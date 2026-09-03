@@ -56,18 +56,25 @@ function metaFromHtml(html) {
     }
   }
 
-  // In-body figures: src plus caption and credit, which the text save lost entirely.
+  // In-body imagery. A serialized DOM has already resolved lazy attributes into src
+  // and made URLs absolute, so accept either shape and de-duplicate.
+  const seenImg = new Set();
   meta.figures = [];
-  for (const f of html.matchAll(/<figure[\s\S]{0,4000}?<\/figure>/gi)) {
+  const pushImg = (src, caption) => {
+    if (!src || seenImg.has(src)) return;
+    if (/^data:|\.svg($|\?)|sprite|logo|avatar|1x1|pixel|placeholder/i.test(src)) return;
+    if (!/gannett-cdn|gcdn|lohud/i.test(src)) return;   // article art only
+    seenImg.add(src);
+    meta.figures.push({ src, ...(caption ? { caption } : {}) });
+  };
+  for (const f of html.matchAll(/<figure[\s\S]{0,6000}?<\/figure>/gi)) {
     const blk = f[0];
-    const src = /<img[^>]+(?:data-gl-src|data-src|src)=["']([^"']+)["']/i.exec(blk);
-    if (!src) continue;
+    const src = /<img[^>]+(?:data-gl-src|data-src|srcset|src)=["']([^"'\s]+)/i.exec(blk);
     const cap = /<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i.exec(blk);
-    meta.figures.push({
-      src: src[1],
-      caption: cap ? dec(cap[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')) : null,
-    });
+    if (src) pushImg(src[1], cap ? dec(cap[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')) : null);
   }
+  // Any remaining article-CDN images outside a <figure>.
+  for (const m of html.matchAll(/<img[^>]+(?:data-gl-src|data-src|src)=["']([^"'\s]+)/gi)) pushImg(m[1], null);
 
   // Publisher-side structured data — answers the brief's open question about whether
   // the live pages already carry schema.
@@ -82,6 +89,9 @@ function metaFromHtml(html) {
 function fromHtml(html) {
   let s = html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ');
   // Prefer an <article> or the Gannett body container when present.
+  // Strip elements a rendered capture includes but the article does not.
+  s = s.replace(/<(aside|nav|header|footer|form|iframe|svg)[\s\S]*?<\/\1>/gi, ' ');
+  s = s.replace(/<div[^>]+(?:class|id)="[^"]*(?:ad[-_]|advert|consent|newsletter|promo|onetrust|recirc|taboola|outbrain|related|more-stories|social)[^"]*"[\s\S]{0,8000}?<\/div>/gi, ' ');
   const m = /<article[\s\S]*?<\/article>/i.exec(s) || /<div[^>]+class="[^"]*(?:gnt_ar_b|article-body|story-body)[^"]*"[\s\S]*?<\/div>\s*<\/div>/i.exec(s);
   if (m) s = m[0];
   const paras = [];
