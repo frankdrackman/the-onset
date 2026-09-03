@@ -104,35 +104,38 @@ a, button { min-height: 0; }
 .search button:hover { background: var(--color-primary-montefiore-800); }
 
 /* ---------- Department rail ---------- */
-.rail { border-bottom: var(--rule); }
-.rail ul { display: flex; flex-wrap: wrap; column-gap: var(--space-4); row-gap: 0; list-style: none; margin: 0; padding: 0; }
+.rail { border-bottom: var(--rule); padding-block: var(--space-16); }
+.rail ul { display: flex; flex-wrap: wrap; column-gap: var(--space-8); row-gap: var(--space-8); list-style: none; margin: 0; padding: 0; }
+
+/* Department pills. Resting is Montefiore navy with white type; the current
+   department inverts to white with navy type, so the selected state reads as a lift
+   out of the row rather than as another fill. Both directions clear 12:1. */
+.rail a {
+  display: inline-flex; align-items: center;
+  padding: var(--space-4) var(--space-16); white-space: nowrap;
+  font-size: var(--text-200); font-weight: var(--w-bold);
+  line-height: calc(var(--text-400) * var(--text-400-lh));
+  color: var(--color-white);
+  background: var(--color-primary-montefiore-500);
+  border: 1px solid var(--color-primary-montefiore-500);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: background var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
+}
+.rail a:hover { background: var(--color-primary-montefiore-800); border-color: var(--color-primary-montefiore-800); color: var(--color-white); }
+.rail a[aria-current="page"] {
+  background: var(--color-white);
+  color: var(--color-primary-montefiore-500);
+  border-color: var(--color-primary-montefiore-500);
+}
+/* Browse all is an action, not a department, so it stays a text link. */
+.rail a.rail__all { background: transparent; border-color: transparent; color: var(--color-primary-montefiore-500); padding-inline: var(--space-8); }
+.rail a.rail__all:hover { background: transparent; color: var(--color-primary-montefiore-800); text-decoration: underline; text-underline-offset: 3px; }
+
 @media (max-width: 860px) {
   /* Only where there is genuinely no room. Horizontal scroll, never a hidden label. */
   .rail ul { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
 }
-/* On a touch device the 44px target is restored — that is where target size actually
-   matters. On a pointer device the tighter rhythm costs nothing in accuracy and the
-   row still clears the WCAG 2.2 AA 24px minimum. */
-@media (pointer: coarse) {
-  .rail a { min-height: 44px; }
-  .rail ul { row-gap: var(--space-4); }
-}
-.rail li { flex: 0 0 auto; }
-.rail a {
-  /* Row rhythm matches the masthead standfirst: 18px x 1.4 = 25.2px, tied to the
-     tokens rather than hard-coded so the two stay locked together. */
-  display: inline-flex; align-items: center;
-  line-height: calc(var(--text-400) * var(--text-400-lh));
-  padding: 0 var(--space-12); white-space: nowrap;
-  font-size: var(--text-200); font-weight: var(--w-bold);
-  color: var(--color-gray-600); text-decoration: none;
-  /* The active underline is a box-shadow, not a border: a border would add its 3px
-     to the box and break the row rhythm we just matched to the standfirst. */
-  box-shadow: inset 0 -3px 0 transparent;
-}
-.rail a:hover { color: var(--color-primary-montefiore-500); box-shadow: inset 0 -3px 0 var(--color-gray-300); }
-.rail a[aria-current="page"] { color: var(--color-primary-montefiore-500); box-shadow: inset 0 -3px 0 var(--color-primary-montefiore-500); }
-.rail a.rail__all { color: var(--color-primary-montefiore-500); }
 
 /* ============================================================
    Module headings + control bar
@@ -572,3 +575,29 @@ select.ctrl { padding-right: var(--space-32); }
   letter-spacing: var(--tracking-800); text-transform: uppercase;
   color: var(--color-gray-500);
 }
+
+/* ---------- Episode embed: the real YouTube still ---------- */
+.embed { display: block; position: relative; aspect-ratio: 16/9; border-radius: var(--radius-md);
+         overflow: hidden; background: var(--color-tint-mirage); text-decoration: none; }
+.embed__thumb { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.embed__play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+               transition: transform var(--duration-base) var(--ease-out); }
+.embed:hover .embed__play { transform: scale(1.06); }
+.embed__cap { position: absolute; left: 0; right: 0; bottom: 0; padding: var(--space-24) var(--space-20) var(--space-16);
+              background: linear-gradient(180deg, rgba(2,3,34,0), rgba(2,3,34,.85));
+              color: var(--color-white); font-size: var(--text-200); font-weight: var(--w-bold); }
+
+/* Full transcript: scrollable rather than collapsed, so the whole thing stays in the
+   HTML and nothing citable sits behind an interaction. */
+.transcript__scroll {
+  max-height: 460px; overflow-y: auto; overscroll-behavior: contain;
+  border: 1px solid var(--color-gray-300); border-radius: var(--radius-md);
+  padding: 0 var(--space-20);
+  scrollbar-width: thin; scrollbar-color: var(--color-gray-400) var(--color-gray-100);
+}
+.transcript__scroll::-webkit-scrollbar { width: 10px; }
+.transcript__scroll::-webkit-scrollbar-track { background: var(--color-gray-100); border-radius: var(--radius-full); }
+.transcript__scroll::-webkit-scrollbar-thumb { background: var(--color-gray-400); border-radius: var(--radius-full); border: 2px solid var(--color-gray-100); }
+.transcript__scroll::-webkit-scrollbar-thumb:hover { background: var(--color-gray-500); }
+.transcript__scroll li:first-child { border-top: 0; }
+@media print { .transcript__scroll { max-height: none; overflow: visible; border: 0; padding: 0; } }

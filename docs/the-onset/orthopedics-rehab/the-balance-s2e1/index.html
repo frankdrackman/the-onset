@@ -280,13 +280,19 @@
         <h1 class="detail__title">Straightening Up</h1>
 
         <!-- Embedded from and linking out to YouTube. The hub does not re-host. -->
-        <div class="embed" style="margin-block:var(--space-28)">
-          <p class="embed__label">
-            <span aria-hidden="true" style="font-size:32px">▶</span><br>
-            YouTube embed — <a href="https://www.youtube.com/watch?v=ekF8UNnTZ2o" rel="noopener" target="_blank">watch on YouTube ↗</a><br>
-            <span style="font-size:var(--text-200);opacity:.8">The video lives on YouTube by design. This page owns the citable text.</span>
-          </p>
-        </div>
+        <!-- The episode's own YouTube still, with the play affordance over it. The
+             video itself stays on YouTube by design; this page owns the citable text. -->
+        <a class="embed" href="https://www.youtube.com/watch?v=ekF8UNnTZ2o" rel="noopener" target="_blank"
+           style="margin-block:var(--space-28)" aria-label="Watch Straightening Up on YouTube">
+          <img class="embed__thumb" src="../../../assets/img/the-balance-s2e1.jpg" alt="" loading="lazy" decoding="async">
+          <span class="embed__play" aria-hidden="true">
+            <svg viewBox="0 0 68 48" width="68" height="48" focusable="false">
+              <path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2 0 34 0 34 0S12.8 0 7.5 1.7a8.6 8.6 0 0 0-6 6A90 90 0 0 0 0 24a90 90 0 0 0 1.5 16.3 8.6 8.6 0 0 0 6 6C12.8 48 34 48 34 48s21.2 0 26.5-1.7a8.6 8.6 0 0 0 6-6A90 90 0 0 0 68 24a90 90 0 0 0-1.5-16.3z" fill="#f00"/>
+              <path d="M27 34V14l18 10z" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="embed__cap">Watch on YouTube <span aria-hidden="true">↗</span></span>
+        </a>
 
         <div class="author" style="margin-top:0">
           <div style="flex:1 1 320px">
@@ -329,6 +335,11 @@
 
         <section class="transcript" aria-labelledby="ep-fulltext">
           <h2 class="mod__h" id="ep-fulltext">Full transcript</h2>
+          <!-- Scrollable, not collapsed. Every line is rendered and in the initial
+               HTML, so nothing is behind an interaction — a reader scrolls it, a
+               crawler reads it whole. tabindex makes the region keyboard-scrollable. -->
+          <div class="transcript__scroll" tabindex="0" role="region"
+               aria-label="Full transcript of Straightening Up, 123 lines">
           <ol>
             
               <li><span class="t">0:00</span><span class="c">(soft music)</span></li>
@@ -455,6 +466,7 @@
               <li><span class="t">6:16</span><span class="c">Until next time, be well.</span></li>
               <li><span class="t">6:20</span><span class="c">(upbeat music)</span></li>
           </ol>
+          </div>
         </section>
 
         </div><!-- /.detail__col -->
