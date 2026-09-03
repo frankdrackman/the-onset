@@ -13,16 +13,21 @@
    ============================================================ */
 
 
-/* ---------- BRAND FACES OMITTED IN THIS BUILD ----------
-   Built with --no-brand-fonts: the ME-licensed Leitura News and Leitura Headline
-   faces are not shipped here. Type falls back to the stack the Storybook token
-   itself declares — Georgia, Times New Roman, serif. Run a local build without
-   the flag to see the real faces.
-   ----------------------------------------------------------
+/* ---------- Leitura News (display serif — ME web + print) ----------
    ME-licensed brand faces, carried locally so the prototype renders in the
    real face for review. Not for public deployment without ME's licence. */
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Roman.otf") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Medium.otf") format("opentype"); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Semibold.otf") format("opentype"); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Bold.otf") format("opentype"); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Italic.otf") format("opentype"); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-MediumItalic.otf") format("opentype"); font-weight:500; font-style:italic; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-SemiboldItalic.otf") format("opentype"); font-weight:600; font-style:italic; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-BoldItalic.otf") format("opentype"); font-weight:700; font-style:italic; font-display:swap; }
 
 /* ---------- Leitura Headline (oversized display) ---------- */
+@font-face { font-family:"Leitura Headline"; src:url("fonts/LeituraHeadline-Roman.otf") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura Headline"; src:url("fonts/LeituraHeadline-Italic.otf") format("opentype"); font-weight:400; font-style:italic; font-display:swap; }
 
 :root {
 

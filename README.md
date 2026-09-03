@@ -83,8 +83,10 @@ else changes.
   episode.
 - **Photography** is not commissioned. Placeholders hold the exact ratios the
   direction calls for — 4:3 lead, 16:9 secondary, 21:9 detail — and say what they are.
-- **Fonts** are ME-licensed brand faces, carried locally so the prototype renders in
-  the real face for review. Not for public deployment without ME's licence.
+- **Fonts** are the ME-licensed Leitura brand faces, shipped so the prototype renders
+  in the real type. `node build.mjs --no-brand-fonts` builds without them and falls
+  back to the stack the Storybook token itself declares (Georgia, Times New Roman,
+  serif), if a deploy ever needs to omit them.
 - Every page carries `noindex`, and `robots.txt` disallows everything by default.
 
 ## The taxonomy, as implemented

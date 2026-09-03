@@ -1,8 +1,2 @@
 node_modules/
 dist/
-
-# ME-licensed brand faces. Carried locally so the prototype renders in the real
-# type for review; never committed, because publishing them would put them outside
-# Montefiore Einstein's licence. Build with --no-brand-fonts for any public deploy.
-src/assets/fonts/*.otf
-src/assets/fonts/*.ttf
