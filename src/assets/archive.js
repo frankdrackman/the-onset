@@ -137,6 +137,7 @@
           '<div class="ph ph--16x9 ' + tint(it) + '" data-label="' + phLabel(it) + '" role="img" aria-label="Art pending"></div>' +
         '</a>' +
         '<h3 class="card__title"><a href="' + url + '">' + esc(it.t) + '</a></h3>' +
+        (it.st ? '<p class="card__stand">' + esc(it.st) + '</p>' : '') +
         '<hr class="card__hr">' +
         '<p class="meta">' + meta + '</p>' +
         '</article>';

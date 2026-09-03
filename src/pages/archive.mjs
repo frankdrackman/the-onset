@@ -212,5 +212,5 @@ const slim = (i) => ({
   t: i.title, u: T.itemPath(i), k: i.kind, d: i.dept, p: i.pillars ?? [],
   sd: i.secondaryDepts ?? [], dt: i.updated, m: i.minutes, es: !!i.es,
   f: !!i.featured, s: i.season ?? null, e: i.episode ?? null,
-  b: i.byline?.name ?? '', st: i.standfirst ?? '', tp: i.topic ?? '',
+  b: i.byline?.name ?? '', st: i.subhead ?? i.standfirst ?? '', tp: i.topic ?? '',
 });

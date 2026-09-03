@@ -88,11 +88,11 @@ export const metaStrip = (item, r, { long = false, extra = [], omitByline = fals
  * A card. Link text is the headline itself — never a repeated "Read Full Article" —
  * so a screen-reader user hearing the link list hears the actual items.
  */
-export const card = (item, r, { ratio = '16x9', size = '', stand = false } = {}) => html`
+export const card = (item, r, { ratio = '16x9', size = '', stand = true } = {}) => html`
 <article class="card ${size}">
   <a class="card__media" href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, ratio, null, r)}</a>
   <h3 class="card__title"><a href="${href(r, item)}">${esc(displayTitle(item))}</a></h3>
-  ${stand && item.standfirst ? `<p class="card__stand">${esc(item.standfirst)}</p>` : ''}
+  ${stand && (item.subhead || item.standfirst) ? `<p class="card__stand">${esc(item.subhead || item.standfirst)}</p>` : ''}
   <hr class="card__hr">
   ${metaStrip(item, r)}
 </article>`;

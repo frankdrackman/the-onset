@@ -93,9 +93,6 @@ const enrich = (i) => {
   };
   if (!b) return { ...i, byline: bind(i.byline) };
   const words = b.paras.reduce((n, p) => n + p.text.split(/\s+/).length, 0);
-  // The publisher's own lead image, referenced at a sensible width. This is the
-  // viewer's browser loading an image, not a crawl. For a self-contained build the
-  // art should be downloaded and served locally — see ingest/CODEX-PROMPT-HTML.md.
   // PULL QUOTE — a line lifted from the article's own body, typographic emphasis
   // only. Per the wireframe these pieces do not quote physicians, so there is no
   // attribution and no speaker. Prefer a sentence the piece already sets in quotes;
@@ -116,6 +113,25 @@ const enrich = (i) => {
   sentences.sort((a, x) => a.rank - x.rank || Math.abs(a.idx - mid) - Math.abs(x.idx - mid));
   const pullQuote = sentences.length ? sentences[0].text : null;
 
+  // CARD SUBHEAD. Prefer the publisher's own teaser; where that was dropped as a
+  // fragment, fall back to the article's opening sentences. Both are the piece's own
+  // words — nothing is written here.
+  const firstPara = b.paras.find((p) => p.tag === 'p' && p.text.length > 80);
+  let subhead = null;
+  if (firstPara) {
+    const t = firstPara.text.trim();
+    if (t.length <= 240) subhead = t;
+    else {
+      // Trim back to a sentence boundary rather than cutting mid-word.
+      const cut = t.slice(0, 240);
+      const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('? '), cut.lastIndexOf('! '));
+      subhead = stop > 90 ? cut.slice(0, stop + 1) : cut.slice(0, cut.lastIndexOf(' ')) + '…';
+    }
+  }
+
+  // The publisher's own lead image, referenced at a sensible width. This is the
+  // viewer's browser loading an image, not a crawl. For a self-contained build the
+  // art should be downloaded and served locally — see ingest/CODEX-PROMPT-HTML.md.
   const img = b.meta?.image
     ? b.meta.image.split('?')[0] + '?width=1200&disable=upscale&format=pjpg&auto=webp'
     : null;
@@ -123,6 +139,7 @@ const enrich = (i) => {
     ...i,
     body: b.paras,
     ...(pullQuote ? { pullQuote } : {}),
+    subhead: i.standfirst || subhead || null,
     ...(img ? { image: img, imageRemote: true, imageCredit: b.meta?.imageAlt ?? null } : {}),
     words,
     minutes: Math.max(1, Math.round(words / 225)),

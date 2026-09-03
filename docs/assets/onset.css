@@ -304,7 +304,14 @@ a, button { min-height: 0; }
 .card__hr { border: 0; border-top: var(--hairline); margin: 0 0 var(--space-12); }
 .card--sm .card__title { font-size: var(--text-400); }
 .card--xs .card__title { font-size: var(--text-300); font-weight: var(--w-medium); }
-.card__stand { font-size: var(--text-200); color: var(--color-gray-550); margin: 0 0 var(--space-12); }
+/* The card subhead sits between the headline and the meta strip in the type scale:
+   16px against an 18px headline and a 14px meta line. Clamped to three lines so a
+   long teaser cannot make one card in a row taller than its neighbours. */
+.card__stand {
+  font-size: var(--text-300); line-height: 1.45; color: var(--color-gray-550);
+  margin: 0 0 var(--space-12);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+}
 
 /* ============================================================
    PATIENT JOURNEYS — the one dark field on the page.
