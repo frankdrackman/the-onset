@@ -107,27 +107,29 @@ a, button { min-height: 0; }
 .rail { border-bottom: var(--rule); padding-block: var(--space-16); }
 .rail ul { display: flex; flex-wrap: wrap; column-gap: var(--space-8); row-gap: var(--space-8); list-style: none; margin: 0; padding: 0; }
 
-/* Department pills. Resting is Montefiore navy with white type; the current
-   department inverts to white with navy type, so the selected state reads as a lift
-   out of the row rather than as another fill. Both directions clear 12:1. */
+/* Department pills. Resting is white with navy type on a navy outline; the current
+   department fills with navy and reverses to white type, so the selected state is the
+   heaviest thing in the row. Both directions clear 12:1. */
 .rail a {
   display: inline-flex; align-items: center;
   padding: var(--space-4) var(--space-16); white-space: nowrap;
   font-size: var(--text-200); font-weight: var(--w-bold);
   line-height: calc(var(--text-400) * var(--text-400-lh));
-  color: var(--color-white);
-  background: var(--color-primary-montefiore-500);
+  color: var(--color-primary-montefiore-500);
+  background: var(--color-white);
   border: 1px solid var(--color-primary-montefiore-500);
   border-radius: var(--radius-full);
   text-decoration: none;
   transition: background var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
 }
-.rail a:hover { background: var(--color-primary-montefiore-800); border-color: var(--color-primary-montefiore-800); color: var(--color-white); }
+.rail a:hover { background: var(--color-soft-blue); color: var(--color-primary-montefiore-800); border-color: var(--color-primary-montefiore-800); }
 .rail a[aria-current="page"] {
-  background: var(--color-white);
-  color: var(--color-primary-montefiore-500);
+  background: var(--color-primary-montefiore-500);
+  color: var(--color-white);
   border-color: var(--color-primary-montefiore-500);
 }
+.rail a[aria-current="page"]:hover { background: var(--color-primary-montefiore-800); border-color: var(--color-primary-montefiore-800); color: var(--color-white); }
+
 /* Browse all is an action, not a department, so it stays a text link. */
 .rail a.rail__all { background: transparent; border-color: transparent; color: var(--color-primary-montefiore-500); padding-inline: var(--space-8); }
 .rail a.rail__all:hover { background: transparent; color: var(--color-primary-montefiore-800); text-decoration: underline; text-underline-offset: 3px; }
