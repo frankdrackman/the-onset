@@ -307,7 +307,9 @@ a, button { min-height: 0; }
 .card__title a { color: inherit; text-decoration: none; }
 .card__title a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .card__hr { border: 0; border-top: var(--hairline); margin: 0 0 10px; }  /* 12px less 2 */
-.card--sm .card__title { font-size: var(--text-400); }
+/* 20px against a 16px subhead and a 14px meta line. At 18px the headline was only
+   one step above the subhead and the two competed; 20px restores the hierarchy. */
+.card--sm .card__title { font-size: var(--text-500); }
 .card--xs .card__title { font-size: var(--text-300); font-weight: var(--w-medium); }
 /* The card subhead sits between the headline and the meta strip in the type scale:
    16px against an 18px headline and a 14px meta line. Clamped to three lines so a
