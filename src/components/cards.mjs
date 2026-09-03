@@ -147,7 +147,9 @@ export const offsetHero = (item, r, { headingLevel = 3 } = {}) => {
  */
 export const journeyBand = (item, r) => html`
 <article class="journey">
-  <div class="journey__bg" data-label="Cinematic patient portrait — art pending"></div>
+  ${item.image
+    ? `<img class="journey__img" src="${esc(/^https?:\/\//.test(item.image) ? item.image : `${r}assets/${item.image}`)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+    : '<div class="journey__bg" data-label="Cinematic patient portrait — art pending"></div>'}
   <div class="journey__scrim" aria-hidden="true"></div>
   <div class="journey__body">
     <p class="journey__eyebrow">Patient Journeys</p>
