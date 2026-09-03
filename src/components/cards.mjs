@@ -6,6 +6,7 @@
 
 import { html, esc, cardDate, longDate } from '../lib/html.mjs';
 import { byDept } from '../data/departments.mjs';
+import { focalFor } from '../data/focal.mjs';
 import { itemPath, deptPath, TYPE_LABEL, displayTitle } from '../lib/taxonomy.mjs';
 
 const href = (r, item) => `${r}${itemPath(item).replace(/^\//, '')}index.html`;
@@ -40,10 +41,11 @@ export const media = (item, ratio = '16x9', label = null, r = '') => {
     // alt is empty on purpose: the headline beside it is the accessible name, so
     // describing the image again would just make a screen reader say it twice.
     const src = /^https?:\/\//.test(item.image) ? item.image : `${r}assets/${item.image}`;
+    const focal = focalFor(item);
     return html`
 <div class="ph ph--${ratio} ph--has-img">
   <img class="ph__img" src="${esc(src)}" alt="" loading="lazy" decoding="async"
-       referrerpolicy="no-referrer">
+       referrerpolicy="no-referrer"${focal ? ` style="object-position:${esc(focal)}"` : ''}>
   ${play}
 </div>`;
   }
