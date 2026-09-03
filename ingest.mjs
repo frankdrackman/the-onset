@@ -47,6 +47,9 @@ function metaFromHtml(html) {
   meta.published = dec(pick(/<meta[^>]+property=["']article:published_time["'][^>]+content=["']([^"']+)/i));
   meta.modified = dec(pick(/<meta[^>]+property=["']article:modified_time["'][^>]+content=["']([^"']+)/i));
   meta.description = dec(pick(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)/i));
+  // The publisher states the byline in a meta tag — cleaner and more reliable than
+  // finding it in the prose.
+  meta.author = dec(pick(/<meta[^>]+property=["']article:author["'][^>]+content=["']([^"']+)/i));
 
   // The article's own link to its Spanish twin — the href, not just the title.
   const es = /<a[^>]+href=["']([^"']+)["'][^>]*>\s*(?:EN\s+ESPA(?:\u00d1|N\u0303)OL:?\s*)?([^<]*)<\/a>/gi;
@@ -180,6 +183,11 @@ async function run() {
     if (paras.length < 2) { unmatched.push(`${f} (too little text extracted)`); continue; }
     // The HTML's own <link rel=alternate> beats the text line: it carries the URL.
     if (meta.spanishUrl) spanish = { title: meta.spanishTitle || spanish?.title || null, url: meta.spanishUrl };
+    if (!byline && meta.author) {
+      const a = meta.author.replace(/,?\s*for\s+Montefiore\s+Einstein\.?$/i, '').trim();
+      const c = /^(.*?),\s*((?:MD|DO|PhD|RD|RDN|MSc|MS|MPH|CDN|CNSC|FACC|FHRS|FACOG|NP|PA)[^,]*)(?:,\s*(.*))?$/.exec(a);
+      byline = c ? { name: `${c[1]}, ${c[2]}`.trim(), role: (c[3] || '').trim() || null } : { name: a, role: null };
+    }
     bodies[item.slug] = {
       source: f,
       ...(byline ? { byline } : {}),

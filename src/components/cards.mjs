@@ -39,9 +39,11 @@ export const media = (item, ratio = '16x9', label = null, r = '') => {
   if (item.image) {
     // alt is empty on purpose: the headline beside it is the accessible name, so
     // describing the image again would just make a screen reader say it twice.
+    const src = /^https?:\/\//.test(item.image) ? item.image : `${r}assets/${item.image}`;
     return html`
 <div class="ph ph--${ratio} ph--has-img">
-  <img class="ph__img" src="${r}assets/${esc(item.image)}" alt="" loading="lazy" decoding="async">
+  <img class="ph__img" src="${esc(src)}" alt="" loading="lazy" decoding="async"
+       referrerpolicy="no-referrer">
   ${play}
 </div>`;
   }

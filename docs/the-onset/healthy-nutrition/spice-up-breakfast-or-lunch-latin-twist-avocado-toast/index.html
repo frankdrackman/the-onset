@@ -61,6 +61,18 @@
       },
       "isPartOf": {
         "@id": "https://www.montefioreeinstein.org/the-onset/#collection"
+      },
+      "review": {
+        "@type": "Review",
+        "author": {
+          "@type": "Physician",
+          "name": "Sandra Arevalo, MPH",
+          "jobTitle": "Montefiore",
+          "affiliation": {
+            "@id": "https://www.montefioreeinstein.org/#organization"
+          }
+        },
+        "reviewBody": "Reviewed by a Montefiore Einstein registered dietitian."
       }
     },
     {
@@ -171,8 +183,9 @@
     <div class="wrap">
       <div class="detail">
         
-<div class="ph ph--21x9 ph--warm3" data-label="Recipe photograph" role="img"
-     aria-label="Recipe photograph — art pending for Spice up breakfast (or lunch) with this Latin twist on avocado toast">
+<div class="ph ph--21x9 ph--has-img">
+  <img class="ph__img" src="https://www.lohud.com/gcdn/presto/2021/06/07/PWES/ba5819f1-165a-4d36-a887-f752345e73f2-GettyImages-641809868.jpg?width=1200&amp;disable=upscale&amp;format=pjpg&amp;auto=webp" alt="" loading="lazy" decoding="async"
+       referrerpolicy="no-referrer">
   
 </div>
         <div class="detail__col">
@@ -181,8 +194,9 @@
           <h1 class="detail__title">Spice up breakfast (or lunch) with this Latin twist on avocado toast</h1>
           
           <p class="detail__byline byline">
-            Published by <strong>Montefiore Einstein</strong> on lohud.com.
-            <span class="mod__note">Physician byline not present in the public index — it lands with the LoHud manifest.</span>
+            By <strong>Sandra Arevalo, MPH</strong>, Montefiore
+            · 2 min read
+            
           </p>
 
         </div>
@@ -190,21 +204,12 @@
         <!-- Answer-first. Speakable. Above the body. Never behind an interaction. -->
         <section class="in-short" aria-labelledby="inshort-h">
           <h2 id="inshort-h">In short</h2>
-          <p>There's a reason avocado toast is a staple on restaurant menus everywhere now — it's simply delicious and healthy.</p>
+          <p>There’s a reason avocado toast is a staple on restaurant menus everywhere now — it’s simply delicious and healthy. The easy-to-make dish is packed with nutrients that can help lower your cholesterol, boost your immune system and do much more to improve your health.</p>
           
         </section>
 
         <div class="prose">
-          
-              <p>
-                This is the Montefiore Einstein page for a piece published in the
-                Montefiore Einstein series on lohud.com. The summary above is the citable text
-                Montefiore Einstein owns on its own domain; the full article is linked below.
-              </p>
-              <p class="mod__note">
-                Body copy for this article has not been ingested yet. See
-                <code>ingest/CODEX-SPEC.md</code>.
-              </p>
+          <p>And because it’s such a simple meal, you can easily customize it to make it more fun and interesting, all while making it more filling and beneficial to your body. In this recipe, we’re putting a Latin twist on the usual avocado-and-bread base by making a superb guacamole that has a kick and serving it with eggs, feta cheese and honey for a dash of sweetness.</p><p>First, we start with the guacamole. Choose a ripe avocado, one that’s soft to the touch but not too mushy, and cut it in half, removing the pit and scooping the rest into a bowl, discarding any bruised brown spots. Mash it with a fork and add in the rest of the ingredients, including your favorite brand of hot sauce. Three drops won’t make it too spicy, but you can always add more if you prefer more of a kick.</p><p>What’s great about guacamole, in general, is that avocados are a super fruit, with good fats that help to improve cardiovascular health by lowering bad cholesterol levels. The tomato adds vitamin C and the antioxidant lycopene, which helps reduce inflammation and fortifies the immune system. For this recipe, I use cilantro because it has so much flavor, which means you don’t have to use as much salt, and it’s rich in vitamins A, C and K, folate, potassium and manganese. Folate is a B vitamin that helps increase blood flow, while the mineral manganese offers a host of benefits, like improving bone density, brain function, sugar levels and metabolism. While most people usually just use the leaves of cilantro, you can keep the stems in for this and any other dish for an extra bit of crunch as well as an even more concentrated serving of nutrients.</p><p>Once the guacamole is ready, set it aside and get to work on your eggs and toast. Here, I use whole wheat bread to add fiber, which helps with digestion. The feta cheese provides a great serving of protein for energy and the feeling of fullness, so you don’t overeat, and it has less fat than other cheese. The honey offers a subtle bit of flavoring, with just enough sweetness that you won’t crave any other sweets for a while. And if you’d like to make this healthy recipe even leaner, you can make it with egg whites to lower the amount of calories and fat, without losing the protein.</p><p>This balanced meal is perfect for breakfast, lunch or as a snack. You can keep experimenting with different ingredients and create different flavor profiles to make sure you never get bored with having the same meal. No matter how you make it, you’ll be enjoying a delicious dish that’s great for your health.</p><p>Follow Sandra on her social channels on LinkedIn and @SandraArevaloRD on Facebook.</p><p>Discover more recipes and learn about Montefiore’s commitment to create a healthy community at www.montefiore.org.</p>
         </div>
 
         
@@ -212,6 +217,21 @@
         <!-- The Person entity made visible — rendered only where a real named
              clinician is known. No author card for an unknown byline. -->
         
+        <aside class="author" aria-label="About the author">
+          <div class="ph author__photo" data-label="Photo" role="img" aria-label="Author photograph pending"></div>
+          <div>
+            <h2 class="author__name">Sandra Arevalo, MPH</h2>
+            <p class="byline">
+              Montefiore, Montefiore Einstein
+              · 2 pieces on The Onset
+            </p>
+            
+          </div>
+          <span class="mod__spacer"></span>
+          <a class="btn btn--ghost" href="https://www.montefioreeinstein.org/doctors/?specialty=nutrition">
+            Find a clinician <span aria-hidden="true">↗</span>
+          </a>
+        </aside>
 
         <!-- Paid custom content boundary: rel="sponsored", passing no link authority.
              This replaces the old "more stories on LoHud.com" component, which
@@ -246,36 +266,39 @@
         <div class="row row--3">
 <article class="card card--sm">
   <a class="card__media" href="../../../the-onset/healthy-nutrition/high-protein-asian-chicken-with-zucchini-noodles/index.html" tabindex="-1" aria-hidden="true">
-<div class="ph ph--16x9 ph--wheat" data-label="Recipe photograph" role="img"
-     aria-label="Recipe photograph — art pending for High-protein Asian chicken with zucchini noodles">
+<div class="ph ph--16x9 ph--has-img">
+  <img class="ph__img" src="https://www.lohud.com/gcdn/authoring/authoring-images/2026/03/04/PDTF/88982118007-lo-hud-march-26-recipe-vf-16-x-9.jpg?width=1200&amp;disable=upscale&amp;format=pjpg&amp;auto=webp" alt="" loading="lazy" decoding="async"
+       referrerpolicy="no-referrer">
   
 </div></a>
   <h3 class="card__title"><a href="../../../the-onset/healthy-nutrition/high-protein-asian-chicken-with-zucchini-noodles/index.html">High-protein Asian chicken with zucchini noodles</a></h3>
   
   <hr class="card__hr">
-  <p class="meta"><span>9 March</span><span class="sep" aria-hidden="true">·</span><a href="../../../the-onset/healthy-nutrition/index.html">Healthy Nutrition</a><span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span><span class="sep" aria-hidden="true">·</span><span>Reviewed by Monica Kelly, MS</span><span class="sep" aria-hidden="true">·</span><span>2 min read</span><span class="sep" aria-hidden="true">·</span><span class="meta__lang" title="Also available in Spanish">EN/ES</span></p>
+  <p class="meta"><span>9 March</span><span class="sep" aria-hidden="true">·</span><a href="../../../the-onset/healthy-nutrition/index.html">Healthy Nutrition</a><span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span><span class="sep" aria-hidden="true">·</span><span>Monica Kelly, MS</span><span class="sep" aria-hidden="true">·</span><span>1 min read</span><span class="sep" aria-hidden="true">·</span><span class="meta__lang" title="Also available in Spanish">EN/ES</span></p>
 </article>
 <article class="card card--sm">
   <a class="card__media" href="../../../the-onset/healthy-nutrition/dubai-inspired-chocolate-covered-strawberries/index.html" tabindex="-1" aria-hidden="true">
-<div class="ph ph--16x9 ph--warm3" data-label="Recipe photograph" role="img"
-     aria-label="Recipe photograph — art pending for Dubai inspired chocolate covered strawberries">
+<div class="ph ph--16x9 ph--has-img">
+  <img class="ph__img" src="https://www.lohud.com/gcdn/authoring/authoring-images/2026/02/26/PDTF/88877117007-lo-hud-feb-26-recipe-v-05.jpg?width=1200&amp;disable=upscale&amp;format=pjpg&amp;auto=webp" alt="" loading="lazy" decoding="async"
+       referrerpolicy="no-referrer">
   
 </div></a>
   <h3 class="card__title"><a href="../../../the-onset/healthy-nutrition/dubai-inspired-chocolate-covered-strawberries/index.html">Dubai inspired chocolate covered strawberries</a></h3>
   
   <hr class="card__hr">
-  <p class="meta"><span>26 February</span><span class="sep" aria-hidden="true">·</span><a href="../../../the-onset/healthy-nutrition/index.html">Healthy Nutrition</a><span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span><span class="sep" aria-hidden="true">·</span><span>Reviewed by Monica Kelly, MS</span><span class="sep" aria-hidden="true">·</span><span>3 min read</span><span class="sep" aria-hidden="true">·</span><span class="meta__lang" title="Also available in Spanish">EN/ES</span></p>
+  <p class="meta"><span>26 February</span><span class="sep" aria-hidden="true">·</span><a href="../../../the-onset/healthy-nutrition/index.html">Healthy Nutrition</a><span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span><span class="sep" aria-hidden="true">·</span><span>Monica Kelly, MS</span><span class="sep" aria-hidden="true">·</span><span>2 min read</span><span class="sep" aria-hidden="true">·</span><span class="meta__lang" title="Also available in Spanish">EN/ES</span></p>
 </article>
 <article class="card card--sm">
   <a class="card__media" href="../../../the-onset/healthy-nutrition/one-pot-chicken-and-mushroom-skillet-with-vitamin-rich-ingredients/index.html" tabindex="-1" aria-hidden="true">
-<div class="ph ph--16x9 ph--warm3" data-label="Recipe photograph" role="img"
-     aria-label="Recipe photograph — art pending for One-pot chicken and mushroom skillet with vitamin-rich ingredients">
+<div class="ph ph--16x9 ph--has-img">
+  <img class="ph__img" src="https://www.lohud.com/gcdn/authoring/authoring-images/2026/01/23/PDTF/88318040007-lo-hud-jan-26-recipe-vf-2-16-x-9.jpg?width=1200&amp;disable=upscale&amp;format=pjpg&amp;auto=webp" alt="" loading="lazy" decoding="async"
+       referrerpolicy="no-referrer">
   
 </div></a>
   <h3 class="card__title"><a href="../../../the-onset/healthy-nutrition/one-pot-chicken-and-mushroom-skillet-with-vitamin-rich-ingredients/index.html">One-pot chicken and mushroom skillet with vitamin-rich ingredients</a></h3>
   
   <hr class="card__hr">
-  <p class="meta"><span>23 January</span><span class="sep" aria-hidden="true">·</span><a href="../../../the-onset/healthy-nutrition/index.html">Healthy Nutrition</a><span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span><span class="sep" aria-hidden="true">·</span><span>Reviewed by Monica Kelly, MS</span><span class="sep" aria-hidden="true">·</span><span>2 min read</span><span class="sep" aria-hidden="true">·</span><span class="meta__lang" title="Also available in Spanish">EN/ES</span></p>
+  <p class="meta"><span>23 January</span><span class="sep" aria-hidden="true">·</span><a href="../../../the-onset/healthy-nutrition/index.html">Healthy Nutrition</a><span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span><span class="sep" aria-hidden="true">·</span><span>Monica Kelly, MS</span><span class="sep" aria-hidden="true">·</span><span>2 min read</span><span class="sep" aria-hidden="true">·</span><span class="meta__lang" title="Also available in Spanish">EN/ES</span></p>
 </article></div>
       </div>
     </section>

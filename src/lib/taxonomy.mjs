@@ -53,9 +53,16 @@ const enrich = (i) => {
   };
   if (!b) return { ...i, byline: bind(i.byline) };
   const words = b.paras.reduce((n, p) => n + p.text.split(/\s+/).length, 0);
+  // The publisher's own lead image, referenced at a sensible width. This is the
+  // viewer's browser loading an image, not a crawl. For a self-contained build the
+  // art should be downloaded and served locally — see ingest/CODEX-PROMPT-HTML.md.
+  const img = b.meta?.image
+    ? b.meta.image.split('?')[0] + '?width=1200&disable=upscale&format=pjpg&auto=webp'
+    : null;
   return {
     ...i,
     body: b.paras,
+    ...(img ? { image: img, imageRemote: true, imageCredit: b.meta?.imageAlt ?? null } : {}),
     words,
     minutes: Math.max(1, Math.round(words / 225)),
     // The article's own byline fills gaps the search index left, but where we already
@@ -66,7 +73,7 @@ const enrich = (i) => {
           ...i.byline,
           name: i.byline?.profileUrl ? i.byline.name : b.byline.name.split(',').slice(0, 2).join(',').trim(),
           // Drop credential tokens from the role — they are already in the name.
-          role: b.byline.role
+          role: (b.byline.role || '')
             .replace(/^(?:(?:MSc|RDN|CNSC|FACOG|FACC|FHRS|MPH|PhD|CDN|MD|DO|RD|MS|NP|PA)\.?,?\s*)+/i, '')
             .replace(/^(?:and|for)\s+/i, '').trim().replace(/[,\s]+$/, '') || null,
           dept: i.dept,
