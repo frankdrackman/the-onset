@@ -92,10 +92,13 @@ const enrich = (i) => {
 
 const enrichBound = (i) => {
   const e = enrich(i);
-  if (!e.byline?.name || e.byline.profileUrl) return e;
-  const p = findProfile(e.byline.name);
+  if (!e.byline?.name) return e;
+  // Bind the profile only if one is not already attached, but ALWAYS look for a
+  // headshot — an article can carry a profile URL from the search-index pass and
+  // still have no photo attached.
+  const p = e.byline.profileUrl ? null : findProfile(e.byline.name);
   const b = p ? { ...e.byline, name: p.name, profileUrl: p.sameAs, npi: p.npi } : e.byline;
-  const photo = headshotFor(b.name);
+  const photo = b.photo ?? headshotFor(b.name);
   return { ...e, byline: photo ? { ...b, photo } : b };
 };
 
