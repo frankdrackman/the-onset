@@ -67,10 +67,6 @@ ${crumbs(trail, r)}
             ${dept.entity ? html`
               <a class="btn btn--ghost" href="${esc(dept.entity.url)}">${esc(dept.entity.name.replace('Montefiore Einstein ', ''))} at Montefiore Einstein <span aria-hidden="true">↗</span></a>` : ''}
           </div>
-          ${!dept.entity ? html`
-            <p class="mod__note" style="margin-top:var(--space-20)">
-              Healthy Nutrition is an editorial collection, not a clinical department. It makes no entity claim, which is exactly why recipes can live here without wearing a department tag they have not earned.
-            </p>` : ''}
         </div>
       </div>
     </div>
@@ -104,10 +100,6 @@ ${crumbs(trail, r)}
         <div class="row row--3" style="margin-top:var(--space-48)">
           ${rest.slice(0, 6).map((it) => card(it, r, { size: 'card--sm' }))}
         </div>` : ''}
-      ${rest.length > 6 ? html`
-        <p class="mod__note" style="margin-top:var(--space-24)">
-          Further ${esc(dept.label)} stories continue in the archive.
-        </p>` : ''}
     </div>
   </section>` : ''}
 
@@ -151,9 +143,6 @@ ${crumbs(trail, r)}
   <aside class="tinted" aria-labelledby="crosspromo-h">
     <div class="wrap">
       <h2 class="mod__h" id="crosspromo-h">More from Montefiore Einstein</h2>
-      <p class="mod__note" style="margin-block:var(--space-12) var(--space-20)">
-        Global cross-promo and media-relations block, developer-fed. The same on every department page, and deliberately styled as page chrome so it never reads as this department's own content.
-      </p>
       <a class="btn btn--ghost" href="https://www.montefioreeinstein.org/news/">Newsroom <span aria-hidden="true">↗</span></a>
     </div>
   </aside>

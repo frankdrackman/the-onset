@@ -106,9 +106,6 @@ export const ticker = (items, r, {
         </div>`)}
     </div>
 
-    <p class="mod__note" data-tick-note hidden>
-      Manual advance is the default. Auto-rotation advances every 7 seconds, pauses when you hover or focus anything inside, and stays paused.
-    </p>
   </div>
 </section>`;
 };

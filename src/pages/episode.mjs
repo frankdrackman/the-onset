@@ -82,7 +82,6 @@ ${crumbs(trail, r)}
           <div style="flex:1 1 320px">
             <p class="byline"><strong>Host</strong> ${esc(SERIES.host.name)} — ${esc(SERIES.host.role)}</p>
             <p class="byline"><strong>Guest</strong> ${esc(ep.guest)}${ep.guestSpecialty ? `, ${esc(ep.guestSpecialty)}` : ''}, Montefiore Einstein</p>
-            <p class="mod__note" style="margin-top:var(--space-8)">Both are Person entities. The guest carries a <code>sameAs</code> to Find a Doctor, which makes the byline corroborable rather than asserted.</p>
           </div>
           <a class="btn btn--ghost" href="${esc(dept.findCare.url)}">View profile in Find a Doctor <span aria-hidden="true">↗</span></a>
         </div>
@@ -100,7 +99,6 @@ ${crumbs(trail, r)}
           <div class="chips chips--tap" style="margin-bottom:var(--space-16)">
             ${ep.topics.map((t) => `<span class="chip">${esc(t)}</span>`)}
           </div>
-          <p class="mod__note">Montefiore Einstein's own subject tags for this episode. On the live hub this block also carries two or three answer-first bullets written for the page.</p>
         </section>` : ''}
 
         <!-- Transcript: chaptered with timestamps, mirrored in VideoObject
@@ -108,11 +106,6 @@ ${crumbs(trail, r)}
              Per-chapter collapsing would be fine; fetch-on-click is not. -->
         <section class="transcript" aria-labelledby="ep-transcript">
           <h2 class="mod__h" id="ep-transcript">Jump to a moment</h2>
-          <p class="mod__note" style="margin-block:var(--space-8) var(--space-16)">
-            Timestamps taken from the episode's own words. The whole ${ep.transcript.length}-line transcript
-            ships in this page’s HTML and is expanded on load — never fetched on click, because text behind an
-            interaction is text an engine cannot cite.
-          </p>
           <ol>
             ${ep.chapters.map((c, i) => html`
               <li id="t${i}"><span class="t">${esc(c.t)}</span><span class="c">${esc(c.label)}</span></li>`)}
@@ -127,10 +120,6 @@ ${crumbs(trail, r)}
           </ol>
         </section>
 
-        ${ep.tieBreak ? html`
-        <aside class="mod__note" style="border-top:var(--rule);padding-top:var(--space-20);margin-top:var(--space-32)">
-          <strong>Classification note.</strong> ${esc(ep.tieBreak)}
-        </aside>` : ''}
         </div><!-- /.detail__col -->
       </div>
     </div>

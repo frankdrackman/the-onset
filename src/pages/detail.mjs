@@ -93,7 +93,6 @@ ${crumbs(trail, r)}
           </p>` : html`
           <p class="detail__byline byline">
             Published by <strong>Montefiore Einstein</strong> on lohud.com.
-            <span class="mod__note">Physician byline not present in the public index — it lands with the LoHud manifest.</span>
           </p>`}
 
         </div>
@@ -116,10 +115,6 @@ ${crumbs(trail, r)}
                 This is the Montefiore Einstein page for a piece published in the
                 ${esc(HUB.publisher)} series on lohud.com. The summary above is the citable text
                 Montefiore Einstein owns on its own domain; the full article is linked below.
-              </p>
-              <p class="mod__note">
-                Body copy for this article has not been ingested yet. See
-                <code>ingest/CODEX-SPEC.md</code>.
               </p>`}
         </div>
 
@@ -132,18 +127,7 @@ ${crumbs(trail, r)}
               <p class="qa__a">${esc(f.a)}</p>
             </div>`)}
           ${faqRec?.reviewedBy ? `<p class="mod__note" style="margin-top:var(--space-16)">Reviewed by ${esc(faqRec.reviewedBy)}${faqRec.reviewed ? `, ${esc(faqRec.reviewed)}` : ''}.</p>` : ''}
-        </section>` : html`
-        <!-- FAQ slot. Wired to data/faqs.mjs and to FAQPage schema; emits neither
-             markup-as-content nor schema until real copy exists. -->
-        <section class="qa qa--empty" aria-labelledby="qa-h">
-          <h2 class="mod__h" id="qa-h">Common questions</h2>
-          <p class="mod__note">
-            Two or three reader questions with standalone answers belong here, written and
-            clinically reviewed by Montefiore Einstein. The slot is wired: copy added to
-            <code>src/data/faqs.mjs</code> under <code>${esc(item.slug)}</code> renders here and
-            emits <code>FAQPage</code> schema automatically. No schema is emitted while it is empty.
-          </p>
-        </section>`}
+        </section>` : ''}
 
         <!-- The Person entity made visible — rendered only where a real named
              clinician is known. No author card for an unknown byline. -->
@@ -158,7 +142,6 @@ ${crumbs(trail, r)}
               ${esc(item.byline?.role || dept.label)}, Montefiore Einstein
               · ${sameByline} piece${sameByline === 1 ? '' : 's'} on ${esc(HUB.name)}
             </p>
-            ${item.byline?.npi ? `<p class="mod__note">Bound to the live Montefiore Einstein Find a Doctor profile (NPI ${esc(item.byline.npi)}) — the byline is corroborable, not asserted.</p>` : ''}
           </div>
           <span class="mod__spacer"></span>
           <a class="btn btn--ghost" href="${esc(item.byline?.profileUrl || dept.findCare.url)}">
@@ -174,12 +157,6 @@ ${crumbs(trail, r)}
           <a class="btn" href="${esc(item.lohudUrl)}" rel="sponsored noopener" target="_blank">
             Read the full article on lohud.com <span aria-hidden="true">↗</span>
           </a>
-          <p class="mod__note" style="margin-top:var(--space-12)">
-            Option C, as SEO carries it: this Montefiore Einstein page is self-canonical and owns the citable
-            summary; the full piece stays where it was published. The cross-boundary link carries
-            <code>rel="sponsored"</code>, so the paid boundary passes no link authority — ME authority accrues by
-            entity consistency instead.
-          </p>
         </div>` : ''}
         </div><!-- /.detail__col -->
       </div>

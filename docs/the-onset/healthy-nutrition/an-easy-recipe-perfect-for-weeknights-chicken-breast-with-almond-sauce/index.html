@@ -213,17 +213,6 @@
         </div>
 
         
-        <!-- FAQ slot. Wired to data/faqs.mjs and to FAQPage schema; emits neither
-             markup-as-content nor schema until real copy exists. -->
-        <section class="qa qa--empty" aria-labelledby="qa-h">
-          <h2 class="mod__h" id="qa-h">Common questions</h2>
-          <p class="mod__note">
-            Two or three reader questions with standalone answers belong here, written and
-            clinically reviewed by Montefiore Einstein. The slot is wired: copy added to
-            <code>src/data/faqs.mjs</code> under <code>an-easy-recipe-perfect-for-weeknights-chicken-breast-with-almond-sauce</code> renders here and
-            emits <code>FAQPage</code> schema automatically. No schema is emitted while it is empty.
-          </p>
-        </section>
 
         <!-- The Person entity made visible — rendered only where a real named
              clinician is known. No author card for an unknown byline. -->
@@ -236,7 +225,6 @@
               CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care, Montefiore Einstein
               · 16 pieces on The Onset
             </p>
-            
           </div>
           <span class="mod__spacer"></span>
           <a class="btn btn--ghost" href="https://www.montefioreeinstein.org/doctors/?specialty=nutrition">
@@ -252,12 +240,6 @@
           <a class="btn" href="https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/03/01/an-easy-recipe-perfect-for-weeknights-chicken-breast-with-almond-sauce/72807007007/" rel="sponsored noopener" target="_blank">
             Read the full article on lohud.com <span aria-hidden="true">↗</span>
           </a>
-          <p class="mod__note" style="margin-top:var(--space-12)">
-            Option C, as SEO carries it: this Montefiore Einstein page is self-canonical and owns the citable
-            summary; the full piece stays where it was published. The cross-boundary link carries
-            <code>rel="sponsored"</code>, so the paid boundary passes no link authority — ME authority accrues by
-            entity consistency instead.
-          </p>
         </div>
         </div><!-- /.detail__col -->
       </div>

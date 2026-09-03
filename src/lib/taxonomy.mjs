@@ -153,7 +153,7 @@ export const theLatest = (limit = 8) =>
 
 /** Department shelves for the hub home — only departments that actually have
  *  content, ordered by how much they have. Zero-item sections are never padded. */
-export const shelves = (n = 3, per = 4) =>
+export const shelves = (n = Infinity, per = 4) =>
   Object.keys(byDept)
     .map((slug) => ({ slug, label: byDept[slug].label, items: canonicalIn(slug).slice(0, per), total: canonicalIn(slug).length }))
     .filter((s) => s.items.length > 0)

@@ -527,3 +527,10 @@ select.ctrl { padding-right: var(--space-32); }
 
 /* Real physician headshot in the author card. */
 .author__photo--real { object-fit: cover; border-radius: var(--radius-full); }
+
+/* Department shelves are all server-rendered; JavaScript only eases them in as they
+   come into view. Without JavaScript they are simply visible. */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal] { opacity: 0; transform: translateY(12px); transition: opacity var(--duration-slow) var(--ease-out), transform var(--duration-slow) var(--ease-out); }
+  .js [data-reveal].is-in { opacity: 1; transform: none; }
+}

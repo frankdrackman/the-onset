@@ -106,9 +106,6 @@ ${crumbs(trail, r)}
 
       <div style="max-width:560px;margin-bottom:var(--space-28)">
         ${searchForm(r)}
-        <p class="mod__note" style="margin-top:var(--space-8)">
-          Search runs across both feeds. Results carry a content-type badge, department, date and language.
-        </p>
       </div>
 
       <!-- FACETS — orthogonal and combinable. Every facet state is a query

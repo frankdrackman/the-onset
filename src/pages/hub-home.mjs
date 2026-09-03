@@ -17,7 +17,7 @@ export const hubHome = () => {
   const balance = T.ofKind('episode').sort(T.byEpisode).slice(0, 3);
   const journey = T.ofKind('journey').sort(T.byDate)[0];
   const otherJourneys = T.ofKind('journey').sort(T.byDate).slice(1, 3);
-  const shelves = T.shelves(3, 4);
+  const shelves = T.shelves();   // every department that has content
   const total = T.CATALOG.length;
 
   return page({
@@ -30,7 +30,8 @@ export const hubHome = () => {
       S.hubCollection(),
       S.breadcrumbs([{ label: 'Montefiore Einstein', href: '/' }, { label: HUB.name }]),
     ),
-    head: `<script src="${r}assets/ticker.js" defer></script>`,
+    head: `<script src="${r}assets/ticker.js" defer></script>
+<script src="${r}assets/reveal.js" defer></script>`,
     children: html`
 ${masthead(r, { isHubHome: true })}
 <main id="main">
@@ -52,9 +53,6 @@ ${masthead(r, { isHubHome: true })}
       <div class="row row--3">
         ${balance.map((e) => card(e, r, { ratio: '16x9', size: 'card--sm' }))}
       </div>
-      <p class="mod__note" style="margin-top:var(--space-20)">
-        Showing 3 of 7 episodes in Season 2. Ordered by episode, not date — a season is a set.
-      </p>
     </div>
   </section>
 
@@ -77,7 +75,7 @@ ${masthead(r, { isHubHome: true })}
   <!-- DEPARTMENT SHELVES — named, themed magazine sections, each a mini-hub. -->
   <div class="wrap">
     ${shelves.map((s) => html`
-      <section class="shelf" aria-labelledby="shelf-${s.slug}">
+      <section class="shelf" data-reveal aria-labelledby="shelf-${s.slug}">
         <div class="shelf__bar">
           <h2 class="shelf__h" id="shelf-${s.slug}">
             <a href="${r}the-onset/${s.slug}/index.html">${esc(s.label)}</a>
@@ -86,9 +84,6 @@ ${masthead(r, { isHubHome: true })}
         </div>
         <div class="row row--4">${s.items.map((it) => shelfCard(it, r))}</div>
       </section>`)}
-    <p class="mod__note" style="padding-block:var(--space-24)">
-      Further department shelves follow the same template. Departments with no tagged items get no shelf — zero-item sections are hidden, never padded.
-    </p>
   </div>
 
   <!-- ARCHIVE STRIP -->

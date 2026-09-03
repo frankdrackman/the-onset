@@ -34,9 +34,6 @@ export const meHome = () => {
   <section class="mod" aria-label="Homepage hero">
     <div class="wrap">
       <div class="ph ph--21x9 ph--sky" data-label="Existing Montefiore Einstein homepage hero — unchanged" role="img" aria-label="Existing Montefiore Einstein homepage hero, unchanged in this prototype"></div>
-      <p class="mod__note" style="margin-top:var(--space-16)">
-        The existing homepage hero is untouched. Everything below is what ${esc(HUB.name)} adds.
-      </p>
     </div>
   </section>
 
@@ -65,9 +62,6 @@ export const meHome = () => {
         <a class="seeall" href="${r}the-onset/the-balance/index.html">All 13 episodes <span aria-hidden="true">→</span></a>
       </div>
       <div class="row row--3">${stream2.map((e) => card(e, r, { size: 'card--sm' }))}</div>
-      <p class="mod__note" style="margin-top:var(--space-20)">
-        Showing 3 of 7 episodes in Season 2. A season is a set, so the count is stated in words and the rest sit behind the series page. Ordered by episode, not date — and this rail never auto-advances.
-      </p>
     </div>
   </section>
 

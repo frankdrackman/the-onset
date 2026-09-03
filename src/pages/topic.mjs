@@ -121,7 +121,6 @@ ${crumbs(trail, r)}
             </p>
           </article>`)}
       </div>
-      ${recipes.length > 6 ? `<p class="mod__note" style="margin-top:var(--space-24)">Further recipes continue in the archive.</p>` : ''}
     </div>
   </section>
 
@@ -154,10 +153,6 @@ ${crumbs(trail, r)}
   <aside class="tinted" aria-labelledby="lives-h">
     <div class="wrap">
       <h2 class="mod__h" id="lives-h">Where this content lives</h2>
-      <p class="mod__note" style="margin-block:var(--space-12) var(--space-20)">
-        Topics gather; departments own. Every item above links to its one canonical URL under the department that owns it.
-        Recipes are the canonical exception — having no clinical department, their home is Healthy Nutrition, which is why it heads this list.
-      </p>
       <div class="chips chips--tap">
         ${homeList.map(([slug, n]) => `<a class="chip" href="${r}the-onset/${esc(slug)}/index.html">${esc(byDept[slug].label)} (${n}) <span aria-hidden="true">→</span></a>`)}
       </div>
