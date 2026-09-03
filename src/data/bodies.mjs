@@ -10,11 +10,17 @@ export const BODIES = {
    "name": "Sandra Aleksic, MD",
    "role": "Assistant Professor in the Department of Medicine, Division of Endocrinology and Geriatrics"
   },
+  "spanish": {
+   "title": "Tres maneras de revertir la prediabetes: podría ser más fácil de lo que piensas",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/tres-maneras-de-revertir-la-prediabetes-podra-ser-ms-fcil-de-lo-que-piensas/71569915007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/11/10/PDTF/71529074007-getty-images-1423350924.jpg?crop=5999,3375,x0,y316&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/11/13/3-ways-to-reverse-prediabetes-it-could-be-easier-than-you-think/71529086007/",
    "description": "‘If I’m diagnosed with prediabetes, am I going to get diabetes?’",
    "author": "Sandra Aleksic, MD, Assistant Professor in the Department of Medicine, Division of Endocrinology and Geriatrics, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/tres-maneras-de-revertir-la-prediabetes-podra-ser-ms-fcil-de-lo-que-piensas/71569915007/",
+   "spanishTitle": "Tres maneras de revertir la prediabetes: podría ser más fácil de lo que piensas",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/11/10/PDTF/71529074007-getty-images-1423350924.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -116,11 +122,17 @@ export const BODIES = {
    "name": "Simon A. Rego, Psy.D., ABPP, A-CBT, Chief of Psychology, Director of Psychology Training, and Professor of Psychiatry and Behavioral Sciences",
    "role": null
   },
+  "spanish": {
+   "title": "Cinco preguntas para reconocer si tu ansiedad es normal o problemática",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/cinco-preguntas-para-reconocer-si-tu-ansiedad-es-normal-o-problemtica/73071144007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/03/22/PDTF/73071035007-getty-images-878980416.jpg?crop=5499,3093,x0,y288&width=3200&height=1800&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/03/22/5-questions-to-recognize-if-anxiety-is-normal-or-a-problem/73071047007/",
    "description": "When to take action on anxiety",
    "author": "Simon A. Rego, Psy.D., ABPP, A-CBT, Chief of Psychology, Director of Psychology Training, and Professor of Psychiatry and Behavioral Sciences, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/cinco-preguntas-para-reconocer-si-tu-ansiedad-es-normal-o-problemtica/73071144007/",
+   "spanishTitle": "Cinco preguntas para reconocer si tu ansiedad es normal o problemática",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/03/22/PDTF/73071035007-getty-images-878980416.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -247,13 +259,16 @@ export const BODIES = {
    "role": "MSc., Director of Preventive Cardiology"
   },
   "spanish": {
-   "title": "6 sugerencias para un corazón más fuerte y sano"
+   "title": "6 sugerencias para un corazón más fuerte y sano",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/27/6-sugerencias-para-un-corazn-ms-fuerte-y-sano/88898916007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/02/27/PDTF/88898317007-getty-images-2229586715.jpg?crop=5499,3094,x0,y287&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/02/27/6-tips-for-a-stronger-healthier-heart/88898798007/",
    "description": "Changes to your routine that build lasting heart health without overhauling your life",
    "author": "Robert Ostfeld, MD, MSc., Director of Preventive Cardiology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/27/6-sugerencias-para-un-corazn-ms-fuerte-y-sano/88898916007/",
+   "spanishTitle": "6 sugerencias para un corazón más fuerte y sano",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/02/27/PDTF/88898317007-getty-images-2229586715.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -563,13 +578,16 @@ export const BODIES = {
    "role": "Medical Director, Advanced Lung Failure and Lung Transplant Program"
   },
   "spanish": {
-   "title": "Una victoria contra la fibrosis pulmonar: el increíble regreso de Paul"
+   "title": "Una victoria contra la fibrosis pulmonar: el increíble regreso de Paul",
+   "url": "http://lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/12/03/una-victoria-contra-la-fibrosis-pulmonar-el-increble-regreso-de-paul/87587661007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/12/03/PDTF/87587533007-me-lung-transplant-paul-rivera-homepage-banner.png?crop=2709,1523,x145,y0&width=2709&height=1523&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/12/03/a-fight-to-beat-pulmonary-fibrosis-pauls-incredible-comeback/87587544007/",
    "description": "Turned down twice for a lung transplant. Only Montefiore Einstein said YES.",
    "author": "Ali Y. Mansour, MD, Medical Director, Advanced Lung Failure and Lung Transplant Program, for Montefiore Einstein",
+   "spanishUrl": "http://lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/12/03/una-victoria-contra-la-fibrosis-pulmonar-el-increble-regreso-de-paul/87587661007/",
+   "spanishTitle": "Una victoria contra la fibrosis pulmonar: el increíble regreso de Paul",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/12/03/PDTF/87587533007-me-lung-transplant-paul-rivera-homepage-banner.png?width=1320&amp;height=672&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -803,11 +821,17 @@ export const BODIES = {
    "name": "Dr. Ulrich P. Jorde, Vice Chief of Cardiology and Head of Heart Failure at Montefiore Einstein",
    "role": null
   },
+  "spanish": {
+   "title": "La jugada salvadora de Joseph fue un nuevo corazón",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-jugada-salvadora-de-joseph-fue-un-nuevo-corazn/70018040007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/02/21/PWES/15ab1421-7305-44b5-bc8c-23b1d1c06791-joseph_16x9_opt1_rgb_header.jpg?crop=3932,2212,x16,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/02/21/a-new-heart-was-josephs-winning-save/69927140007/",
    "description": "Joseph’s bloodless heart transplant preserved both life and conscience",
    "author": "Dr. Ulrich P. Jorde, Vice Chief of Cardiology and Head of Heart Failure at Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-jugada-salvadora-de-joseph-fue-un-nuevo-corazn/70018040007/",
+   "spanishTitle": "La jugada salvadora de Joseph fue un nuevo corazón",
    "figures": [
     {
      "src": "/gcdn/presto/2023/02/21/PWES/15ab1421-7305-44b5-bc8c-23b1d1c06791-joseph_16x9_opt1_rgb_header.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -930,13 +954,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Risotto de avena y calabaza rico en antioxidantes que refuerza el sistema inmunológico"
+   "title": "Risotto de avena y calabaza rico en antioxidantes que refuerza el sistema inmunológico",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/11/12/risotto-de-avena-y-calabaza-rico-en-antioxidantes-que-refuerza-el-sistema-inmunolgico/87231396007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/11/12/PDTF/87231229007-lo-hud-nov-25-recipe-vf-11-10-16-x-9-02.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/11/12/a-pumpkin-oatmeal-risotto-rich-in-antioxidants-and-boost-immune-health/87231242007/",
    "description": "Pumpkin Oatmeal Risotto, the wholesome dish for any celebration",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/11/12/risotto-de-avena-y-calabaza-rico-en-antioxidantes-que-refuerza-el-sistema-inmunolgico/87231396007/",
+   "spanishTitle": "Risotto de avena y calabaza rico en antioxidantes que refuerza el sistema inmunológico",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/11/12/PDTF/87231229007-lo-hud-nov-25-recipe-vf-11-10-16-x-9-02.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1120,11 +1147,17 @@ export const BODIES = {
    "name": "Oren Tepper, MD",
    "role": "Director of the Craniofacial Surgery Program, Children’s Hospital at Montefiore Einstein"
   },
+  "spanish": {
+   "title": "Opciones avanzadas de tratamiento para niños nacidos con anomalías craneofaciales",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/opciones-avanzadas-de-tratamiento-para-nios-nacidos-con-anomalas-craneofaciales/71214967007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/10/17/PDTF/71214847007-getty-images-526059451.jpg?crop=3462,1948,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/10/17/advanced-treatment-options-for-children-born-with-craniofacial-anomalies/71214904007/",
    "description": "Enhancing lives with advanced cleft lip and palate treatment options",
    "author": "Oren Tepper, MD, Director of the Craniofacial Surgery Program, Children’s Hospital at Montefiore Einstein, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/opciones-avanzadas-de-tratamiento-para-nios-nacidos-con-anomalas-craneofaciales/71214967007/",
+   "spanishTitle": "Opciones avanzadas de tratamiento para niños nacidos con anomalías craneofaciales",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/10/17/PDTF/71214847007-getty-images-526059451.jpg?width=1320&amp;height=1288&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1410,11 +1443,17 @@ export const BODIES = {
    "name": "Dr. Breck Borcherding, for Montefiore-Einstein",
    "role": null
   },
+  "spanish": {
+   "title": "Los muchos desafíos físicos y mentales del autismo pueden ser difíciles de ver",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/11/los-muchos-desafios-fisicos-y-mentales-del-autismo-pueden-ser-dificiles-de-ver/5341957002/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/06/08/PWES/ef81ceac-b510-43de-a293-289ec58df304-GettyImages-1130567258.jpg?crop=2120,1193,x0,y107&width=2120&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/06/09/autisms-many-physical-and-mental-health-challenges-can-hard-see/5322413002/",
    "description": "Autism: A lifetime of challenge needs compassion and understanding",
    "author": "Dr. Breck Borcherding, for Montefiore-Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/11/los-muchos-desafios-fisicos-y-mentales-del-autismo-pueden-ser-dificiles-de-ver/5341957002/",
+   "spanishTitle": "Los muchos desafíos físicos y mentales del autismo pueden ser difíciles de ver",
    "figures": [
     {
      "src": "/gcdn/presto/2020/06/08/PWES/ef81ceac-b510-43de-a293-289ec58df304-GettyImages-1130567258.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1528,13 +1567,16 @@ export const BODIES = {
    "role": "PhD, FACC, FHRS, System Director of Electrophysiology"
   },
   "spanish": {
-   "title": "Con más fuerza que nunca: cómo Phyllis recuperó su corazón y su vida"
+   "title": "Con más fuerza que nunca: cómo Phyllis recuperó su corazón y su vida",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/10/31/con-ms-fuerza-que-nunca-cmo-phyllis-recuper-su-corazn-y-su-vida/87011884007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/10/31/PDTF/87011684007-iq-x-wi-a.jpeg?crop=1599,901,x0,y82&width=1599&height=901&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/10/31/back-to-beating-strong-how-phyllis-got-her-heart-and-her-life-back-on-track/87011754007/",
    "description": "Back to beating strong — how Phyllis got her heart and her life back on track",
    "author": "Luigi Di Biase, MD, PhD, FACC, FHRS, System Director of Electrophysiology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/10/31/con-ms-fuerza-que-nunca-cmo-phyllis-recuper-su-corazn-y-su-vida/87011884007/",
+   "spanishTitle": "Con más fuerza que nunca: cómo Phyllis recuperó su corazón y su vida",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/10/31/PDTF/87011684007-iq-x-wi-a.jpeg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1641,13 +1683,16 @@ export const BODIES = {
    "role": "Co-Director, Montefiore Einstein Sinus and Allergy Center"
   },
   "spanish": {
-   "title": "Gánele al polen: plante cara a las alergias estacionales"
+   "title": "Gánele al polen: plante cara a las alergias estacionales",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/07/03/gnele-al-polen-plante-cara-a-las-alergias-estacionales/84461313007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/07/03/PDTF/84461216007-getty-images-1490426190.jpg?crop=6719,3781,x0,y349&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/07/03/beat-the-pollen-combatting-seasonal-allergies/84461246007/",
    "description": "Allergies hitting you hard? Try these proven tips and treatments.",
    "author": "By Denisa Ferastraoaru, MD, Co-Director, Montefiore Einstein Sinus and Allergy Center, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/07/03/gnele-al-polen-plante-cara-a-las-alergias-estacionales/84461313007/",
+   "spanishTitle": "Gánele al polen: plante cara a las alergias estacionales",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/07/03/PDTF/84461216007-getty-images-1490426190.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1730,13 +1775,16 @@ export const BODIES = {
    "role": "Associate Professor, Department of Medicine, Division of Endocrinology and Geriatrics"
   },
   "spanish": {
-   "title": "Aliados indispensables en la prediabetes: estilo de vida, dieta y ejercicio"
+   "title": "Aliados indispensables en la prediabetes: estilo de vida, dieta y ejercicio",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/03/25/aliados-indispensables-en-la-prediabetes-estilo-de-vida-dieta-y-ejercicio/89314863007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/03/25/PDTF/89314770007-getty-images-9800127401.jpg?crop=7155,4025,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/03/25/beating-prediabetes-the-indispensable-lifestyle-ally-to-diet-and-exercise/89314789007/",
    "description": "Latest research elevates sleep’s role as key to stop prediabetes before it becomes Type 2",
    "author": "Sandra Aleksic, MD, Associate Professor, Department of Medicine, Division of Endocrinology and Geriatrics, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/03/25/aliados-indispensables-en-la-prediabetes-estilo-de-vida-dieta-y-ejercicio/89314863007/",
+   "spanishTitle": "Aliados indispensables en la prediabetes: estilo de vida, dieta y ejercicio",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/03/25/PDTF/89314770007-getty-images-9800127401.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1854,11 +1902,17 @@ export const BODIES = {
    "name": "Mark Einstein, MD",
    "role": "MS, FACS, FACOG, Department Chair of Obstetrics & Gynecology and Women’s Health"
   },
+  "spanish": {
+   "title": "Pruebas de cáncer de cuello uterino: Ahora puede tomarse usted la muestra",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/06/pruebas-de-cncer-de-cuello-uterino-ahora-puede-tomarse-usted-la-muestra/78091578007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/01/31/PDTF/78091080007-getty-images-1300002098.jpg?crop=5182,2915,x0,y177&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/01/31/beyond-the-pap-self-collection-now-a-cervical-cancer-testing-option/78091174007/",
    "description": "Understanding the new HPV test that can be done without a standard pelvic exam",
    "author": "Mark Einstein, MD, MS, FACS, FACOG, Department Chair of Obstetrics & Gynecology and Women’s Health, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/06/pruebas-de-cncer-de-cuello-uterino-ahora-puede-tomarse-usted-la-muestra/78091578007/",
+   "spanishTitle": "Pruebas de cáncer de cuello uterino: Ahora puede tomarse usted la muestra",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/01/31/PDTF/78091080007-getty-images-1300002098.jpg?width=1320&amp;height=834&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -1974,13 +2028,16 @@ export const BODIES = {
    "role": "Section Head of Breast Pathology and Attending Pathologist at Montefiore Einstein Comprehensive Cancer Center"
   },
   "spanish": {
-   "title": "Por qué cada cáncer de mama es único y por qué importa esa diferencia"
+   "title": "Por qué cada cáncer de mama es único y por qué importa esa diferencia",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/03/por-qu-cada-cncer-de-mama-es-nico-y-por-qu-importa-esa-diferencia/88489660007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/02/03/PDTF/88489458007-getty-images-2205428355.jpg?crop=799,450,x0,y0&width=799&height=450&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/02/03/beyond-the-stage-what-makes-each-breast-cancer-unique-and-why-it-matters/88489473007/",
    "description": "The new information doctors use to advance individualized breast cancer treatment",
    "author": "By Susan Fineberg, MD, Section Head of Breast Pathology and Attending Pathologist at Montefiore Einstein Comprehensive Cancer Center, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/03/por-qu-cada-cncer-de-mama-es-nico-y-por-qu-importa-esa-diferencia/88489660007/",
+   "spanishTitle": "Por qué cada cáncer de mama es único y por qué importa esa diferencia",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/02/03/PDTF/88489458007-getty-images-2205428355.jpg?width=660&amp;height=440&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -2080,13 +2137,16 @@ export const BODIES = {
    "role": "Department of Medicine, Division of Gastroenterology"
   },
   "spanish": {
-   "title": "Hinchazón, cólicos, urgencia para evacuar: ¿Y si es síndrome del intestino irritable?"
+   "title": "Hinchazón, cólicos, urgencia para evacuar: ¿Y si es síndrome del intestino irritable?",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/08/07/hinchazn-clicos-urgencia-para-evacuar-y-si-es-sndrome-del-intestino-irritable/91213330007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/08/06/PDTF/91197162007-lo-hud-ibs-article-getty-images-1439682718.jpg?crop=6018,3386,x0,y313&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/08/07/bloating-cramps-urgency-could-it-be-ibs/91213117007/",
    "description": "Understand IBS symptoms, triggers, and when to get an IBS evaluation",
    "author": "Suchi Thakker, MD, Department of Medicine, Division of Gastroenterology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/08/07/hinchazn-clicos-urgencia-para-evacuar-y-si-es-sndrome-del-intestino-irritable/91213330007/",
+   "spanishTitle": "Hinchazón, cólicos, urgencia para evacuar: ¿Y si es síndrome del intestino irritable?",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/08/06/PDTF/91197162007-lo-hud-ibs-article-getty-images-1439682718.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -2551,11 +2611,17 @@ export const BODIES = {
    "name": "Dr. Andrew K. Krumerman, Professor of Medicine, Cardiology, Montefiore Einstein Center for Heart & Vascular Care",
    "role": null
   },
+  "spanish": {
+   "title": "¿Paro cardíaco, ataque al corazón o insuficiencia cardíaca? ¿Cuál es la diferencia?",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/paro-cardaco-ataque-al-corazn-o-insuficiencia-cardaca-cul-es-la-diferencia/70100307007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/03/17/PWES/ef83a6d2-5d7c-4222-be27-755c9b57c48c-GettyImages_1351441253.jpg?crop=6194,3485,x0,y346&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/03/17/cardiac-arrest-heart-attack-or-heart-failure-whats-the-difference/70020895007/",
    "description": "Understanding the what and why of these three heart conditions",
    "author": "Dr. Andrew K. Krumerman, Professor of Medicine, Cardiology, Montefiore Einstein Center for Heart & Vascular Care",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/paro-cardaco-ataque-al-corazn-o-insuficiencia-cardaca-cul-es-la-diferencia/70100307007/",
+   "spanishTitle": "¿Paro cardíaco, ataque al corazón o insuficiencia cardíaca? ¿Cuál es la diferencia?",
    "figures": [
     {
      "src": "/gcdn/presto/2023/03/17/PWES/ef83a6d2-5d7c-4222-be27-755c9b57c48c-GettyImages_1351441253.jpg?width=1320&amp;height=894&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -2908,11 +2974,17 @@ export const BODIES = {
    "name": "Drs. Nicole Nevadunsky and Keyur Mehta, for Montefiore",
    "role": null
   },
+  "spanish": {
+   "title": "El cáncer de cuello de útero puede prevenirse con exámenes y la vacuna contra el VPH.",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/07/13/el-cancer-de-cuello-de-utero-puede-prevenirse-con-examenes-y-la-vacuna-contra-el-vph/5430678002/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/02/06/PWES/075dbea5-4521-4c9b-a90e-d06fe973ea8d-GettyImages_879054926.jpg?crop=5573,3135,x0,y283&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/02/06/cervical-cancer-preventable-screening-and-hpv-vaccination/4679461002/",
    "description": "Regular screening and HPV vaccination empower women to prevent cervical cancer",
    "author": "Drs. Nicole Nevadunsky and Keyur Mehta, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/07/13/el-cancer-de-cuello-de-utero-puede-prevenirse-con-examenes-y-la-vacuna-contra-el-vph/5430678002/",
+   "spanishTitle": "El cáncer de cuello de útero puede prevenirse con exámenes y la vacuna contra el VPH.",
    "figures": [
     {
      "src": "/gcdn/presto/2020/02/06/PWES/075dbea5-4521-4c9b-a90e-d06fe973ea8d-GettyImages_879054926.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -3192,13 +3264,16 @@ export const BODIES = {
    "role": "PhD, Co-Leader, GI Clinical and Translational Research, Montefiore Einstein Comprehensive Cancer Center"
   },
   "spanish": {
-   "title": "Cáncer de colon, 1ª causa de muerte en adultos menores de 50: Qué saber"
+   "title": "Cáncer de colon, 1ª causa de muerte en adultos menores de 50: Qué saber",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/04/17/cncer-de-colon-1-causa-de-muerte-en-adultos-menores-de-50-qu-saber/89657468007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/04/17/PDTF/89657320007-getty-images-2187734694.jpg?crop=2476,1393,x0,y82&width=2476&height=1393&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/04/17/colon-cancer-now-leads-cancer-deaths-under-50-what-to-know/89657342007/",
    "description": "Diet, lifestyle, and delayed screening may be driving the increase in younger adults",
    "author": "By Chaoyuan Kuang, MD, PhD, Co-Leader, GI Clinical and Translational Research, Montefiore Einstein Comprehensive Cancer Center, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/04/17/cncer-de-colon-1-causa-de-muerte-en-adultos-menores-de-50-qu-saber/89657468007/",
+   "spanishTitle": "Cáncer de colon, 1ª causa de muerte en adultos menores de 50: Qué saber",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/04/17/PDTF/89657320007-getty-images-2187734694.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -3385,13 +3460,16 @@ export const BODIES = {
    "role": "Chief, Dermatology"
   },
   "spanish": {
-   "title": "¿Será cáncer de piel? Los signos, manchas y hábitos que importan"
+   "title": "¿Será cáncer de piel? Los signos, manchas y hábitos que importan",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/06/30/ser-cncer-de-piel-los-signos-manchas-y-hbitos-que-importan/90750532007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/06/30/PDTF/90750391007-lo-hud-skin-cancer-getty-images-1199879633.jpg?crop=8255,4645,x0,y429&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/06/30/could-it-be-skin-cancer-the-signs-spots-and-sun-habits-that-matter/90750426007/",
    "description": "Early signs to notice, easy self-checks, and how to protect your skin",
    "author": "Beth N. McLellan, MD, Chief, Dermatology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/06/30/ser-cncer-de-piel-los-signos-manchas-y-hbitos-que-importan/90750532007/",
+   "spanishTitle": "¿Será cáncer de piel? Los signos, manchas y hábitos que importan",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/06/30/PDTF/90750391007-lo-hud-skin-cancer-getty-images-1199879633.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -3620,13 +3698,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Sopa de otoño reconfortante con calabaza, batata y lentejas"
+   "title": "Sopa de otoño reconfortante con calabaza, batata y lentejas",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/10/06/sopa-de-otoo-reconfortante-con-calabaza-batata-y-lentejas/86550181007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/10/06/PDTF/86549686007-lo-hud-oct-25-recipe-vf-2-16-x-9.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/10/06/cozy-fall-soup-with-pumpkin-sweet-potato-lentils-turmeric/86549722007/",
    "description": "Seasonal comfort in a bowl",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/10/06/sopa-de-otoo-reconfortante-con-calabaza-batata-y-lentejas/86550181007/",
+   "spanishTitle": "Sopa de otoño reconfortante con calabaza, batata y lentejas",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/10/06/PDTF/86549686007-lo-hud-oct-25-recipe-vf-2-16-x-9.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -3806,11 +3887,17 @@ export const BODIES = {
    "name": "Luigi Di Biase, MD",
    "role": "PhD, Section Head of Electrophysiology, Director of Arrhythmia Services"
   },
+  "spanish": {
+   "title": "Curar un corazón acelerado: cómo logró Phyllis vencer su arritmia",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/curar-un-corazn-acelerado-cmo-logr-phyllis-vencer-su-arritmia/71132190007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/10/10/PDTF/71132121007-hirez-phyllis-191030-10-2693.jpg?crop=6190,3482,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/10/10/curing-a-racing-heart-how-phyllis-beat-arrhythmia/71132185007/",
    "description": "Returning a racing heart to its normal rhythm",
    "author": "Luigi Di Biase, MD, PhD, Section Head of Electrophysiology, Director of Arrhythmia Services, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/curar-un-corazn-acelerado-cmo-logr-phyllis-vencer-su-arritmia/71132190007/",
+   "spanishTitle": "Curar un corazón acelerado: cómo logró Phyllis vencer su arritmia",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/10/10/PDTF/71132121007-hirez-phyllis-191030-10-2693.jpg?width=1320&amp;height=952&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -3892,11 +3979,17 @@ export const BODIES = {
    "name": "Traci Maynigo, PsyD, Program Director, HERO Dads and Supporting Healthy Relationships",
    "role": null
   },
+  "spanish": {
+   "title": "Súper papás: el impacto de la paternidad",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/sper-paps-el-impacto-de-la-paternidad/70321918007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/06/14/PWES/1dd6a5ab-95d7-4431-baad-6719dbb92c02-GettyImages_583655820.jpg?crop=5092,2865,x0,y508&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/06/14/dad-power-the-impact-of-fatherhood/70321859007/",
    "description": "A dad’s best investment is time with his kids: How to make the most of it",
    "author": "Traci Maynigo, PsyD, Program Director, HERO Dads and Supporting Healthy Relationships",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/sper-paps-el-impacto-de-la-paternidad/70321918007/",
+   "spanishTitle": "Súper papás: el impacto de la paternidad",
    "figures": [
     {
      "src": "/gcdn/presto/2023/06/14/PWES/1dd6a5ab-95d7-4431-baad-6719dbb92c02-GettyImages_583655820.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -3983,13 +4076,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Corteza de chocolate oscuro, un dulce placer que beneficia la salud del cerebro"
+   "title": "Corteza de chocolate oscuro, un dulce placer que beneficia la salud del cerebro",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/12/16/corteza-de-chocolate-oscuro-un-dulce-placer-que-beneficia-la-salud-del-cerebro/87790997007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/12/16/PDTF/87790902007-lo-hud-dec-25-recipe-vf-16-x-9.jpg?crop=2391,1346,x0,y10&width=2391&height=1346&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/12/16/dark-chocolate-bark-for-a-delicious-boost-to-brain-wellness/87790924007/",
    "description": "A spark of holiday joy in every bite",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/12/16/corteza-de-chocolate-oscuro-un-dulce-placer-que-beneficia-la-salud-del-cerebro/87790997007/",
+   "spanishTitle": "Corteza de chocolate oscuro, un dulce placer que beneficia la salud del cerebro",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/12/16/PDTF/87790902007-lo-hud-dec-25-recipe-vf-16-x-9.jpg?width=1320&amp;height=756&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -4236,13 +4332,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Fresas con Chocolate al Estilo Dubái"
+   "title": "Fresas con Chocolate al Estilo Dubái",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/26/fresas-con-chocolate-al-estilo-dubi/88877368007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/02/26/PDTF/88877117007-lo-hud-feb-26-recipe-v-05.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/02/26/dubai-inspired-chocolate-covered-strawberries/88877142007/",
    "description": "Made with antioxidant‑rich chocolate, vitamin‑packed berries, and pistachios",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/26/fresas-con-chocolate-al-estilo-dubi/88877368007/",
+   "spanishTitle": "Fresas con Chocolate al Estilo Dubái",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/02/26/PDTF/88877117007-lo-hud-feb-26-recipe-v-05.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -4455,11 +4554,17 @@ export const BODIES = {
    "name": "Lauren Gluck, MD",
    "role": "Director, Montefiore Multiple Sclerosis Center"
   },
+  "spanish": {
+   "title": "La detección precoz de la esclerosis múltiple y nuevos tratamientos pueden prevenir la discapacidad",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-deteccin-precoz-de-la-esclerosis-mltiple-y-nuevos-tratamientos-pueden-prevenir-la-discapacidad/70516635007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/08/02/PDTF/70514245007-header.jpg?crop=4480,2532,x0,y624&width=3200&height=1809&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/08/03/early-multiple-sclerosis-detection-new-treatments-can-prevent-disability/70514254007/",
    "description": "Slowing the progression of multiple sclerosis",
    "author": "Lauren Gluck, MD, Director, Montefiore Multiple Sclerosis Center, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-deteccin-precoz-de-la-esclerosis-mltiple-y-nuevos-tratamientos-pueden-prevenir-la-discapacidad/70516635007/",
+   "spanishTitle": "La detección precoz de la esclerosis múltiple y nuevos tratamientos pueden prevenir la discapacidad",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/08/02/PDTF/70514245007-header.jpg?width=1320&amp;height=1114&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -4650,11 +4755,17 @@ export const BODIES = {
    "name": "Jonathan Alpert, M.D. PhD, for Montefiore",
    "role": null
   },
+  "spanish": {
+   "title": "The Trevor Project",
+   "url": "http://bit.ly/2ks9kAZ"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2019/09/24/USAT/fd255782-b792-4626-aaa3-be6b80e084a1-GettyImages-157282180.jpg?crop=1599,900,x0,y148&width=1599&height=900&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2019/11/05/every-individual-and-community-touched-suicide-heres-how-help/2386281001/",
    "description": "Action individuals and communities can take to reverse the upward trend in suicide.",
    "author": "Jonathan Alpert, M.D. PhD, for Montefiore",
+   "spanishUrl": "http://bit.ly/2ks9kAZ",
+   "spanishTitle": "The Trevor Project",
    "figures": [
     {
      "src": "/gcdn/presto/2019/09/24/USAT/fd255782-b792-4626-aaa3-be6b80e084a1-GettyImages-157282180.jpg?width=1320&amp;height=990&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -4937,13 +5048,16 @@ export const BODIES = {
    "role": "Medical Director, Family Health & Wellness Center–Montefiore Medical Group"
   },
   "spanish": {
-   "title": "Protegerse contra la gripe no es hacer más. Es actuar en el momento justo."
+   "title": "Protegerse contra la gripe no es hacer más. Es actuar en el momento justo.",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/11/28/protegerse-contra-la-gripe-no-es-hacer-ms-es-actuar-en-el-momento-justo/87508351007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/11/28/PDTF/87508208007-getty-images-2177305398.jpg?crop=6085,3424,x0,y316&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/11/28/flu-protection-isnt-about-doing-more-its-about-timing-it-right/87508219007/",
    "description": "4 things you can do right now to stay ahead of the flu",
    "author": "Alice S. Teich, MD, Medical Director, Family Health & Wellness Center–Montefiore Medical Group, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/11/28/protegerse-contra-la-gripe-no-es-hacer-ms-es-actuar-en-el-momento-justo/87508351007/",
+   "spanishTitle": "Protegerse contra la gripe no es hacer más. Es actuar en el momento justo.",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/11/28/PDTF/87508208007-getty-images-2177305398.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5054,13 +5168,16 @@ export const BODIES = {
    "role": "Surgeon-in-Chief and Chair, Surgery and Cardiothoracic & Vascular Surgery"
   },
   "spanish": {
-   "title": "El corazón de Guy se detuvo 2 veces; en 10 días volvió a entrenar."
+   "title": "El corazón de Guy se detuvo 2 veces; en 10 días volvió a entrenar.",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/11/el-corazn-de-guy-se-detuvo-2-veces-en-10-das-volvi-a-entrenar/88624636007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/02/11/PDTF/88623407007-guy-shot-1-034-layer-vertical-1-16-x-9-opt-a.jpg?crop=3302,1857,x0,y0&width=3200&height=1800&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/02/11/guy-monseairs-heart-stopped-twice-he-was-back-coaching-in-just-10-days/88623422007/",
    "description": "Guy Monseair technically died after two cardiac arrests. His second chance.",
    "author": "By Robert E. Michler, MD, Surgeon-in-Chief and Chair, Surgery and Cardiothoracic & Vascular Surgery, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/02/11/el-corazn-de-guy-se-detuvo-2-veces-en-10-das-volvi-a-entrenar/88624636007/",
+   "spanishTitle": "El corazón de Guy se detuvo 2 veces; en 10 días volvió a entrenar.",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/02/11/PDTF/88623407007-guy-shot-1-034-layer-vertical-1-16-x-9-opt-a.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5174,11 +5291,17 @@ export const BODIES = {
    "name": "Jessica Shapiro, MS",
    "role": "RD, CDN, CDCES, Nutrition Program Manager, Montefiore Einstein Advanced Care–Westchester"
   },
+  "spanish": {
+   "title": "¡Feliz y saludable Año Nuevo! Ocho sugerencias para cumplir con tus propósitos de nutrición",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/feliz-y-saludable-ao-nuevo-ocho-sugerencias-para-cumplir-con-tus-propsitos-de-nutricin/69845280007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/01/26/PWES/81bffb4a-943b-4de2-a573-92045c672f6c-GettyImages_1430305468.jpg?crop=6239,3510,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/01/27/healthy-new-year-8-tips-to-stick-to-your-nutrition-resolutions/69845236007/",
    "description": "Check out these tips for achieving your healthy eating goals in 2023",
    "author": "Jessica Shapiro, MS, RD, CDN, CDCES, Nutrition Program Manager, Montefiore Einstein Advanced Care–Westchester",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/feliz-y-saludable-ao-nuevo-ocho-sugerencias-para-cumplir-con-tus-propsitos-de-nutricin/69845280007/",
+   "spanishTitle": "¡Feliz y saludable Año Nuevo! Ocho sugerencias para cumplir con tus propósitos de nutrición",
    "figures": [
     {
      "src": "/gcdn/presto/2023/01/26/PWES/81bffb4a-943b-4de2-a573-92045c672f6c-GettyImages_1430305468.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5371,13 +5494,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Paella cardiosaludable de garbanzos y vegetales"
+   "title": "Paella cardiosaludable de garbanzos y vegetales",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/08/19/paella-cardiosaludable-de-garbanzos-y-vegetales/85725524007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/08/19/PDTF/85725164007-lo-hud-august-25-recipe-vf-16-x-9.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/08/19/heart-healthy-vegetable-and-chickpea-paella/85725262007/",
    "description": "Enjoy this Spanish classic all year round.",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/08/19/paella-cardiosaludable-de-garbanzos-y-vegetales/85725524007/",
+   "spanishTitle": "Paella cardiosaludable de garbanzos y vegetales",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/08/19/PDTF/85725164007-lo-hud-august-25-recipe-vf-16-x-9.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5459,11 +5585,17 @@ export const BODIES = {
    "name": "Melissa Rifkin, MS",
    "role": "RD, CDN, for Montefiore"
   },
+  "spanish": {
+   "title": "Esta contundente sopa minestrone es muy rica en fibra, proteínas, vitaminas y otros nutrientes",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/24/esta-contundente-sopa-minestrone-es-muy-rica-en-fibra-proteinas-vitaminas-y-otros-nutrientes/3253203001/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/01/16/PWES/8dd1c5c2-a59a-4da5-9bb3-57e7aa39b637-GettyImages-467947693.jpg?crop=2120,1193,x0,y107&width=2120&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/01/16/hearty-minestrone-soup-loaded-fiber-protein-vitamins-and-other-nutrients/4489106002/",
    "description": "Ring in the New Year with a healthy, high-fiber minestrone soup",
    "author": "Melissa Rifkin, MS, RD, CDN, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/24/esta-contundente-sopa-minestrone-es-muy-rica-en-fibra-proteinas-vitaminas-y-otros-nutrientes/3253203001/",
+   "spanishTitle": "Esta contundente sopa minestrone es muy rica en fibra, proteínas, vitaminas y otros nutrientes",
    "figures": [
     {
      "src": "/gcdn/presto/2020/01/16/PWES/8dd1c5c2-a59a-4da5-9bb3-57e7aa39b637-GettyImages-467947693.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5529,11 +5661,17 @@ export const BODIES = {
    "name": "Pedro Maria, DO",
    "role": "Attending Physician, Urology"
   },
+  "spanish": {
+   "title": "Las causas ocultas de la disfunción eréctil: Acabar con los mitos de la disfunción eréctil",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/las-causas-ocultas-de-la-disfuncin-erctil-acabar-con-los-mitos-de-la-disfuncin-erctil/70530460007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/08/04/PDTF/70530374007-getty-images-597317369-cropped.jpg?crop=4999,2824,x0,y347&width=3200&height=1808&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/08/04/hidden-causes-of-erectile-dysfunction-dispelling-ed-myths/70530405007/",
    "description": "Get your sex life back: Treating erectile dysfunction’s hidden causes",
    "author": "Pedro Maria, DO, Attending Physician, Urology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/las-causas-ocultas-de-la-disfuncin-erctil-acabar-con-los-mitos-de-la-disfuncin-erctil/70530460007/",
+   "spanishTitle": "Las causas ocultas de la disfunción eréctil: Acabar con los mitos de la disfunción eréctil",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/08/04/PDTF/70530374007-getty-images-597317369-cropped.jpg?width=1320&amp;height=930&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5623,11 +5761,17 @@ export const BODIES = {
    "name": "Kara Watts, MD",
    "role": "Director of Urology Quality Assurance & Improvement and Director of Prostate Cancer Screening Program"
   },
+  "spanish": {
+   "title": "El HIFU y otros tratamientos de cáncer de próstata logran preservar la función sexual",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/el-hifu-y-otros-tratamientos-de-cncer-de-prstata-logran-preservar-la-funcin-sexual-el-hifu-y-otros-t/75414252007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/09/27/PDTF/75413999007-getty-images-544650797-edited.jpg?crop=5152,2899,x0,y171&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/09/27/hifu-other-latest-prostate-cancer-treatments-can-preserve-sexual-function/75414022007/",
    "description": "Catching prostate cancer early may open the door to avoiding radical surgery and radiation",
    "author": "Kara Watts, MD, Director of Urology Quality Assurance & Improvement and Director of Prostate Cancer Screening Program, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/el-hifu-y-otros-tratamientos-de-cncer-de-prstata-logran-preservar-la-funcin-sexual-el-hifu-y-otros-t/75414252007/",
+   "spanishTitle": "El HIFU y otros tratamientos de cáncer de próstata logran preservar la función sexual",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/09/27/PDTF/75413999007-getty-images-544650797-edited.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5714,13 +5858,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Pollo Asiático Alto en Proteína con Fideos de Calabacín"
+   "title": "Pollo Asiático Alto en Proteína con Fideos de Calabacín",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/03/09/pollo-asitico-alto-en-protena-con-fideos-de-calabacn/88982522007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/03/04/PDTF/88982118007-lo-hud-march-26-recipe-vf-16-x-9.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/03/09/high-protein-asian-chicken-with-zucchini-noodles/88982136007/",
    "description": "A flavorful, low-carb recipe that supports muscle health and balanced eating.",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/03/09/pollo-asitico-alto-en-protena-con-fideos-de-calabacn/88982522007/",
+   "spanishTitle": "Pollo Asiático Alto en Proteína con Fideos de Calabacín",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/03/04/PDTF/88982118007-lo-hud-march-26-recipe-vf-16-x-9.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5802,11 +5949,17 @@ export const BODIES = {
    "name": "Dr. Sybil Hodgson, for Montefiore",
    "role": null
   },
+  "spanish": {
+   "title": "La humedad y el calor aumentan el riesgo de deshidratación. Aquí encontrará algunos consejos para evitarla",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/07/22/la-humedad-y-el-calor-aumentan-el-riesgo-de-deshidratacion-aqui-encontrara-algunos-consejos-para-evi/5486792002/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/07/01/PWES/1dabded6-fc18-4e6e-81a1-d7632bf39268-GettyImages-939848398.jpg?crop=2120,1193,x0,y107&width=2120&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/07/01/hot-humid-weather-raises-risk-dehydration-heres-how-avoid/5358895002/",
    "description": "7 expert tips to stay hydrated this summer",
    "author": "Dr. Sybil Hodgson, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/07/22/la-humedad-y-el-calor-aumentan-el-riesgo-de-deshidratacion-aqui-encontrara-algunos-consejos-para-evi/5486792002/",
+   "spanishTitle": "La humedad y el calor aumentan el riesgo de deshidratación. Aquí encontrará algunos consejos para evitarla",
    "figures": [
     {
      "src": "/gcdn/presto/2020/07/01/PWES/1dabded6-fc18-4e6e-81a1-d7632bf39268-GettyImages-939848398.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -5928,13 +6081,16 @@ export const BODIES = {
    "role": "Thoracic Surgeon, Montefiore Einstein Comprehensive Cancer Center"
   },
   "spanish": {
-   "title": "Por qué cada vez más personas superan el cáncer de pulmón"
+   "title": "Por qué cada vez más personas superan el cáncer de pulmón",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/04/22/por-qu-cada-vez-ms-personas-superan-el-cncer-de-pulmn/89732698007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/04/22/PDTF/89732409007-getty-images-2160938576.jpg?crop=7007,3943,x0,y364&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/04/22/how-more-people-are-beating-lung-cancer-today/89732517007/",
    "description": "Advancements giving people with lung cancer more options—and more hope—than ever before",
    "author": "Tamar Nobel, MD, Thoracic Surgeon, Montefiore Einstein Comprehensive Cancer Center, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/04/22/por-qu-cada-vez-ms-personas-superan-el-cncer-de-pulmn/89732698007/",
+   "spanishTitle": "Por qué cada vez más personas superan el cáncer de pulmón",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/04/22/PDTF/89732409007-getty-images-2160938576.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -6132,13 +6288,16 @@ export const BODIES = {
    "role": "Attending Physician at Burke Rehabilitation Hospital"
   },
   "spanish": {
-   "title": "Cómo se cura el cerebro a sí mismo y cómo favorecer la sanación"
+   "title": "Cómo se cura el cerebro a sí mismo y cómo favorecer la sanación",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/12/05/cmo-se-cura-el-cerebro-a-s-mismo-y-cmo-favorecer-la-sanacin/87622140007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/12/05/PDTF/87621967007-getty-images-158548893.jpg?crop=5099,2868,x0,y437&width=3200&height=1800&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/12/05/how-the-brain-heals-itself-and-how-we-can-help-it-along/87621993007/",
    "description": "Neuroplasticity lets the brain adapt and rewire—and therapies make recovery even stronger.",
    "author": "Sharon Bushi, MD, Attending Physician at Burke Rehabilitation Hospital, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/12/05/cmo-se-cura-el-cerebro-a-s-mismo-y-cmo-favorecer-la-sanacin/87622140007/",
+   "spanishTitle": "Cómo se cura el cerebro a sí mismo y cómo favorecer la sanación",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/12/05/PDTF/87621967007-getty-images-158548893.jpg?width=1320&amp;height=970&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -6351,13 +6510,16 @@ export const BODIES = {
    "role": "FACC, Assistant Professor of Medicine—Cardiology"
   },
   "spanish": {
-   "title": "Insuficiencia cardiaca: detección, y nuevos y transformadores tratamientos"
+   "title": "Insuficiencia cardiaca: detección, y nuevos y transformadores tratamientos",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/11/insuficiencia-cardiaca-deteccin-y-nuevos-y-transformadores-tratamientos/84149982007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/06/11/PDTF/84149472007-getty-images-85450740.jpg?crop=6269,3528,x0,y326&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/06/11/how-to-spot-heart-failure-plus-the-latest-life-changing-treatments/84149483007/",
    "description": "Warning signs of heart failure and why early treatment is key",
    "author": "Yogita M. Rochlani, MD, FACC, Assistant Professor of Medicine—Cardiology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/11/insuficiencia-cardiaca-deteccin-y-nuevos-y-transformadores-tratamientos/84149982007/",
+   "spanishTitle": "Insuficiencia cardiaca: detección, y nuevos y transformadores tratamientos",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/06/11/PDTF/84149472007-getty-images-85450740.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -6495,11 +6657,17 @@ export const BODIES = {
    "name": "Jacob Cynamon, MD",
    "role": "Director of the Division of Vascular and Interventional Radiology, Montefiore Einstein"
   },
+  "spanish": {
+   "title": "La histerectomía no es la única opción para mujeres con fibromas uterinos",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-histerectoma-no-es-la-nica-opcin-para-mujeres-con-fibromas-uterinos/69536988007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/09/27/PWES/1b36e46e-7bec-4735-a049-41fb1c5a0935-header_montefiore.jpg?crop=2015,1134,x0,y102&width=2015&height=1134&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2022/09/27/hysterectomy-is-not-the-only-option-for-women-with-uterine-fibroids/69522088007/",
    "description": "The uterine fibroid treatment option women should know about",
    "author": "Jacob Cynamon, MD, Director of the Division of Vascular and Interventional Radiology, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-histerectoma-no-es-la-nica-opcin-para-mujeres-con-fibromas-uterinos/69536988007/",
+   "spanishTitle": "La histerectomía no es la única opción para mujeres con fibromas uterinos",
    "figures": [
     {
      "src": "/gcdn/presto/2022/09/27/PWES/1b36e46e-7bec-4735-a049-41fb1c5a0935-header_montefiore.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -6596,11 +6764,17 @@ export const BODIES = {
    "name": "Ulrich P. Jorde, MD",
    "role": "Head of Heart Failure, Cardiac Transplantation, and Mechanical Circulatory Support"
   },
+  "spanish": {
+   "title": "El fallo cardíaco de James fue para los libros de historia",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/el-fallo-cardaco-de-james-fue-para-los-libros-de-historia/70325512007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/06/15/PWES/495e6ce0-0193-4ba2-aa6f-84993dd02142-211118_Montefiore_James_Bradley_S3_005_1_R5.jpg?crop=6719,3780,x0,y341&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/03/31/jamess-heart-failure-reversal-is-one-for-the-record-books/70325494007/",
    "description": "Saving James without a heart transplant",
    "author": "Ulrich P. Jorde, MD, Head of Heart Failure, Cardiac Transplantation, and Mechanical Circulatory Support, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/el-fallo-cardaco-de-james-fue-para-los-libros-de-historia/70325512007/",
+   "spanishTitle": "El fallo cardíaco de James fue para los libros de historia",
    "figures": [
     {
      "src": "/gcdn/presto/2023/06/15/PWES/495e6ce0-0193-4ba2-aa6f-84993dd02142-211118_Montefiore_James_Bradley_S3_005_1_R5.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -6823,11 +6997,17 @@ export const BODIES = {
    "name": "Amanda Zayde, Psy.D, Assistant Professor, Department of Psychiatry and Behavioral Sciences",
    "role": null
   },
+  "spanish": {
+   "title": "Momentos de conexión para superar las críticas a las madres",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/momentos-de-conexin-para-superar-las-crticas-a-las-madres/73640650007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/05/10/PDTF/73640490007-getty-images-1252568147-1.jpg?crop=7951,4473,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/05/10/kicking-mom-shaming-to-the-curb-through-moments-of-connection/73640510007/",
    "description": "One big step for momkind: Less mom-shaming, more kindness",
    "author": "Amanda Zayde, Psy.D, Assistant Professor, Department of Psychiatry and Behavioral Sciences, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/momentos-de-conexin-para-superar-las-crticas-a-las-madres/73640650007/",
+   "spanishTitle": "Momentos de conexión para superar las críticas a las madres",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/05/10/PDTF/73640490007-getty-images-1252568147-1.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -7238,11 +7418,17 @@ export const BODIES = {
    "name": "Gloria Rothenberg, NP",
    "role": "for Montefiore-Einstein"
   },
+  "spanish": {
+   "title": "La donación en vida de órganos salvan miles de vidas cada año",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/25/la-donacion-en-vida-de-organos-salvan-miles-de-vidas-cada-ano/3258113001/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/05/06/PWES/038a616d-d717-484a-8d91-9d56ea6e2d3c-GettyImages-1164802821_-_HEADER.jpg?crop=5432,3056,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/05/06/living-organ-donors-save-thousands-lives-each-year/5177298002/",
    "description": "Living organ donors: Most say they wish they could do it again",
    "author": "Gloria Rothenberg, NP, for Montefiore-Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/25/la-donacion-en-vida-de-organos-salvan-miles-de-vidas-cada-ano/3258113001/",
+   "spanishTitle": "La donación en vida de órganos salvan miles de vidas cada año",
    "figures": [
     {
      "src": "/gcdn/presto/2020/05/06/PWES/038a616d-d717-484a-8d91-9d56ea6e2d3c-GettyImages-1164802821_-_HEADER.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -7577,16 +7763,13 @@ export const BODIES = {
    "role": "Program Director of Community and Patient Population, Montefiore Nyack"
   },
   "spanish": {
-   "title": "Haciendo más divertido el lunch con estas sencillas, saludables y deliciosas recetas.",
-   "url": "/story/sponsor-story/montefiore-health-system-spanish/2025/03/26/haciendo-mas-divertido-el-lunch-con-estas-sencillas-saludables-y-deliciosas-recetas/2072967001/"
+   "title": "Haciendo más divertido el lunch con estas sencillas, saludables y deliciosas recetas."
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2019/07/31/PWES/ab034617-d5c0-4da2-a9ee-dda479588c6d-GettyImages-918656814.jpg?crop=2119,1192,x0,y0&width=2119&height=1192&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2019/11/05/make-lunch-time-more-fun-these-simple-healthy-and-delicious-recipes/1878617001/",
    "description": "These creative school lunches are easy to make, high in protein and great sources of fiber",
    "author": "Sandra Arevalo, RDN, Program Director of Community and Patient Population, Montefiore Nyack",
-   "spanishUrl": "/story/sponsor-story/montefiore-health-system-spanish/2025/03/26/haciendo-mas-divertido-el-lunch-con-estas-sencillas-saludables-y-deliciosas-recetas/2072967001/",
-   "spanishTitle": "Haciendo más divertido el lunch con estas sencillas, saludables y deliciosas recetas.",
    "figures": [
     {
      "src": "/gcdn/presto/2019/07/31/PWES/ab034617-d5c0-4da2-a9ee-dda479588c6d-GettyImages-918656814.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -7858,13 +8041,16 @@ export const BODIES = {
    "role": "Attending Physician, Neurology"
   },
   "spanish": {
-   "title": "¿Adiós a las migrañas? Llegan tratamientos revolucionarios"
+   "title": "¿Adiós a las migrañas? Llegan tratamientos revolucionarios",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/20/adis-a-las-migraas-llegan-tratamientos-revolucionarios/84286735007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/06/20/PDTF/84286472007-getty-images-1323861102.jpg?crop=8191,4608,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/06/20/migraines-no-more-new-discoveries-are-revolutionizing-treatment/84286503007/",
    "description": "Migraine prevention is now more possible than ever",
    "author": "Cynthia Armand, MD, Attending Physician, Neurology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/20/adis-a-las-migraas-llegan-tratamientos-revolucionarios/84286735007/",
+   "spanishTitle": "¿Adiós a las migrañas? Llegan tratamientos revolucionarios",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/06/20/PDTF/84286472007-getty-images-1323861102.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -8029,13 +8215,16 @@ export const BODIES = {
    "role": "Physician, Center for Comprehensive Stroke Care"
   },
   "spanish": {
-   "title": "Prevención de accidente cerebrovascular (stroke): Reduzca el riesgo un 80 %"
+   "title": "Prevención de accidente cerebrovascular (stroke): Reduzca el riesgo un 80 %",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/05/01/prevencin-de-accidente-cerebrovascular-stroke-reduzca-el-riesgo-un-80/89891518007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/05/01/PDTF/89891176007-lo-hud-stroke-risk-reduction-getty-images-1199079048.jpg?crop=4990,2808,x0,y259&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/05/01/most-strokes-are-preventable-cut-your-stroke-risk-by-80/89891238007/",
    "description": "Prevention starts with what you can control — here’s how",
    "author": "Charles C. Esenwa, MD, Physician, Center for Comprehensive Stroke Care, for Montefiore Einstein.",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/05/01/prevencin-de-accidente-cerebrovascular-stroke-reduzca-el-riesgo-un-80/89891518007/",
+   "spanishTitle": "Prevención de accidente cerebrovascular (stroke): Reduzca el riesgo un 80 %",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/05/01/PDTF/89891176007-lo-hud-stroke-risk-reduction-getty-images-1199079048.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -8276,13 +8465,16 @@ export const BODIES = {
    "role": "Chair, Department of Oncology, Co-Director of the Blood Cancer Institute, for Montefiore Einstein Comprehensive Cancer Center"
   },
   "spanish": {
-   "title": "Nuevos avances contra la leucemia, el linfoma y otros cánceres de la sangre"
+   "title": "Nuevos avances contra la leucemia, el linfoma y otros cánceres de la sangre",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/09/30/nuevos-avances-contra-la-leucemia-el-linfoma-y-otros-cnceres-de-la-sangre/86437918007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/09/30/PDTF/86437692007-getty-images-1468259122.jpg?crop=5999,3375,x0,y313&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/09/30/new-advances-against-leukemia-lymphoma-and-other-blood-cancers/86437720007/",
    "description": "Innovative blood cancer treatments are giving patients more options & more hope",
    "author": "Amit Verma, MD, Chair, Department of Oncology, Co-Director of the Blood Cancer Institute, for Montefiore Einstein Comprehensive Cancer Center",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/09/30/nuevos-avances-contra-la-leucemia-el-linfoma-y-otros-cnceres-de-la-sangre/86437918007/",
+   "spanishTitle": "Nuevos avances contra la leucemia, el linfoma y otros cánceres de la sangre",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/09/30/PDTF/86437692007-getty-images-1468259122.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -8525,11 +8717,17 @@ export const BODIES = {
    "name": "Dr. Marc J. Gibber, Director, Division of Comprehensive/General Otolaryngology at Montefiore Medical Center",
    "role": null
   },
+  "spanish": {
+   "title": "Ni mascarillas ni tubos, a dormir. La innovadora alternativa para la apnea del sueño",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/ni-mascarillas-ni-tubos-a-dormir-la-innovadora-alternativa-para-la-apnea-del-sueo/71044915007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/10/03/PDTF/71044723007-getty-images-1195034931.jpg?crop=5471,3079,x0,y284&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/10/03/no-mask-no-hose-just-sleep-the-innovative-alternative-for-sleep-apnea/71044808007/",
    "description": "Can’t tolerate CPAP? The latest treatment option for sleep apnea",
    "author": "Dr. Marc J. Gibber, Director, Division of Comprehensive/General Otolaryngology at Montefiore Medical Center, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/ni-mascarillas-ni-tubos-a-dormir-la-innovadora-alternativa-para-la-apnea-del-sueo/71044915007/",
+   "spanishTitle": "Ni mascarillas ni tubos, a dormir. La innovadora alternativa para la apnea del sueño",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/10/03/PDTF/71044723007-getty-images-1195034931.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -8673,13 +8871,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Pollo con champiñones preparado en una sola cacerola, elaborado con ingredientes ricos en vitaminas"
+   "title": "Pollo con champiñones preparado en una sola cacerola, elaborado con ingredientes ricos en vitaminas",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/01/23/pollo-con-championes-preparado-en-una-sola-cacerola-elaborado-con-ingredientes-ricos-en-vitaminas/88318285007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/01/23/PDTF/88318040007-lo-hud-jan-26-recipe-vf-2-16-x-9.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/01/23/one-pot-chicken-and-mushroom-skillet-with-vitamin-rich-ingredients/88318090007/",
    "description": "A warm, satisfying recipe with whole-food ingredients",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/01/23/pollo-con-championes-preparado-en-una-sola-cacerola-elaborado-con-ingredientes-ricos-en-vitaminas/88318285007/",
+   "spanishTitle": "Pollo con champiñones preparado en una sola cacerola, elaborado con ingredientes ricos en vitaminas",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/01/23/PDTF/88318040007-lo-hud-jan-26-recipe-vf-2-16-x-9.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -8874,11 +9075,17 @@ export const BODIES = {
    "name": "Dr. Alyssa Silver, for Montefiore",
    "role": null
   },
+  "spanish": {
+   "title": "Prevenir ell virus sincitial respiratorio (VSR) es la mejor manera de mantener a los bebés a salvo de la bronquiolitis",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/25/prevenir-ell-virus-sincitial-respiratorio-vsr-es-la-mejor-manera-de-mantener-los-bebes-salvo-de-la-b/3261225001/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2019/12/30/PWES/88699d81-0954-4d36-8cb3-d59cbc2a1f47-GettyImages_169972472_header_image.jpg?crop=3883,2185,x0,y197&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2019/12/30/prevention-respiratory-syncytial-virus-rsv-best-way-keep-babies-safe-bronchiolitis/2774905001/",
    "description": "Learn how to protect babies from serious lung infection caused by respiratory syncytial virus (RSV)",
    "author": "Dr. Alyssa Silver, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/25/prevenir-ell-virus-sincitial-respiratorio-vsr-es-la-mejor-manera-de-mantener-los-bebes-salvo-de-la-b/3261225001/",
+   "spanishTitle": "Prevenir ell virus sincitial respiratorio (VSR) es la mejor manera de mantener a los bebés a salvo de la bronquiolitis",
    "figures": [
     {
      "src": "/gcdn/presto/2019/12/30/PWES/88699d81-0954-4d36-8cb3-d59cbc2a1f47-GettyImages_169972472_header_image.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -8984,11 +9191,17 @@ export const BODIES = {
    "name": "Maria Dela Cruz, MD",
    "role": "Internal Medicine Specialist,"
   },
+  "spanish": {
+   "title": "Temperaturas de récord y deshidratación: Nueve maneras de permanecer hidratado",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/temperaturas-de-rcord-y-deshidratacin-nueve-maneras-de-permanecer-hidratado/74919426007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/08/23/PFTC/74919172007-getty-images-1758077594-this-one.jpg?crop=2119,1193,x0,y110&width=2119&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/08/23/record-breaking-heat-waves-and-dehydration-9-ways-to-stay-hydrated/74918016007/",
    "description": "The scoop on dehydration and how much water you really need.",
    "author": "Maria Dela Cruz, MD, Internal Medicine Specialist,",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/temperaturas-de-rcord-y-deshidratacin-nueve-maneras-de-permanecer-hidratado/74919426007/",
+   "spanishTitle": "Temperaturas de récord y deshidratación: Nueve maneras de permanecer hidratado",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/08/23/PFTC/74919172007-getty-images-1758077594-this-one.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -9111,13 +9324,16 @@ export const BODIES = {
    "role": "PhD, FACC, FHRS, System Director of Electrophysiology"
   },
   "spanish": {
-   "title": "Restablezca un ritmo cardiaco normal y reduzca el riesgo de ACV"
+   "title": "Restablezca un ritmo cardiaco normal y reduzca el riesgo de ACV",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/09/15/restablezca-un-ritmo-cardiaco-normal-y-reduzca-el-riesgo-de-acv/86166138007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/09/12/PDTF/86112085007-getty-images-1367988708.jpg?crop=8255,4644,x0,y859&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/09/12/restore-a-normal-heart-rhythm-cut-stroke-risk/86112153007/",
    "description": "How breakthroughs in ablation for AFib are beating irregular heartbeats",
    "author": "Luigi Di Biase, MD, PhD, FACC, FHRS, System Director of Electrophysiology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/09/15/restablezca-un-ritmo-cardiaco-normal-y-reduzca-el-riesgo-de-acv/86166138007/",
+   "spanishTitle": "Restablezca un ritmo cardiaco normal y reduzca el riesgo de ACV",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/09/12/PDTF/86112085007-getty-images-1367988708.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -9329,11 +9545,17 @@ export const BODIES = {
    "name": "Sandra Aleksic, MD",
    "role": "Assistant Professor in the Department of Medicine, Division of Endocrinology and Geriatrics"
   },
+  "spanish": {
+   "title": "Revertir la prediabetes podría ser más fácil de lo que piensa",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/revertir-la-prediabetes-podra-ser-ms-fcil-de-lo-que-piensa/76622492007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/11/27/PDTF/76622350007-getty-images-110053297.jpg?crop=5231,2944,x0,y265&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/11/27/reversing-prediabetes-could-be-easier-than-you-think/76622364007/",
    "description": "Head off prediabetes before it becomes Type 2",
    "author": "Sandra Aleksic, MD, Assistant Professor in the Department of Medicine, Division of Endocrinology and Geriatrics, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/revertir-la-prediabetes-podra-ser-ms-fcil-de-lo-que-piensa/76622492007/",
+   "spanishTitle": "Revertir la prediabetes podría ser más fácil de lo que piensa",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/11/27/PDTF/76622350007-getty-images-110053297.jpg?width=1320&amp;height=878&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -9675,11 +9897,17 @@ export const BODIES = {
    "name": "Jillian Parekh, MD",
    "role": "Attending Physician, Academic General Pediatrics, Children’s Hospital at Montefiore Einstein"
   },
+  "spanish": {
+   "title": "Prácticas seguras para reducir el riesgo de muerte súbita en bebés",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/prcticas-seguras-para-reducir-el-riesgo-de-muerte-sbita-en-bebs/75515593007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/10/04/PDTF/75515450007-getty-images-1392180366-cropped.jpg?crop=4741,2667,x0,y286&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/10/04/safe-sleep-practices-to-reduce-babies-sids-risk/75515476007/",
    "description": "Dramatically reduce SIDS risk. The sleep guide every parent needs.",
    "author": "Jillian Parekh, MD, Attending Physician, Academic General Pediatrics, Children’s Hospital at Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/prcticas-seguras-para-reducir-el-riesgo-de-muerte-sbita-en-bebs/75515593007/",
+   "spanishTitle": "Prácticas seguras para reducir el riesgo de muerte súbita en bebés",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/10/04/PDTF/75515450007-getty-images-1392180366-cropped.jpg?width=1320&amp;height=902&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -10224,11 +10452,17 @@ export const BODIES = {
    "name": "Nicole Hayde, MD",
    "role": "Medical Director of Pediatric Kidney Transplantation, Montefiore Einstein"
   },
+  "spanish": {
+   "title": "Frenar la progresión de la enfermedad renal en niños",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/frenar-la-progresin-de-la-enfermedad-renal-en-nios/70273663007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/05/31/PWES/8adffee6-d76b-4dad-ac22-5c5ce3e920d9-GettyImages_507152029.jpg?crop=4525,2546,x0,y229&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/05/31/slowing-the-progression-of-kidney-disease-in-children/70273607007/",
    "description": "Helpful tools to empower children with kidney disease.",
    "author": "Nicole Hayde, MD, Medical Director of Pediatric Kidney Transplantation, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/frenar-la-progresin-de-la-enfermedad-renal-en-nios/70273663007/",
+   "spanishTitle": "Frenar la progresión de la enfermedad renal en niños",
    "figures": [
     {
      "src": "/gcdn/presto/2023/05/31/PWES/8adffee6-d76b-4dad-ac22-5c5ce3e920d9-GettyImages_507152029.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -10395,11 +10629,17 @@ export const BODIES = {
    "name": "Jessica Shapiro, MS",
    "role": "RD, CDN, CDE, for Montefiore"
   },
+  "spanish": {
+   "title": "Alegre su cocina casera con esta sencilla y saludable receta de sopa tailandesa",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/22/alegre-su-cocina-casera-con-esta-sencilla-y-saludable-receta-de-sopa-tailandesa/3239378001/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/05/27/PWES/2fc13d88-1a12-475a-bd2d-dffb23d4a158-GettyImages-914137338.jpg?crop=2120,1193,x0,y107&width=2120&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/05/27/spice-up-stay-home-cooking-easy-healthy-thai-soup-recipe/5269192002/",
    "description": "Cooking at home: Try this easy Thai soup recipe made with curry paste",
    "author": "Jessica Shapiro, MS, RD, CDN, CDE, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/22/alegre-su-cocina-casera-con-esta-sencilla-y-saludable-receta-de-sopa-tailandesa/3239378001/",
+   "spanishTitle": "Alegre su cocina casera con esta sencilla y saludable receta de sopa tailandesa",
    "figures": [
     {
      "src": "/gcdn/presto/2020/05/27/PWES/2fc13d88-1a12-475a-bd2d-dffb23d4a158-GettyImages-914137338.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -10568,13 +10808,16 @@ export const BODIES = {
    "role": "Chief, Cardiology, Montefiore Einstein, and Co-Director, Montefiore Einstein Center for Heart and Vascular Care"
   },
   "spanish": {
-   "title": "Sugerencias para detectar y frenar la enfermedad cardiaca"
+   "title": "Sugerencias para detectar y frenar la enfermedad cardiaca",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/07/02/sugerencias-para-detectar-y-frenar-la-enfermedad-cardiaca/90781534007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/07/02/PDTF/90781378007-lo-hud-heart-disease-getty-images-2106785382.jpg?crop=2457,1383,x0,y128&width=2457&height=1383&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/07/02/spotting-heart-disease-and-how-to-stop-it/90781411007/",
    "description": "From warning signs to prevention: Steps to stop heart disease now",
    "author": "Mario Garcia, MD, Chief, Cardiology, Montefiore Einstein, and Co-Director, Montefiore Einstein Center for Heart and Vascular Care, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/07/02/sugerencias-para-detectar-y-frenar-la-enfermedad-cardiaca/90781534007/",
+   "spanishTitle": "Sugerencias para detectar y frenar la enfermedad cardiaca",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/07/02/PDTF/90781378007-lo-hud-heart-disease-getty-images-2106785382.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -10718,13 +10961,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Empieza el día de la mejor manera con estos JohnnyCakes caseros con arándanos"
+   "title": "Empieza el día de la mejor manera con estos JohnnyCakes caseros con arándanos",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/05/01/empieza-el-da-de-la-mejor-manera-con-estos-johnnycakes-caseros-con-arndanos/83387943007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/05/01/PDTF/83387789007-lo-hud-may-25-recipe-vf-01-16-x-9.jpg?crop=2687,1513,x0,y11&width=2687&height=1513&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/05/01/start-your-morning-right-with-homestyle-blueberry-johnnycakes/83387802007/",
    "description": "Classic, all-American breakfast pancakes that deliver a double dose of fiber and protein",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/05/01/empieza-el-da-de-la-mejor-manera-con-estos-johnnycakes-caseros-con-arndanos/83387943007/",
+   "spanishTitle": "Empieza el día de la mejor manera con estos JohnnyCakes caseros con arándanos",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/05/01/PDTF/83387789007-lo-hud-may-25-recipe-vf-01-16-x-9.jpg?width=1320&amp;height=756&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -11033,11 +11279,17 @@ export const BODIES = {
    "name": "David J. Carruthers, MD",
    "role": "Internal Medicine–Endocrinology, Diabetes, and Metabolism"
   },
+  "spanish": {
+   "title": "Nuevos tratamientos facilitan detener y hasta revertir la diabetes tipo 2",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/nuevos-tratamientos-facilitan-detener-y-hasta-revertir-la-diabetes-tipo-2/71741848007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/11/29/PDTF/71741804007-getty-images-1396504295.jpg?crop=7807,4393,x0,y316&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2023/11/29/stop-and-even-reverse-type-2-diabetes-new-treatments-are-making-it-easier/71741820007/",
    "description": "New Type 2 diabetes treatments provide game-changing benefits",
    "author": "David J. Carruthers, MD, Internal Medicine–Endocrinology, Diabetes, and Metabolism, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/nuevos-tratamientos-facilitan-detener-y-hasta-revertir-la-diabetes-tipo-2/71741848007/",
+   "spanishTitle": "Nuevos tratamientos facilitan detener y hasta revertir la diabetes tipo 2",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2023/11/29/PDTF/71741804007-getty-images-1396504295.jpg?width=1320&amp;height=850&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -11128,13 +11380,16 @@ export const BODIES = {
    "role": "PhD, Co-Leader, GI Clinical and Translational Research, at Montefiore Einstein Comprehensive Cancer Center, and Othon Wiltz, MD, Colon and Rectal Surgeon"
   },
   "spanish": {
-   "title": "Detener el cáncer de colon: más pruebas y avances en el tratamiento"
+   "title": "Detener el cáncer de colon: más pruebas y avances en el tratamiento",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/26/detener-el-cncer-de-colon-ms-pruebas-y-avances-en-el-tratamiento/82676708007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/03/26/PDTF/82675342007-getty-images-1336733312.jpg?crop=7951,4473,x0,y415&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/03/26/stopping-colon-cancer-with-more-testing-options-and-treatment-advances/82675359007/",
    "description": "A new era for colon cancer testing and treatment",
    "author": "Chaoyuan Kuang, MD, PhD, Co-Leader, GI Clinical and Translational Research, at Montefiore Einstein Comprehensive Cancer Center, and Othon Wiltz, MD, Colon and Rectal Surgeon, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/26/detener-el-cncer-de-colon-ms-pruebas-y-avances-en-el-tratamiento/82676708007/",
+   "spanishTitle": "Detener el cáncer de colon: más pruebas y avances en el tratamiento",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/03/26/PDTF/82675342007-getty-images-1336733312.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -11409,11 +11664,17 @@ export const BODIES = {
    "name": "Alexander I. Sankin, MD",
    "role": "Associate Residency Program Director, Director of Clinical Trials and Associate Professor of Urology, Montefiore Einstein"
   },
+  "spanish": {
+   "title": "Sobrevivir al cáncer de vejiga y preservar el órgano",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/28/sobrevivir-al-cncer-de-vejiga-y-preservar-el-rgano/69671698007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/11/15/PWES/7c712df0-2eb1-4f22-89b6-9f0b061b99be-GettyImages_1180593871.jpg?crop=1709,962,x0,y86&width=1709&height=962&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2022/11/15/surviving-bladder-cancer-and-keeping-your-bladder/69650606007/",
    "description": "Bladder preservation is possible with this new approach to treatment.",
    "author": "Alexander I. Sankin, MD, Associate Residency Program Director, Director of Clinical Trials and Associate Professor of Urology, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/28/sobrevivir-al-cncer-de-vejiga-y-preservar-el-rgano/69671698007/",
+   "spanishTitle": "Sobrevivir al cáncer de vejiga y preservar el órgano",
    "figures": [
     {
      "src": "/gcdn/presto/2022/11/15/PWES/7c712df0-2eb1-4f22-89b6-9f0b061b99be-GettyImages_1180593871.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -11744,13 +12005,16 @@ export const BODIES = {
    "role": "Chief of Dermatology"
   },
   "spanish": {
-   "title": "El ABCDE para detectar el cáncer de piel y cinco medidas para prevenirlo"
+   "title": "El ABCDE para detectar el cáncer de piel y cinco medidas para prevenirlo",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/13/el-abcde-para-detectar-el-cncer-de-piel-y-cinco-medidas-para-prevenirlo/84185618007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/06/13/PDTF/84185373007-getty-images-10172071.jpg?crop=5021,2824,x0,y261&width=3200&height=1800&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/06/13/the-abcdes-to-spot-skin-cancer-and-the-5-ss-to-prevent-it/84185410007/",
    "description": "Skin cancer can be hard to spot. Check these less obvious places.",
    "author": "Beth N. McLellan, MD, Chief of Dermatology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/13/el-abcde-para-detectar-el-cncer-de-piel-y-cinco-medidas-para-prevenirlo/84185618007/",
+   "spanishTitle": "El ABCDE para detectar el cáncer de piel y cinco medidas para prevenirlo",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/06/13/PDTF/84185373007-getty-images-10172071.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -11889,13 +12153,16 @@ export const BODIES = {
    "role": "Director of Inpatient Diabetes Services"
   },
   "spanish": {
-   "title": "La nueva frontera tecnológica para tratar la diabetes tipo 2"
+   "title": "La nueva frontera tecnológica para tratar la diabetes tipo 2",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/11/25/la-nueva-frontera-tecnolgica-para-tratar-la-diabetes-tipo-2/87468068007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/11/25/PDTF/87467754007-getty-images-2194054058.jpg?crop=7568,4258,x0,y395&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/11/25/the-next-frontier-in-type-2-diabetes-smarter-tech-better-treatment/87467779007/",
    "description": "From technology to treatment, Type 2 diabetes care is becoming smarter and more personal.",
    "author": "Anjali Manavalan, MD, Director of Inpatient Diabetes Services, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/11/25/la-nueva-frontera-tecnolgica-para-tratar-la-diabetes-tipo-2/87468068007/",
+   "spanishTitle": "La nueva frontera tecnológica para tratar la diabetes tipo 2",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/11/25/PDTF/87467754007-getty-images-2194054058.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -12002,13 +12269,16 @@ export const BODIES = {
    "role": "MS, FACS, FACOG, Department Chair of Obstetrics & Gynecology and Women’s Health"
   },
   "spanish": {
-   "title": "Nueva prueba del VPH desde casa para detectar el cáncer de cuello uterino"
+   "title": "Nueva prueba del VPH desde casa para detectar el cáncer de cuello uterino",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/03/16/nueva-prueba-del-vph-desde-casa-para-detectar-el-cncer-de-cuello-uterino/89179982007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/03/16/PDTF/89179709007-getty-images-1301171036.jpg?crop=5999,3375,x0,y312&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/03/16/the-shift-in-cervical-cancer-screening-how-new-at-home-hpv-test-fits-in/89179721007/",
    "description": "New in-home HPV test option is now available, joining healthcare-setting Pap and HPV tests",
    "author": "Mark Einstein, MD, MS, FACS, FACOG, Department Chair of Obstetrics & Gynecology and Women’s Health, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/03/16/nueva-prueba-del-vph-desde-casa-para-detectar-el-cncer-de-cuello-uterino/89179982007/",
+   "spanishTitle": "Nueva prueba del VPH desde casa para detectar el cáncer de cuello uterino",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/03/16/PDTF/89179709007-getty-images-1301171036.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -12140,13 +12410,16 @@ export const BODIES = {
    "role": "Dir. of Neurovascular Surgery, Co-Dir. of Montefiore Comprehensive Stroke Center; Allan Brook, MD, Neuroradiology; Neil Haranhalli, MD, Endovascular/Cerebrovascular Neurosurgeon; & Daniel Labovitz, MD, Vascular Neurology"
   },
   "spanish": {
-   "title": "El tratamiento de accidente cerebrovascular que previene la discapacidad"
+   "title": "El tratamiento de accidente cerebrovascular que previene la discapacidad",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/27/el-tratamiento-de-accidente-cerebrovascular-que-previene-la-discapacidad/84390023007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/06/27/PDTF/84389429007-getty-images-1369757487-1.jpg?crop=5799,3263,x0,y268&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/06/27/the-stroke-treatment-that-can-prevent-disability/84389479007/",
    "description": "Saving brains and reversing disability from stroke",
    "author": "By David Altschul, MD, Dir. of Neurovascular Surgery, Co-Dir. of Montefiore Comprehensive Stroke Center; Allan Brook, MD, Neuroradiology; Neil Haranhalli, MD, Endovascular/Cerebrovascular Neurosurgeon; & Daniel Labovitz, MD, Vascular Neurology",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/06/27/el-tratamiento-de-accidente-cerebrovascular-que-previene-la-discapacidad/84390023007/",
+   "spanishTitle": "El tratamiento de accidente cerebrovascular que previene la discapacidad",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/06/27/PDTF/84389429007-getty-images-1369757487-1.jpg?width=1320&amp;height=866&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -12268,11 +12541,17 @@ export const BODIES = {
    "name": "Sunju Park, MD",
    "role": "Pediatric Ophthalmology and Adult Strabismus, Montefiore Einstein"
   },
+  "spanish": {
+   "title": "Los tres problemas de la vista más comunes en niños y cómo detectarlos",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/los-tres-problemas-de-la-vista-ms-comunes-en-nios-y-cmo-detectarlos/69510176007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/09/21/PWES/447246e7-514c-439d-a4b4-5b70d1ac004a-GettyImages_1191849217.jpg?crop=1641,924,x0,y83&width=1641&height=924&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2022/09/21/the-three-most-common-vision-disorders-in-children-and-how-to-spot-them/69510096007/",
    "description": "Protect kids’ eyes and vision with these simple tips",
    "author": "Sunju Park, MD, Pediatric Ophthalmology and Adult Strabismus, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/los-tres-problemas-de-la-vista-ms-comunes-en-nios-y-cmo-detectarlos/69510176007/",
+   "spanishTitle": "Los tres problemas de la vista más comunes en niños y cómo detectarlos",
    "figures": [
     {
      "src": "/gcdn/presto/2022/09/21/PWES/447246e7-514c-439d-a4b4-5b70d1ac004a-GettyImages_1191849217.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -12405,11 +12684,17 @@ export const BODIES = {
    "name": "Jessica Shapiro, MS",
    "role": "RD, CDN, CDCES, for Montefiore"
   },
+  "spanish": {
+   "title": "Estas ensaladas y bebidas nutritivas realzan cualquier comida de verano",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/26/estas-ensaladas-y-bebidas-nutritivas-realzan-cualquier-comida-de-verano/3265529001/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/06/22/PWES/d6bf1e27-a5c6-429c-8de5-e711bff210ab-GettyImages-672647584.jpg?crop=2120,1193,x0,y0&width=2120&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/06/22/these-nutritious-salads-and-drinks-liven-up-any-summer-meal/3236247001/",
    "description": "Creative salads and sips to stay hydrated and healthy this summer",
    "author": "Jessica Shapiro, MS, RD, CDN, CDCES, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2020/06/26/estas-ensaladas-y-bebidas-nutritivas-realzan-cualquier-comida-de-verano/3265529001/",
+   "spanishTitle": "Estas ensaladas y bebidas nutritivas realzan cualquier comida de verano",
    "figures": [
     {
      "src": "/gcdn/presto/2020/06/22/PWES/d6bf1e27-a5c6-429c-8de5-e711bff210ab-GettyImages-672647584.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -12617,13 +12902,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC,"
   },
   "spanish": {
-   "title": "Ensalada de frijoles rica en antioxidantes, el plato vegetal perfecto para el verano"
+   "title": "Ensalada de frijoles rica en antioxidantes, el plato vegetal perfecto para el verano",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/07/15/1-antioxidantes-el-plato-vegetal-perfecto-para-el-verano/85217159007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/07/15/USAT/85216715007-montefiore-article-5-1.jpg?crop=2687,1513,x0,y11&width=2687&height=1513&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/07/15/this-antioxidant-rich-bean-salad-is-the-perfect-plant-based-summer-dish/85216777007/",
    "description": "Delightfully satisfying and good for the heart",
    "author": "Monica Kelly, MS, RD, CDN, CNSC,",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/07/15/1-antioxidantes-el-plato-vegetal-perfecto-para-el-verano/85217159007/",
+   "spanishTitle": "Ensalada de frijoles rica en antioxidantes, el plato vegetal perfecto para el verano",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/07/15/USAT/85216715007-montefiore-article-5-1.jpg?width=1320&amp;height=756&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -12945,13 +13233,16 @@ export const BODIES = {
    "role": "MPH, FACOG, Associate Program Director, Urogynecology & Reconstructive Pelvic Surgery Fellowship"
   },
   "spanish": {
-   "title": "¿Harta de tener pérdidas de orina? El alivio empieza en el suelo pélvico"
+   "title": "¿Harta de tener pérdidas de orina? El alivio empieza en el suelo pélvico",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/05/15/harta-de-tener-prdidas-de-orina-el-alivio-empieza-en-el-suelo-plvico/90095814007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/05/15/PDTF/90095457007-getty-images-2198911343.jpg?crop=3180,1789,x0,y166&width=3180&height=1789&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/05/15/tired-of-urine-leaks-relief-may-start-with-your-pelvic-floor/90095476007/",
    "description": "Your pelvic floor—the muscles behind bladder control—and how to restore real control",
    "author": "Whitney L. Clearwater, MD, MPH, FACOG, Associate Program Director, Urogynecology & Reconstructive Pelvic Surgery Fellowship, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/05/15/harta-de-tener-prdidas-de-orina-el-alivio-empieza-en-el-suelo-plvico/90095814007/",
+   "spanishTitle": "¿Harta de tener pérdidas de orina? El alivio empieza en el suelo pélvico",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/05/15/PDTF/90095457007-getty-images-2198911343.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13086,11 +13377,17 @@ export const BODIES = {
    "name": "Beth N. McLellan, MD",
    "role": "Chief of the Division of Dermatology, Montefiore Einstein"
   },
+  "spanish": {
+   "title": "De los pies al cuero cabelludo: el cáncer de piel puede aparecer en lugares inesperados",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/de-los-pies-al-cuero-cabelludo-el-cancer-de-piel-puede-aparecer-en-lugares-inesperados/9999607002/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/06/07/PWES/66c61aea-4484-4a66-9958-ef7d6e0ad73f-GettyImages_1324717537.jpg?crop=4007,2254,x0,y203&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2022/06/07/toes-scalp-skin-cancer-can-show-up-unexpected-spots/7545158001/",
    "description": "Knowing what and where to look for signs of skin cancer",
    "author": "Beth N. McLellan, MD, Chief of the Division of Dermatology, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/de-los-pies-al-cuero-cabelludo-el-cancer-de-piel-puede-aparecer-en-lugares-inesperados/9999607002/",
+   "spanishTitle": "De los pies al cuero cabelludo: el cáncer de piel puede aparecer en lugares inesperados",
    "figures": [
     {
      "src": "/gcdn/presto/2022/06/07/PWES/66c61aea-4484-4a66-9958-ef7d6e0ad73f-GettyImages_1324717537.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13231,11 +13528,17 @@ export const BODIES = {
    "name": "Cewin Chao, MS",
    "role": "RD, CDN, MBA Director, Clinical Nutrition Services"
   },
+  "spanish": {
+   "title": "Tom Kha Gai: Un abrazo de la cocina Tailandesa",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/tom-kha-gai-un-abrazo-de-la-cocina-tailandesa/73178211007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/04/02/PDTF/73178022007-picture-1.jpg?crop=671,378,x0,y0&width=671&height=378&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/04/02/tom-kha-gai-a-warm-embrace-from-thai-cuisine/73178064007/",
    "description": "Dive into a bowl of comfort bursting with nutrients and vibrant flavors.",
    "author": "Cewin Chao, MS, RD, CDN, MBA Director, Clinical Nutrition Services, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/tom-kha-gai-un-abrazo-de-la-cocina-tailandesa/73178211007/",
+   "spanishTitle": "Tom Kha Gai: Un abrazo de la cocina Tailandesa",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/04/02/PDTF/73178022007-picture-1.jpg?width=660&amp;height=373&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13411,11 +13714,17 @@ export const BODIES = {
    "name": "Cewin Chao, MS",
    "role": "RD, CDN, MBA, Director, Clinical Nutrition Services, Montefiore Einstein"
   },
+  "spanish": {
+   "title": "Consiente a Mamá con estos Muffins de Huevo y Vegetales frescos",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/consiente-a-mam-con-estos-muffins-de-huevo-y-vegetales-frescos/73526236007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/05/01/PDTF/73526050007-thumbnail-mtf-lo-hud-may-24-recipe-vf.jpg?crop=1919,1079,x0,y0&width=1919&height=1079&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/05/03/treat-mom-to-mini-garden-fresh-vegetable-egg-bites/73526067007/",
    "description": "Made especially for Mom: Light, wholesome and flavorful",
    "author": "Cewin Chao, MS, RD, CDN, MBA, Director, Clinical Nutrition Services, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/consiente-a-mam-con-estos-muffins-de-huevo-y-vegetales-frescos/73526236007/",
+   "spanishTitle": "Consiente a Mamá con estos Muffins de Huevo y Vegetales frescos",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/05/01/PDTF/73526050007-thumbnail-mtf-lo-hud-may-24-recipe-vf.jpg?width=1320&amp;height=744&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13490,13 +13799,16 @@ export const BODIES = {
    "role": "Vice Chair of Urology and Director of Urologic Cancer Services"
   },
   "spanish": {
-   "title": "Tratar el cáncer de próstata preservando función sexual y control urinario"
+   "title": "Tratar el cáncer de próstata preservando función sexual y control urinario",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/04/28/tratar-el-cncer-de-prstata-preservando-funcin-sexual-y-control-urinario/89835505007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2026/04/28/PDTF/89835277007-getty-images-2160754337.jpg?crop=6719,3781,x0,y349&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2026/04/28/treating-prostate-cancer-while-preserving-sexual-function-urinary-control/89835297007/",
    "description": "How focal ablation and HIFU are changing the way prostate cancer is treated",
    "author": "Kara Watts, MD, Vice Chair of Urology and Director of Urologic Cancer Services, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2026/04/28/tratar-el-cncer-de-prstata-preservando-funcin-sexual-y-control-urinario/89835505007/",
+   "spanishTitle": "Tratar el cáncer de próstata preservando función sexual y control urinario",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2026/04/28/PDTF/89835277007-getty-images-2160754337.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13586,11 +13898,17 @@ export const BODIES = {
    "name": "Monica Kelly, MS",
    "role": "RD, CDN, CNSC"
   },
+  "spanish": {
+   "title": "La ensalada de pavo que tu familia devorará",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-ensalada-de-pavo-que-tu-familia-devorar/76045682007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/11/04/PDTF/76045318007-lo-hud-nov-24-recipe-vf-16-x-9.jpg?crop=2687,1513,x0,y11&width=2687&height=1513&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/11/04/turkey-salad-your-whole-family-will-gobble-up/76045391007/",
    "description": "This meal is the cranberry on top",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/la-ensalada-de-pavo-que-tu-familia-devorar/76045682007/",
+   "spanishTitle": "La ensalada de pavo que tu familia devorará",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/11/04/PDTF/76045318007-lo-hud-nov-24-recipe-vf-16-x-9.jpg?width=1320&amp;height=756&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13680,13 +13998,16 @@ export const BODIES = {
    "role": "Attending Physician, Pediatric Urology"
   },
   "spanish": {
-   "title": "Incontinencia nocturna: consejos de expertos para estrategias eficaces"
+   "title": "Incontinencia nocturna: consejos de expertos para estrategias eficaces",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/09/26/incontinencia-nocturna-consejos-de-expertos-para-estrategias-eficaces/86369228007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/09/26/PDTF/86369034007-getty-images-1435293274.jpg?crop=8191,4609,x0,y427&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/09/26/understanding-bedwetting-expert-advice-for-effective-strategies/86369067007/",
    "description": "Steps toward dry nights and when to seek help",
    "author": "Miriam Harel, MD, Attending Physician, Pediatric Urology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/09/26/incontinencia-nocturna-consejos-de-expertos-para-estrategias-eficaces/86369228007/",
+   "spanishTitle": "Incontinencia nocturna: consejos de expertos para estrategias eficaces",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/09/26/PDTF/86369034007-getty-images-1435293274.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13780,11 +14101,17 @@ export const BODIES = {
    "name": "Jessica Shapiro, MS",
    "role": "RD, CDN, CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
   },
+  "spanish": {
+   "title": "Cassoulet Vegano. Receta vegetariana provincial, con un toque sofisticado",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/cassoulet-vegano-receta-vegetariana-provincial-con-un-toque-sofisticado/72396226007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/01/29/PDTF/72395984007-thumbnail-mtf-lo-hud-feb-24-recipe-vf.jpg?crop=1919,1081,x0,y47&width=1919&height=1081&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2024/02/01/vegan-cassoulet-rustic-elegance-with-hearty-plant-delights/72396033007/",
    "description": "French flair with every sustainable bite.",
    "author": "Jessica Shapiro, MS, RD, CDN, CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/cassoulet-vegano-receta-vegetariana-provincial-con-un-toque-sofisticado/72396226007/",
+   "spanishTitle": "Cassoulet Vegano. Receta vegetariana provincial, con un toque sofisticado",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2024/01/29/PDTF/72395984007-thumbnail-mtf-lo-hud-feb-24-recipe-vf.jpg?width=1320&amp;height=810&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -13938,11 +14265,17 @@ export const BODIES = {
    "name": "Melissa Rifkin, MS",
    "role": "RD, CDN, for Montefiore"
   },
+  "spanish": {
+   "title": "Prepárese para la primavera con esta exhuberante receta de sopa de cacahuetes del África occidental",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/26/preparese-para-la-primavera-con-esta-exhuberante-receta-de-sopa-de-cacahuetes-del-africa-occidental/3245272001/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/03/12/PWES/dc42458f-d377-4f91-92e5-c77c13979177-GettyImages-1046016472.jpg?crop=2120,1193,x0,y107&width=2120&height=1193&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2020/03/12/warm-up-spring-vibrant-west-african-peanut-soup-recipe/5034737002/",
    "description": "This recipe is loaded with powerhouse foods: sweet potatoes, nuts, leafy greens and fresh ginger",
    "author": "Melissa Rifkin, MS, RD, CDN, for Montefiore",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/26/preparese-para-la-primavera-con-esta-exhuberante-receta-de-sopa-de-cacahuetes-del-africa-occidental/3245272001/",
+   "spanishTitle": "Prepárese para la primavera con esta exhuberante receta de sopa de cacahuetes del África occidental",
    "figures": [
     {
      "src": "/gcdn/presto/2020/03/12/PWES/dc42458f-d377-4f91-92e5-c77c13979177-GettyImages-1046016472.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -14004,11 +14337,17 @@ export const BODIES = {
    "name": "Dr. Sybil Hodgson, the Department of Family and Social Medicine at the Albert Einstein College of Medicine, Montefiore Einstein",
    "role": null
   },
+  "spanish": {
+   "title": "Qué debe saber sobre la deshidratación y cómo evitarla",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/qu-debe-saber-sobre-la-deshidratacin-y-cmo-evitarla/65393383007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/08/01/PWES/11b052a2-3396-47e3-b433-79d9630ee120-Montefiore_Article1_1.jpg?crop=1900,1069,x0,y96&width=1900&height=1069&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2022/08/01/what-to-know-about-dehydration-and-how-to-avoid-it/65388665007/",
    "description": "Know who are the most vulnerable for dehydration and how to avoid it",
    "author": "Dr. Sybil Hodgson, the Department of Family and Social Medicine at the Albert Einstein College of Medicine, Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/qu-debe-saber-sobre-la-deshidratacin-y-cmo-evitarla/65393383007/",
+   "spanishTitle": "Qué debe saber sobre la deshidratación y cómo evitarla",
    "figures": [
     {
      "src": "/gcdn/presto/2022/08/01/PWES/11b052a2-3396-47e3-b433-79d9630ee120-Montefiore_Article1_1.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -14090,11 +14429,17 @@ export const BODIES = {
    "name": "Lynn D. Hamberg, LMSW, MEd, Director of the J.E. and Z.B. Butler Center for Children and Families at the Children’s Hospital at Montefiore Einstein",
    "role": null
   },
+  "spanish": {
+   "title": "¿Qué es el CSP? Cómo tratar y prevenir el comportamiento sexual problemático en los niños.",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/qu-es-el-csp-cmo-tratar-y-prevenir-el-comportamiento-sexual-problemtico-en-los-nios/69544711007/"
+  },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/10/06/PWES/f50ef45f-3ef8-48e1-8e85-7fabd80b33e0-GettyImages_1198107702.jpg?crop=1650,929,x0,y84&width=1650&height=929&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2022/10/06/whats-psb-how-to-treat-and-prevent-problematic-sexual-behavior-in-kids/69544713007/",
    "description": "Body curiosity between kids is natural. Here’s how to keep it appropriate.",
    "author": "Lynn D. Hamberg, LMSW, MEd, Director of the J.E. and Z.B. Butler Center for Children and Families at the Children’s Hospital at Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/03/27/qu-es-el-csp-cmo-tratar-y-prevenir-el-comportamiento-sexual-problemtico-en-los-nios/69544711007/",
+   "spanishTitle": "¿Qué es el CSP? Cómo tratar y prevenir el comportamiento sexual problemático en los niños.",
    "figures": [
     {
      "src": "/gcdn/presto/2022/10/06/PWES/f50ef45f-3ef8-48e1-8e85-7fabd80b33e0-GettyImages_1198107702.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -14415,13 +14760,16 @@ export const BODIES = {
    "role": "RD, CDN, CNSC"
   },
   "spanish": {
-   "title": "Te fascinarán estos wraps de repollo saludables para el corazón"
+   "title": "Te fascinarán estos wraps de repollo saludables para el corazón",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/04/08/te-fascinarn-estos-wraps-de-repollo-saludables-para-el-corazn/82990042007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/04/08/PDTF/82989692007-lo-hud-april-25-recipe-06-copy.jpg?crop=2687,1513,x0,y11&width=2687&height=1513&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/04/08/youll-get-wrapped-up-in-these-heart-healthy-cabbage-wraps/82989768007/",
    "description": "Ditch the tortillas to create a high-fiber meal rich in vitamins",
    "author": "Monica Kelly, MS, RD, CDN, CNSC, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/04/08/te-fascinarn-estos-wraps-de-repollo-saludables-para-el-corazn/82990042007/",
+   "spanishTitle": "Te fascinarán estos wraps de repollo saludables para el corazón",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/04/08/PDTF/82989692007-lo-hud-april-25-recipe-06-copy.jpg?width=1320&amp;height=756&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -14492,13 +14840,16 @@ export const BODIES = {
    "role": "Director of the Center for Comprehensive Stroke Care"
   },
   "spanish": {
-   "title": "Su defensa en casa ante un accidente cerebrovascular"
+   "title": "Su defensa en casa ante un accidente cerebrovascular",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/05/21/su-defensa-en-casa-ante-un-accidente-cerebrovascular/83768840007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/05/21/PDTF/83768682007-getty-images-1305666359.jpg?crop=5199,2926,x0,y270&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/05/21/your-at-home-defense-against-stroke/83768705007/",
    "description": "Beat the odds of having a stroke with these 8 habits",
    "author": "Charles Esenwa, MD, Director of the Center for Comprehensive Stroke Care, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/05/21/su-defensa-en-casa-ante-un-accidente-cerebrovascular/83768840007/",
+   "spanishTitle": "Su defensa en casa ante un accidente cerebrovascular",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/05/21/PDTF/83768682007-getty-images-1305666359.jpg?width=1320&amp;height=882&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
@@ -14637,13 +14988,16 @@ export const BODIES = {
    "role": "MSc., Director of Preventive Cardiology"
   },
   "spanish": {
-   "title": "La salud del corazón depende más de su dieta de lo que cree"
+   "title": "La salud del corazón depende más de su dieta de lo que cree",
+   "url": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/05/23/la-salud-del-corazn-depende-ms-de-su-dieta-de-lo-que-cree/83817515007/"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2025/05/23/PDTF/83817354007-getty-images-604376865.jpg?crop=5615,3159,x0,y292&width=3200&height=1801&format=pjpg&auto=webp",
    "canonical": "https://www.lohud.com/story/sponsor-story/montefiore-health-system/2025/05/23/your-heart-health-is-more-on-your-plate-than-you-might-think/83817391007/",
    "description": "6 tips for boosting heart health — with surprising bonus benefits",
    "author": "Robert Ostfeld, MD, MSc., Director of Preventive Cardiology, for Montefiore Einstein",
+   "spanishUrl": "https://www.lohud.com/story/sponsor-story/montefiore-health-system-spanish/2025/05/23/la-salud-del-corazn-depende-ms-de-su-dieta-de-lo-que-cree/83817515007/",
+   "spanishTitle": "La salud del corazón depende más de su dieta de lo que cree",
    "figures": [
     {
      "src": "/gcdn/authoring/authoring-images/2025/05/23/PDTF/83817354007-getty-images-604376865.jpg?width=1320&amp;height=880&amp;fit=crop&amp;format=pjpg&amp;auto=webp"

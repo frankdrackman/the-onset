@@ -51,11 +51,17 @@ function metaFromHtml(html) {
   // finding it in the prose.
   meta.author = dec(pick(/<meta[^>]+property=["']article:author["'][^>]+content=["']([^"']+)/i));
 
-  // The article's own link to its Spanish twin — the href, not just the title.
-  const es = /<a[^>]+href=["']([^"']+)["'][^>]*>\s*(?:EN\s+ESPA(?:\u00d1|N\u0303)OL:?\s*)?([^<]*)<\/a>/gi;
-  for (const m of html.matchAll(es)) {
-    if (/EN\s+ESPA/i.test(m[0]) || /\/en-espanol\//i.test(m[1])) {
-      meta.spanishUrl = m[1]; meta.spanishTitle = dec(m[2]) || null; break;
+  // The article's own link to its Spanish twin. The marker sits in its own element
+  // beside the anchor rather than inside it, so find the marker and take the next
+  // link after it.
+  const esIdx = html.search(/EN\s+ESPA(?:\u00d1|N\u0303)OL/i);
+  if (esIdx > -1) {
+    const after = html.slice(esIdx, esIdx + 1200);
+    const a = /<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i.exec(after);
+    if (a && !/^#|^javascript:/i.test(a[1])) {
+      const abs = a[1].startsWith('http') ? a[1] : `https://www.lohud.com${a[1]}`;
+      meta.spanishUrl = abs;
+      meta.spanishTitle = dec(a[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')) || null;
     }
   }
 
