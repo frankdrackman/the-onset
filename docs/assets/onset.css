@@ -517,6 +517,10 @@ a, button { min-height: 0; }
 select.ctrl { padding-right: var(--space-32); }
 [data-results] { min-height: 120px; }
 
+/* FAQ slot awaiting editorial copy — a build affordance, never mistaken for content. */
+.qa--empty { border: 1px dashed var(--color-gray-400); border-radius: var(--radius-md); padding: var(--space-24); background: var(--color-soft-gray); }
+.qa--empty .mod__h { margin-bottom: var(--space-8); }
+
 
 .tick-set + .tick-set { margin-top: var(--space-64); padding-top: var(--space-48); border-top: var(--rule); }
 .tick-set[hidden] { display: none; }

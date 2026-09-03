@@ -229,6 +229,17 @@
         </div>
 
         
+        <!-- FAQ slot. Wired to data/faqs.mjs and to FAQPage schema; emits neither
+             markup-as-content nor schema until real copy exists. -->
+        <section class="qa qa--empty" aria-labelledby="qa-h">
+          <h2 class="mod__h" id="qa-h">Common questions</h2>
+          <p class="mod__note">
+            Two or three reader questions with standalone answers belong here, written and
+            clinically reviewed by Montefiore Einstein. The slot is wired: copy added to
+            <code>src/data/faqs.mjs</code> under <code>breastfeeding-is-a-personal-choice-know-the-benefits-for-baby-and-mom</code> renders here and
+            emits <code>FAQPage</code> schema automatically. No schema is emitted while it is empty.
+          </p>
+        </section>
 
         <!-- The Person entity made visible — rendered only where a real named
              clinician is known. No author card for an unknown byline. -->

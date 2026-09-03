@@ -16,6 +16,7 @@ import { page, masthead, crumbs, rel } from '../components/chrome.mjs';
 import { card, media, metaStrip } from '../components/cards.mjs';
 import { HUB } from '../data/site.mjs';
 import { byDept } from '../data/departments.mjs';
+import { faqsFor } from '../data/faqs.mjs';
 import * as T from '../lib/taxonomy.mjs';
 import * as S from '../lib/schema.mjs';
 
@@ -28,10 +29,11 @@ export const detailPage = (item) => {
   // Prefer the article's own opening paragraph — it is complete prose. The search
   // snippet is the fallback, and only when it is not visibly truncated.
   const opener = item.body?.find((b) => b.tag === 'p' && b.text.length > 140);
+  const faqRec = faqsFor(item.slug);
   const inShort = opener ? [opener.text]
     : item.standfirst && !/\.\.\.$/.test(item.standfirst) ? [item.standfirst]
     : item.standfirst ? [item.standfirst.replace(/\s*\.\.\.$/, '')] : [];
-  const faqs = [];
+  const faqs = faqRec?.items ?? [];
   const related = T.surfacingIn(item.dept).filter((i) => i !== item).slice(0, 3);
   const sameByline = item.byline?.name
     ? T.CATALOG.filter((i) => i.byline?.name === item.byline.name && i.kind !== 'episode').length : 0;
@@ -129,7 +131,19 @@ ${crumbs(trail, r)}
               <h3 class="qa__q">${esc(f.q)}</h3>
               <p class="qa__a">${esc(f.a)}</p>
             </div>`)}
-        </section>` : ''}
+          ${faqRec?.reviewedBy ? `<p class="mod__note" style="margin-top:var(--space-16)">Reviewed by ${esc(faqRec.reviewedBy)}${faqRec.reviewed ? `, ${esc(faqRec.reviewed)}` : ''}.</p>` : ''}
+        </section>` : html`
+        <!-- FAQ slot. Wired to data/faqs.mjs and to FAQPage schema; emits neither
+             markup-as-content nor schema until real copy exists. -->
+        <section class="qa qa--empty" aria-labelledby="qa-h">
+          <h2 class="mod__h" id="qa-h">Common questions</h2>
+          <p class="mod__note">
+            Two or three reader questions with standalone answers belong here, written and
+            clinically reviewed by Montefiore Einstein. The slot is wired: copy added to
+            <code>src/data/faqs.mjs</code> under <code>${esc(item.slug)}</code> renders here and
+            emits <code>FAQPage</code> schema automatically. No schema is emitted while it is empty.
+          </p>
+        </section>`}
 
         <!-- The Person entity made visible — rendered only where a real named
              clinician is known. No author card for an unknown byline. -->
