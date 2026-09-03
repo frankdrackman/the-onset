@@ -59,6 +59,15 @@ function fromText(txt) {
 
 const JUNK = /^(advertisement|sign up|subscribe|share this|read more|more:|related:|follow us|this content is|paid (for )?by|sponsored by|view comments|story from)/i;
 
+// A byline line: "Name, MD, <role>, for Montefiore Einstein" — sometimes "By Name...".
+const BYLINE = /^(?:By\s+)?([A-Z][A-Za-z.'’\-]+(?:\s+[A-Z]\.?)?(?:\s+[A-Z][A-Za-z.'’\-]+){0,3}),\s*((?:MD|DO|PhD|RD|RDN|MS|MSc|MPH|CDN|CNSC|FACC|FHRS|FACOG|NP|PA)[A-Za-z0-9.,&\-\/\s]*?),?\s*(?:for\s+Montefiore\s+Einstein)\.?$/;
+
+// The article's own link to its Spanish twin.
+const ES = /^EN\s+ESPA(?:\u00d1|N\u0303)OL:\s*(.+)$/i;
+
+// Closing appointment/CTA furniture — real ME copy, but page chrome, not article body.
+const CTA = /(?:call\s*\(\d{3}\)|to (?:make|schedule) an appointment|learn more (?:at|about)|find a doctor|visit\s+montefiore)/i;
+
 async function run() {
   let files = [];
   try { files = (await readdir(PAGES)).filter((f) => /\.(html?|txt)$/i.test(f)); }
@@ -72,7 +81,7 @@ async function run() {
 
   const bodies = {}; const unmatched = [];
   for (const f of files) {
-    const raw = await readFile(join(PAGES, f), 'utf8');
+    const raw = (await readFile(join(PAGES, f), 'utf8')).normalize('NFC');
     const isHtml = extname(f).toLowerCase().startsWith('.htm') || /<html|<body|<article/i.test(raw);
     let paras = (isHtml ? fromHtml(raw) : fromText(raw))
       .filter((p) => !JUNK.test(p.text))
@@ -90,10 +99,30 @@ async function run() {
       (titleHit ? byTitle.get(norm(titleHit.text)) : null);
 
     if (!item) { unmatched.push(f); continue; }
+
     // Drop a leading paragraph that merely repeats the headline.
     if (paras.length && norm(paras[0].text) === norm(item.title)) paras = paras.slice(1);
+
+    // Lift the byline and the Spanish-twin link out of the body — they are metadata
+    // the hub renders in its own furniture, not article prose.
+    let byline = null, spanish = null;
+    paras = paras.filter((p) => {
+      const b = BYLINE.exec(p.text);
+      if (b && !byline) {
+        byline = { name: `${b[1]}, ${b[2].replace(/[,\s]+$/, '')}`, role: b[2].replace(/[,\s]+$/, '') };
+        return false;
+      }
+      const e = ES.exec(p.text);
+      if (e && !spanish) { spanish = { title: e[1].trim() }; return false; }
+      return true;
+    });
+
+    // Trim closing CTA blocks from the tail only — the same words mid-article are
+    // usually genuine copy.
+    while (paras.length && CTA.test(paras[paras.length - 1].text)) paras.pop();
+
     if (paras.length < 2) { unmatched.push(`${f} (too little text extracted)`); continue; }
-    bodies[item.slug] = { source: f, paras };
+    bodies[item.slug] = { source: f, ...(byline ? { byline } : {}), ...(spanish ? { spanish } : {}), paras };
   }
 
   const out = `// Article bodies, ingested from saved pages by ingest.mjs.
@@ -106,9 +135,12 @@ export const BODIES = ${JSON.stringify(bodies, null, 1)};
   await writeFile(join(ROOT, 'src', 'data', 'bodies.mjs'), out, 'utf8');
 
   const n = Object.keys(bodies).length;
+  const withByline = Object.values(bodies).filter((b) => b.byline).length;
+  const withEs = Object.values(bodies).filter((b) => b.spanish).length;
   console.log(`✓ ${n} article bod${n === 1 ? 'y' : 'ies'} → src/data/bodies.mjs`);
+  console.log(`  ${withByline} carry a byline · ${withEs} carry a Spanish twin`);
   for (const [slug, b] of Object.entries(bodies)) {
-    console.log(`   ${b.paras.length.toString().padStart(3)} blocks  ${slug}`);
+    console.log(`   ${b.paras.length.toString().padStart(3)} blocks ${b.byline ? 'B' : ' '}${b.spanish ? 'E' : ' '}  ${slug}`);
   }
   if (unmatched.length) {
     console.log(`\n! could not match ${unmatched.length} file(s) — rename to the article slug:`);

@@ -25,7 +25,12 @@ export const detailPage = (item) => {
   // Option C, as the brief carries it: this ME-domain page owns the citable summary
   // and links out to the full piece on lohud.com. The body text is LoHud's; it is not
   // reproduced here, and nothing is invented to fill the space.
-  const inShort = item.standfirst ? [item.standfirst] : [];
+  // Prefer the article's own opening paragraph — it is complete prose. The search
+  // snippet is the fallback, and only when it is not visibly truncated.
+  const opener = item.body?.find((b) => b.tag === 'p' && b.text.length > 140);
+  const inShort = opener ? [opener.text]
+    : item.standfirst && !/\.\.\.$/.test(item.standfirst) ? [item.standfirst]
+    : item.standfirst ? [item.standfirst.replace(/\s*\.\.\.$/, '')] : [];
   const faqs = [];
   const related = T.surfacingIn(item.dept).filter((i) => i !== item).slice(0, 3);
   const sameByline = item.byline?.name
@@ -82,6 +87,7 @@ ${crumbs(trail, r)}
           <p class="detail__byline byline">
             ${item.byline.reviewer ? 'Reviewed by' : 'By'} <strong>${esc(item.byline.name)}</strong>${item.byline.role ? `, ${esc(item.byline.role)}` : `, ${esc(dept.label)}`}
             ${item.minutes ? `· ${item.minutes} min read` : ''}
+            ${item.spanishTitle ? `· <a href="${esc(item.lohudUrl)}" rel="sponsored noopener" hreflang="es" lang="es">${esc(item.spanishTitle)}</a>` : ''}
           </p>` : html`
           <p class="detail__byline byline">
             Published by <strong>Montefiore Einstein</strong> on lohud.com.
@@ -99,18 +105,20 @@ ${crumbs(trail, r)}
         </section>
 
         <div class="prose">
-          <p>
-            This is the Montefiore Einstein page for a piece published in the
-            ${esc(HUB.publisher)} series on lohud.com. The summary above is the citable text
-            Montefiore Einstein owns on its own domain; the full article stays where it was
-            published, and the link below goes to it.
-          </p>
-          <p class="mod__note">
-            On the live hub this block is where the ME-authored teaser copy sits — two or three
-            answer-first paragraphs written for this page. It is deliberately empty in the
-            prototype rather than filled with invented copy: the body text belongs to LoHud, and
-            the summary above is the publisher's own.
-          </p>
+          ${item.body?.length
+            ? item.body.filter((b) => b !== opener).map((b) => b.tag === 'p'
+                ? `<p>${esc(b.text)}</p>`
+                : `<h2>${esc(b.text)}</h2>`)
+            : html`
+              <p>
+                This is the Montefiore Einstein page for a piece published in the
+                ${esc(HUB.publisher)} series on lohud.com. The summary above is the citable text
+                Montefiore Einstein owns on its own domain; the full article is linked below.
+              </p>
+              <p class="mod__note">
+                Body copy for this article has not been ingested yet. See
+                <code>ingest/CODEX-SPEC.md</code>.
+              </p>`}
         </div>
 
         ${faqs.length ? html`

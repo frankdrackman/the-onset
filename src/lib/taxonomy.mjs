@@ -9,6 +9,8 @@ import { ITEMS } from '../data/articles.mjs';
 import { EPISODES, SERIES } from '../data/episodes.mjs';
 import { HUB } from '../data/site.mjs';
 import { byDept } from '../data/departments.mjs';
+import { BODIES } from '../data/bodies.mjs';
+import { findProfile } from '../data/profiles.mjs';
 
 const HUB_PATH = HUB.path;
 
@@ -37,7 +39,54 @@ const fromEpisode = (e) => ({
   series: SERIES.name,
 });
 
-export const CATALOG = [...ITEMS, ...EPISODES.map(fromEpisode)];
+/** Merge in anything the ingested article bodies tell us. The body is the primary
+ *  source: it carries the byline the public index did not, the article's own link to
+ *  its Spanish twin, and enough words to compute a real read time. */
+const enrich = (i) => {
+  const b = BODIES[i.slug];
+  // Bind any known byline to its live Find a Doctor profile, whichever source named it.
+  const bind = (by) => {
+    if (!by?.name) return by;
+    const p = findProfile(by.name);
+    return p ? { ...by, name: p.name, profileUrl: p.sameAs, npi: p.npi } : by;
+  };
+  if (!b) return { ...i, byline: bind(i.byline) };
+  const words = b.paras.reduce((n, p) => n + p.text.split(/\s+/).length, 0);
+  return {
+    ...i,
+    body: b.paras,
+    words,
+    minutes: Math.max(1, Math.round(words / 225)),
+    // The article's own byline fills gaps the search index left, but where we already
+    // bound the clinician to a live Find a Doctor profile, that directory name is the
+    // canonical entity name and wins.
+    byline: b.byline
+      ? {
+          ...i.byline,
+          name: i.byline?.profileUrl ? i.byline.name : b.byline.name.split(',').slice(0, 2).join(',').trim(),
+          // Drop credential tokens from the role — they are already in the name.
+          role: b.byline.role
+            .replace(/^(?:(?:MSc|RDN|CNSC|FACOG|FACC|FHRS|MPH|PhD|CDN|MD|DO|RD|MS|NP|PA)\.?,?\s*)+/i, '')
+            .replace(/^(?:and|for)\s+/i, '').trim().replace(/[,\s]+$/, '') || null,
+          dept: i.dept,
+          pending: false,
+          reviewer: /\b(RD|RDN|CDN)\b/.test(b.byline.name),
+        }
+      : i.byline,
+    // The article links its own Spanish version, so the twin is confirmed, not assumed.
+    es: !!b.spanish,
+    spanishTitle: b.spanish?.title ?? null,
+  };
+};
+
+const enrichBound = (i) => {
+  const e = enrich(i);
+  if (!e.byline?.name || e.byline.profileUrl) return e;
+  const p = findProfile(e.byline.name);
+  return p ? { ...e, byline: { ...e.byline, name: p.name, profileUrl: p.sameAs, npi: p.npi } } : e;
+};
+
+export const CATALOG = [...ITEMS.map(enrichBound), ...EPISODES.map(fromEpisode)];
 
 // ---- content-type labels. Type is always stated in words on the meta strip, so it
 // is never conveyed by colour alone (WCAG 1.4.1 / brief accessibility rule).
