@@ -535,6 +535,25 @@ select.ctrl { padding-right: var(--space-32); }
   .js [data-reveal].is-in { opacity: 1; transform: none; }
 }
 
+/* PULL QUOTE — a line lifted from the article's own body. Typographic emphasis only:
+   no attribution and no speaker, because these pieces do not quote physicians. */
+.pull { margin: var(--space-40) 0; padding: var(--space-4) 0 var(--space-4) var(--space-20);
+        border-left: 4px solid var(--color-primary-montefiore-500); }
+.pull .pull-quote { display: block; font-family: var(--font-serif); font-style: italic;
+        font-size: var(--text-800); line-height: 1.35; color: var(--color-primary-montefiore-500); }
+@media (max-width: 860px) { .pull .pull-quote { font-size: var(--text-600); } }
+
+/* Placeholder Q&A — visibly awaiting copy, and never mistaken for content. */
+.qa--placeholder { position: relative; }
+.qa--placeholder .qa__q, .qa--placeholder .qa__a { color: var(--color-gray-500); }
+.qa--placeholder::after {
+  content: "Placeholder copy — awaiting Montefiore Einstein editorial";
+  display: block; margin-top: var(--space-16);
+  font-size: var(--text-100); font-weight: var(--w-bold);
+  letter-spacing: var(--tracking-800); text-transform: uppercase;
+  color: var(--color-gray-500);
+}
+
 
 .tick-set + .tick-set { margin-top: var(--space-64); padding-top: var(--space-48); border-top: var(--rule); }
 .tick-set[hidden] { display: none; }
