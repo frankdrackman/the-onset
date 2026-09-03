@@ -155,6 +155,7 @@ a, button { min-height: 0; }
 .ctrl[disabled] { opacity: .45; cursor: not-allowed; }
 .ctrl__group { display: inline-flex; gap: var(--space-4); }
 .pos { font-size: var(--text-200); color: var(--color-gray-550); font-variant-numeric: tabular-nums; }
+.mod__bar .seeall { margin-left: auto; }  /* stays right-aligned even when the bar wraps */
 .seeall { font-size: var(--text-200); font-weight: var(--w-bold); color: var(--color-primary-montefiore-500); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; padding-inline: var(--space-8); }
 .seeall:hover { text-decoration: underline; text-underline-offset: 3px; }
 
