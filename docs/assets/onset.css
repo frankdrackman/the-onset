@@ -299,8 +299,12 @@ a, button { min-height: 0; }
    Cinematic full-bleed portrait, scrim over the lower third.
    Scrim guarantees 4.5:1 for the overlaid text.
    ============================================================ */
-.journey { position: relative; min-height: 460px; display: flex; align-items: flex-end; border-radius: var(--radius-md); overflow: hidden; }
-.journey__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* The lead images are 16:9. A 2.6:1 band cropped them hard enough to cut the
+   subject's head off, so the band sits at 21:9 — closer to the source ratio — and
+   the crop is biased upward, because in editorial portraits the head is in the top
+   third and the feet rarely matter. */
+.journey { position: relative; aspect-ratio: 21 / 9; min-height: 460px; display: flex; align-items: flex-end; border-radius: var(--radius-md); overflow: hidden; }
+.journey__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .journey__bg { position: absolute; inset: 0; background: linear-gradient(140deg, #2f4257, var(--color-tint-mirage)); }
 .journey__bg::after {
   content: attr(data-label); position: absolute; top: var(--space-20); left: var(--space-24);
@@ -483,7 +487,7 @@ a, button { min-height: 0; }
   .mod__bar { gap: var(--space-8); }
   .ctrl { padding: var(--space-4) var(--space-8); font-size: var(--text-100); }
   .mod__bar .seeall { padding-inline: var(--space-4); }
-  .journey { min-height: 380px; }
+  .journey { aspect-ratio: 4 / 3; min-height: 380px; }
   .journey__body { padding: var(--space-24); }
   .journey__title { font-size: var(--text-900); }
   .foot__grid { grid-template-columns: 1fr; }
