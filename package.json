@@ -1,0 +1,12 @@
+{
+  "name": "the-onset",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The Onset (working title) — prototype of the Montefiore Einstein content hub, wireframe v2.",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "start": "node build.mjs --serve"
+  }
+}

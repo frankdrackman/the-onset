@@ -1,0 +1,15 @@
+# The Onset — PROTOTYPE. Every page also carries a noindex meta tag.
+# On the live build, remove the blanket Disallow below and keep the allowances.
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Googlebot
+User-agent: Bingbot
+Allow: /the-onset/
+
+User-agent: *
+Disallow: /

@@ -1,0 +1,295 @@
+/* ============================================================
+   Montefiore Einstein — Colors & Type
+   ------------------------------------------------------------
+   TWO LAYERS:
+     1. WEB  — mirrors the ME Storybook (Design System v5.8.0).
+               Authoritative for anything shipping on the web.
+     2. PRINT — mirrors the 2022 Brand Guidance PDF.
+               Authoritative for slides, collateral, print.
+
+   The two differ on purpose. Most notably the web platform
+   pairs Leitura News with ARIAL; Fakt is print-only.
+   See research/storybook-tokens.md for provenance.
+   ============================================================ */
+
+
+/* ---------- Leitura News (display serif — ME web + print) ----------
+   ME-licensed brand faces, carried locally so the prototype renders in the
+   real face for review. Not for public deployment without ME's licence. */
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Roman.otf") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Medium.otf") format("opentype"); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Semibold.otf") format("opentype"); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Bold.otf") format("opentype"); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-Italic.otf") format("opentype"); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-MediumItalic.otf") format("opentype"); font-weight:500; font-style:italic; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-SemiboldItalic.otf") format("opentype"); font-weight:600; font-style:italic; font-display:swap; }
+@font-face { font-family:"Leitura News"; src:url("fonts/LeituraNews-BoldItalic.otf") format("opentype"); font-weight:700; font-style:italic; font-display:swap; }
+
+/* ---------- Leitura Headline (oversized display) ---------- */
+@font-face { font-family:"Leitura Headline"; src:url("fonts/LeituraHeadline-Roman.otf") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:"Leitura Headline"; src:url("fonts/LeituraHeadline-Italic.otf") format("opentype"); font-weight:400; font-style:italic; font-display:swap; }
+
+:root {
+
+  /* ==========================================================
+     WEB TOKENS — ME Storybook v5.8.0
+     Color model: family -> brand -> step (200 light / 500 base / 800 dark)
+     ========================================================== */
+
+  /* ---------- Brand: Primary ---------- */
+  --color-primary-montefiore-200: #004788;
+  --color-primary-montefiore-500: #003769;  /* base — identical to PDF PMS 540 */
+  --color-primary-montefiore-800: #00274a;
+  --color-primary-einstein-200:   #5d8fdf;
+  --color-primary-einstein-500:   #4e79bd;
+  --color-primary-einstein-800:   #3a5f99;
+
+  /* ---------- Brand: Secondary (charcoal for Montefiore, deep blue for Einstein) ---------- */
+  --color-secondary-montefiore-200: #4c4e56;
+  --color-secondary-montefiore-500: #33383e;
+  --color-secondary-montefiore-800: #020322;
+  --color-secondary-einstein-200:   #28548e;
+  --color-secondary-einstein-500:   #153764;
+  --color-secondary-einstein-800:   #0a264a;
+
+  /* ---------- Functional ---------- */
+  --color-success-200: #e7ffea;
+  --color-success-500: #46da5e;
+  --color-success-800: #1ea233;
+  --color-error-200:   #fff3f3;
+  --color-error-500:   #ff4e4e;
+  --color-error-800:   #d12b2b;
+  --color-warning-200: #fff8e1;
+  --color-warning-500: #ffd84e;
+  --color-warning-800: #d9a900;
+
+  /* ---------- Visited link ---------- */
+  --color-visited-200: #d78fe3;
+  --color-visited-500: #841496;
+
+  /* ---------- Gray ---------- */
+  --color-gray-100: #f9fafb;
+  --color-gray-200: #e4e9ee;
+  --color-gray-250: #d9dfe8;
+  --color-gray-300: #d0d7e0;
+  --color-gray-400: #9da2ad;
+  --color-gray-500: #6a6a73;
+  --color-gray-550: #4c4e56;
+  --color-gray-600: #33383e;
+  --color-gray-700: #33383e;  /* same hex as 600 in source — confirm with DS team */
+
+  /* ---------- Tint (decorative / illustration) ---------- */
+  --color-tint-sky:          #4e79bd;
+  --color-tint-water:        #93c4e3;
+  --color-tint-flesh:        #e18a92;
+  --color-tint-wheat:        #f1e7d7;
+  --color-tint-mint:         #aed8c9;
+  --color-tint-bronze:       #fdeaab;
+  --color-tint-pattens-blue: #dcf2ff;
+  --color-tint-jungle-mist:  #a8cece;
+  --color-tint-nevada:       #5d7178;
+  --color-tint-mirage:       #191b2d;
+
+  /* ---------- Base + soft surfaces ---------- */
+  --color-black:        #000000;
+  --color-white:        #ffffff;
+  --color-soft-blue:    #f1f7fb;
+  --color-soft-gray:    #f5f5f5;
+  --color-soft-fuchsia: #f5f3f7;
+
+  /* ---------- LEGACY — do not use on new work ---------- */
+  --color-legacy-secondary-montefiore-200: #d90077;
+  --color-legacy-secondary-montefiore-500: #c4006b;
+  --color-legacy-secondary-montefiore-800: #9c0055;
+
+  /* ---------- Semantic roles (web) ---------- */
+  --text-base:      var(--color-gray-600);
+  --text-secondary: var(--color-gray-500);
+  --text-inverse:   var(--color-white);
+  --bg-white:       var(--color-white);
+  --bg-soft-blue:   var(--color-soft-blue);
+  --bg-soft-gray:   var(--color-soft-gray);
+  --border-default: var(--color-gray-300);
+  --border-brand:   var(--color-primary-montefiore-500);
+  --border-inverse: var(--color-white);
+
+  /* ---------- Type families ---------- */
+  --font-sans:      Arial, Helvetica, sans-serif;                    /* WEB body — per Storybook */
+  --font-serif:     "Leitura News", Georgia, "Times New Roman", serif;
+  --font-headline:  "Leitura Headline", "Leitura News", Georgia, serif;
+  --font-print-sans:"Fakt", Arial, Helvetica, sans-serif;             /* PRINT body */
+  --font-sans-alt:  "Basis Grotesque", Arial, Helvetica, sans-serif;
+
+  /* ---------- Type scale (text-100 … text-1800) ---------- */
+  --text-100: 12px;  --text-100-lh: 1.3; /* @kind font */
+  --text-200: 14px;  --text-200-lh: 1.4; /* @kind font */
+  --text-300: 16px;  --text-300-lh: 1.5; /* @kind font */
+  --text-400: 18px;  --text-400-lh: 1.4; /* @kind font */
+  --text-500: 20px;  --text-500-lh: 1.3; /* @kind font */
+  --text-600: 22px;  --text-600-lh: 1.3; /* @kind font */
+  --text-700: 24px;  --text-700-lh: 1.3; /* @kind font */
+  --text-800: 26px;  --text-800-lh: 1.3; /* @kind font */
+  --text-900: 28px;  --text-900-lh: 1.3; /* @kind font */
+  --text-1000: 30px; --text-1000-lh: 1.2; /* @kind font */
+  --text-1100: 32px; --text-1100-lh: 1.2; /* @kind font */
+  --text-1200: 34px; --text-1200-lh: 1.2; /* @kind font */
+  --text-1300: 38px; --text-1300-lh: 1.2; /* @kind font */
+  --text-1400: 40px; --text-1400-lh: 1.2; /* @kind font */
+  --text-1500: 42px; --text-1500-lh: 1.2; /* @kind font */
+  --text-1600: 48px; --text-1600-lh: 1.2; /* @kind font */
+  --text-1700: 52px; --text-1700-lh: 1.2; /* @kind font */
+  --text-1800: 64px; --text-1800-lh: 1.2; /* @kind font */
+
+  /* ---------- Letter-spacing ---------- */
+  --tracking-100: -1px;    /* @kind font */
+  --tracking-200: -0.5px;  /* @kind font */
+  --tracking-300: -0.3px;  /* @kind font */
+  --tracking-400: -0.2px;  /* @kind font */
+  --tracking-500: -0.1px;  /* @kind font */
+  --tracking-600: 0;       /* @kind font */
+  --tracking-700: 0.1px;   /* @kind font */
+  --tracking-800: 0.2px;   /* @kind font */
+
+  /* ---------- Type weights ---------- */
+  --w-light:    300; /* @kind font */
+  --w-regular:  400; /* @kind font */
+  --w-medium:   500; /* @kind font */
+  --w-semibold: 600; /* @kind font */
+  --w-bold:     700; /* @kind font */
+
+  /* ---------- Spacing ----------
+     Source scale keys ARE their px value: 0, 1–32 (every 1px),
+     36–80 (every 4px), 96, 128, 192, 256, 320, 384, 448, 512.
+     Common steps tokenised below. */
+  --space-0: 0;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-128: 128px;
+  --space-192: 192px;
+  --space-256: 256px;
+  --space-320: 320px;
+  --space-384: 384px;
+  --space-448: 448px;
+  --space-512: 512px;
+
+  /* ---------- Radii — scale tops out at 4px ---------- */
+  --radius-none: 0;
+  --radius-px:   1px;
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-full: 9999px;
+
+  /* ---------- Elevation — 5 levels x light/strong ---------- */
+  --shadow-none: none;
+  --shadow-100-light:  0 1px 1px rgba(0,0,0,.04), 0 2px 1px rgba(0,0,0,.02), 0 1px 8px rgba(0,0,0,.04);
+  --shadow-100-strong: 0 1px 1px rgba(0,0,0,.08), 0 2px 1px rgba(0,0,0,.04), 0 1px 8px rgba(0,0,0,.08);
+  --shadow-200-light:  0 5px 5px rgba(0,0,0,.05), 0 2px 2px rgba(0,0,0,.1);
+  --shadow-200-strong: 0 5px 5px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.2);
+  --shadow-300-light:  0 2px 4px rgba(0,0,0,.06), 0 6px 10px rgba(0,0,0,.03), 0 10px 15px rgba(0,0,0,.06);
+  --shadow-300-strong: 0 2px 4px rgba(0,0,0,.12), 0 6px 10px rgba(0,0,0,.06), 0 10px 15px rgba(0,0,0,.12);
+  --shadow-400-light:  0 24px 38px rgba(0,0,0,.04), 0 9px 46px rgba(0,0,0,.04), 0 11px 15px rgba(0,0,0,.04);
+  --shadow-400-strong: 0 24px 38px rgba(0,0,0,.08), 0 9px 46px rgba(0,0,0,.08), 0 11px 15px rgba(0,0,0,.08);
+  --shadow-500-light:  0 48px 80px rgba(0,0,0,.06), 0 32px 48px rgba(0,0,0,.03), 0 20px 26px rgba(0,0,0,.03), 0 10px 12px rgba(0,0,0,.03), 0 4px 8px rgba(0,0,0,.02), 0 2px 6px rgba(0,0,0,.02);
+  --shadow-500-strong: 0 48px 80px rgba(0,0,0,.16), 0 32px 48px rgba(0,0,0,.1), 0 20px 26px rgba(0,0,0,.1), 0 10px 12px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.05);
+  --shadow-focus: 0 0 0 3px rgba(0, 55, 105, 0.25);
+
+  /* ---------- Breakpoints ---------- */
+  --bp-sm:  600px;
+  --bp-md:  768px;
+  --bp-lg:  1024px;
+  --bp-xl:  1440px;
+  --bp-2xl: 1600px;
+
+  /* ---------- Grid — 24 columns ---------- */
+  --grid-columns: 24; /* @kind other */
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.3, 0, 0.2, 1); /* @kind other */
+  --ease-in:  cubic-bezier(0.8, 0, 0.2, 1); /* @kind other */
+  --duration-fast: 120ms; /* @kind other */
+  --duration-base: 200ms; /* @kind other */
+  --duration-slow: 320ms; /* @kind other */
+
+  /* ---------- Icons ---------- */
+  --icon-size: 24px;
+  --icon-size-small: 16px;
+  --icon-fill: #374151;
+
+  /* ==========================================================
+     PRINT TOKENS — 2022 Brand Guidance PDF
+     For slides, collateral, and print only.
+     ========================================================== */
+  --me-blue:         #003769;  /* PMS 540 */
+  --me-light-blue:   #e6f0f5;  /* PMS 649 */
+  --me-black-90:     #414042;
+  --me-white:        #fafafa;  /* "Opaque White" */
+  --me-pure-white:   #ffffff;
+  --me-light-blue-2: #94c5e3;  /* PMS 291 — web equivalent is --color-tint-water #93c4e3 */
+  --me-dark-blue:    #112b47;  /* PMS 282 */
+  --me-grey:         #e6e6e6;  /* PMS 5315 */
+
+  /* Print type — Leitura News + Fakt */
+  --print-font-display: "Leitura News", "Times New Roman", Georgia, serif;
+  --print-font-sans:    "Fakt", Arial, Helvetica, sans-serif;
+}
+
+/* ============================================================
+   Base layer — add class="me" to opt in (web defaults)
+   ------------------------------------------------------------
+   ADAPTATION (prototype): the rules below are the Storybook's
+   verbatim, but they are wrapped in an @layer so they behave as
+   what they are — a BASE layer. Unwrapped, `.me a` (0,1,1) beats
+   a component class like `.btn` (0,1,0), so every component that
+   styles a link or a heading would have to out-specify the base.
+   Declarations are unchanged; only their cascade position is.
+   ============================================================ */
+@layer me-base {
+
+.me {
+  font-family: var(--font-sans);
+  font-size: var(--text-300);
+  line-height: var(--text-300-lh);
+  color: var(--text-base);
+  background: var(--bg-white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.me h1, .me .h1 { font-family: var(--font-sans); font-weight: var(--w-bold); font-size: var(--text-1600); line-height: var(--text-1600-lh); letter-spacing: var(--tracking-200); color: var(--color-primary-montefiore-500); margin: 0; }
+.me h2, .me .h2 { font-family: var(--font-sans); font-weight: var(--w-bold); font-size: var(--text-1300); line-height: var(--text-1300-lh); letter-spacing: var(--tracking-300); color: var(--color-primary-montefiore-500); margin: 0; }
+.me h3, .me .h3 { font-family: var(--font-sans); font-weight: var(--w-bold); font-size: var(--text-1000); line-height: var(--text-1000-lh); letter-spacing: var(--tracking-400); color: var(--color-primary-montefiore-500); margin: 0; }
+.me h4, .me .h4 { font-family: var(--font-sans); font-weight: var(--w-bold); font-size: var(--text-700); line-height: var(--text-700-lh); letter-spacing: var(--tracking-500); color: var(--color-primary-montefiore-500); margin: 0; }
+
+/* Serif headline variant — headline_variant="serif" */
+.me .headline-serif { font-family: var(--font-serif); font-weight: var(--w-regular); letter-spacing: var(--tracking-300); }
+
+.me p, .me .body { font-size: var(--text-300); line-height: var(--text-300-lh); color: var(--text-base); margin: 0 0 1em 0; text-wrap: pretty; }
+.me .body-lg { font-size: var(--text-400); line-height: var(--text-400-lh); }
+.me .body-sm { font-size: var(--text-200); line-height: var(--text-200-lh); }
+.me .caption { font-size: var(--text-100); line-height: var(--text-100-lh); color: var(--text-secondary); }
+.me .eyebrow { font-family: var(--font-sans); font-weight: var(--w-bold); font-size: var(--text-100); line-height: var(--text-100-lh); letter-spacing: var(--tracking-800); text-transform: uppercase; color: var(--color-primary-montefiore-500); }
+
+.me a { color: var(--color-primary-montefiore-500); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color var(--duration-fast) var(--ease-out); }
+.me a:hover { color: var(--color-primary-montefiore-800); }
+.me a:visited { color: var(--color-visited-500); }
+
+.me em.pull-quote { font-family: var(--font-serif); font-style: italic; font-size: var(--text-900); line-height: var(--text-900-lh); color: var(--color-primary-montefiore-500); }
+
+/* ---------- Dual-brand theming — mirrors site-montefiore / site-einstein ---------- */
+.site-montefiore { --brand-primary: var(--color-primary-montefiore-500); --brand-primary-light: var(--color-primary-montefiore-200); --brand-primary-dark: var(--color-primary-montefiore-800); --brand-secondary: var(--color-secondary-montefiore-500); }
+.site-einstein   { --brand-primary: var(--color-primary-einstein-500);   --brand-primary-light: var(--color-primary-einstein-200);   --brand-primary-dark: var(--color-primary-einstein-800);   --brand-secondary: var(--color-secondary-einstein-500); }
+}
