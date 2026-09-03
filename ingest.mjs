@@ -33,6 +33,51 @@ const bySlug = new Map(ITEMS.map((i) => [i.slug, i]));
 const byId = new Map(ITEMS.map((i) => [(/\/(\d+)\/?$/.exec(i.lohudUrl || '') || [])[1], i]).filter(([k]) => k));
 const byTitle = new Map(ITEMS.map((i) => [norm(i.title), i]));
 
+/** Everything an HTML save carries that a text save throws away. */
+function metaFromHtml(html) {
+  const meta = {};
+  const pick = (re) => { const m = re.exec(html); return m ? m[1].trim() : null; };
+  const dec = (s) => s && s.replace(/&amp;/g, '&').replace(/&#0?39;|&rsquo;/g, '’')
+    .replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').trim();
+
+  meta.image = dec(pick(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)/i)
+    || pick(/<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)/i));
+  meta.imageAlt = dec(pick(/<meta[^>]+property=["']og:image:alt["'][^>]+content=["']([^"']+)/i));
+  meta.canonical = dec(pick(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)/i));
+  meta.published = dec(pick(/<meta[^>]+property=["']article:published_time["'][^>]+content=["']([^"']+)/i));
+  meta.modified = dec(pick(/<meta[^>]+property=["']article:modified_time["'][^>]+content=["']([^"']+)/i));
+  meta.description = dec(pick(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)/i));
+
+  // The article's own link to its Spanish twin — the href, not just the title.
+  const es = /<a[^>]+href=["']([^"']+)["'][^>]*>\s*(?:EN\s+ESPA(?:\u00d1|N\u0303)OL:?\s*)?([^<]*)<\/a>/gi;
+  for (const m of html.matchAll(es)) {
+    if (/EN\s+ESPA/i.test(m[0]) || /\/en-espanol\//i.test(m[1])) {
+      meta.spanishUrl = m[1]; meta.spanishTitle = dec(m[2]) || null; break;
+    }
+  }
+
+  // In-body figures: src plus caption and credit, which the text save lost entirely.
+  meta.figures = [];
+  for (const f of html.matchAll(/<figure[\s\S]{0,4000}?<\/figure>/gi)) {
+    const blk = f[0];
+    const src = /<img[^>]+(?:data-gl-src|data-src|src)=["']([^"']+)["']/i.exec(blk);
+    if (!src) continue;
+    const cap = /<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i.exec(blk);
+    meta.figures.push({
+      src: src[1],
+      caption: cap ? dec(cap[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')) : null,
+    });
+  }
+
+  // Publisher-side structured data — answers the brief's open question about whether
+  // the live pages already carry schema.
+  meta.ldTypes = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)]
+    .flatMap((m) => { try { const j = JSON.parse(m[1]); return [].concat(j['@graph'] || j).map((n) => n['@type']).filter(Boolean); } catch { return []; } });
+
+  for (const k of Object.keys(meta)) if (meta[k] == null || (Array.isArray(meta[k]) && !meta[k].length)) delete meta[k];
+  return meta;
+}
+
 /** Strip a saved HTML page down to its article paragraphs. */
 function fromHtml(html) {
   let s = html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ');
@@ -83,6 +128,7 @@ async function run() {
   for (const f of files) {
     const raw = (await readFile(join(PAGES, f), 'utf8')).normalize('NFC');
     const isHtml = extname(f).toLowerCase().startsWith('.htm') || /<html|<body|<article/i.test(raw);
+    const meta = isHtml ? metaFromHtml(raw) : {};
     let paras = (isHtml ? fromHtml(raw) : fromText(raw))
       .filter((p) => !JUNK.test(p.text))
       .filter((p) => p.tag !== 'p' || p.text.length > 45);
@@ -122,7 +168,15 @@ async function run() {
     while (paras.length && CTA.test(paras[paras.length - 1].text)) paras.pop();
 
     if (paras.length < 2) { unmatched.push(`${f} (too little text extracted)`); continue; }
-    bodies[item.slug] = { source: f, ...(byline ? { byline } : {}), ...(spanish ? { spanish } : {}), paras };
+    // The HTML's own <link rel=alternate> beats the text line: it carries the URL.
+    if (meta.spanishUrl) spanish = { title: meta.spanishTitle || spanish?.title || null, url: meta.spanishUrl };
+    bodies[item.slug] = {
+      source: f,
+      ...(byline ? { byline } : {}),
+      ...(spanish ? { spanish } : {}),
+      ...(Object.keys(meta).length ? { meta } : {}),
+      paras,
+    };
   }
 
   const out = `// Article bodies, ingested from saved pages by ingest.mjs.
@@ -137,8 +191,9 @@ export const BODIES = ${JSON.stringify(bodies, null, 1)};
   const n = Object.keys(bodies).length;
   const withByline = Object.values(bodies).filter((b) => b.byline).length;
   const withEs = Object.values(bodies).filter((b) => b.spanish).length;
+  const withImg = Object.values(bodies).filter((b) => b.meta?.image).length;
   console.log(`✓ ${n} article bod${n === 1 ? 'y' : 'ies'} → src/data/bodies.mjs`);
-  console.log(`  ${withByline} carry a byline · ${withEs} carry a Spanish twin`);
+  console.log(`  ${withByline} carry a byline · ${withEs} carry a Spanish twin · ${withImg} carry a lead image`);
   for (const [slug, b] of Object.entries(bodies)) {
     console.log(`   ${b.paras.length.toString().padStart(3)} blocks ${b.byline ? 'B' : ' '}${b.spanish ? 'E' : ' '}  ${slug}`);
   }
