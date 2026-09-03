@@ -73,9 +73,14 @@ export const person = (byline) => {
     ...(byline.reviewer ? {} : { medicalSpecialty: dept?.entity?.name ?? undefined }),
     affiliation: { '@id': ME_ID },
   };
-  // sameAs binds the byline to the live Find a Doctor profile. Omitted while the
-  // byline is a placeholder rather than a named clinician.
-  if (!byline.pending && byline.profileUrl) node.sameAs = byline.profileUrl;
+  // sameAs binds the byline to the live Find a Doctor profile, which is what makes
+  // the attribution corroborable rather than asserted. The NPI is a second,
+  // registry-level identifier for the same person.
+  if (byline.profileUrl) {
+    node.sameAs = byline.profileUrl;
+    node.url = byline.profileUrl;
+    if (byline.npi) node.identifier = { '@type': 'PropertyValue', propertyID: 'NPI', value: byline.npi };
+  }
   return node;
 };
 

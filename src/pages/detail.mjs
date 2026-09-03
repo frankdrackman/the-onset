@@ -134,10 +134,12 @@ ${crumbs(trail, r)}
               ${esc(item.byline?.role || dept.label)}, Montefiore Einstein
               · ${sameByline} piece${sameByline === 1 ? '' : 's'} on ${esc(HUB.name)}
             </p>
-            ${item.byline?.partial ? '<p class="mod__note">Only the surname survives in the public index; the full name lands with the LoHud manifest.</p>' : ''}
+            ${item.byline?.npi ? `<p class="mod__note">Bound to the live Montefiore Einstein Find a Doctor profile (NPI ${esc(item.byline.npi)}) — the byline is corroborable, not asserted.</p>` : ''}
           </div>
           <span class="mod__spacer"></span>
-          <a class="btn btn--ghost" href="${esc(dept.findCare.url)}">View profile <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost" href="${esc(item.byline?.profileUrl || dept.findCare.url)}">
+            ${item.byline?.profileUrl ? 'View profile in Find a Doctor' : 'Find a clinician'} <span aria-hidden="true">↗</span>
+          </a>
         </aside>` : ''}
 
         <!-- Paid custom content boundary: rel="sponsored", passing no link authority.
