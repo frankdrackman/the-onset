@@ -190,9 +190,17 @@ async function run() {
     // The HTML's own <link rel=alternate> beats the text line: it carries the URL.
     if (meta.spanishUrl) spanish = { title: meta.spanishTitle || spanish?.title || null, url: meta.spanishUrl };
     if (!byline && meta.author) {
-      const a = meta.author.replace(/,?\s*for\s+Montefiore\s+Einstein\.?$/i, '').trim();
-      const c = /^(.*?),\s*((?:MD|DO|PhD|RD|RDN|MSc|MS|MPH|CDN|CNSC|FACC|FHRS|FACOG|NP|PA)[^,]*)(?:,\s*(.*))?$/.exec(a);
-      byline = c ? { name: `${c[1]}, ${c[2]}`.trim(), role: (c[3] || '').trim() || null } : { name: a, role: null };
+      const CRED = '(?:MD|DO|PhD|RD|RDN|MSc|MS|MPH|CDN|CDCES|CNSC|FACC|FHRS|FACOG|FACS|NP|PA)';
+      const a = meta.author
+        .replace(/,?\s*for\s+Montefiore\s+Einstein\.?$/i, '')
+        .replace(/^\s*(?:By|Written by)\s+/i, '')   // the meta tag sometimes carries "By "
+        .trim();
+      // Take EVERY trailing credential token, not just the first: "MS, RD, CDN"
+      // is one credential string, and truncating it at the comma loses the RD.
+      const c = new RegExp(`^(.*?),\\s*(${CRED}\\.?(?:,\\s*${CRED}\\.?)*)(?:,\\s*(.*))?$`).exec(a);
+      byline = c
+        ? { name: `${c[1]}, ${c[2]}`.replace(/\s+/g, ' ').trim(), role: (c[3] || '').trim() || null }
+        : { name: a, role: null };
     }
     bodies[item.slug] = {
       source: f,

@@ -255,8 +255,8 @@ export const BODIES = {
  "6-tips-for-a-stronger-healthier-heart": {
   "source": "6-tips-for-a-stronger-healthier-heart.html",
   "byline": {
-   "name": "Robert Ostfeld, MD",
-   "role": "MSc., Director of Preventive Cardiology"
+   "name": "Robert Ostfeld, MD, MSc.",
+   "role": "Director of Preventive Cardiology"
   },
   "spanish": {
    "title": "6 sugerencias para un corazón más fuerte y sano",
@@ -481,8 +481,8 @@ export const BODIES = {
  "a-creamy-tikka-masala-that-will-put-a-spring-in-your-step": {
   "source": "a-creamy-tikka-masala-that-will-put-a-spring-in-your-step.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Pollo tikka masala cremoso, que te levantará el ánimo"
@@ -950,8 +950,8 @@ export const BODIES = {
  "a-pumpkin-oatmeal-risotto-rich-in-antioxidants-and-boost-immune-health": {
   "source": "a-pumpkin-oatmeal-risotto-rich-in-antioxidants-and-boost-immune-health.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Risotto de avena y calabaza rico en antioxidantes que refuerza el sistema inmunológico",
@@ -1058,8 +1058,8 @@ export const BODIES = {
  "adult-rsv-who-should-protect-themselves-with-the-new-vaccine": {
   "source": "adult-rsv-who-should-protect-themselves-with-the-new-vaccine.html",
   "byline": {
-   "name": "Gregory D. Weston, MD",
-   "role": "MS, Attending Physician–Infectious Diseases"
+   "name": "Gregory D. Weston, MD, MS",
+   "role": "Attending Physician–Infectious Diseases"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/12/12/PDTF/71895198007-getty-images-100372167.jpg?crop=4949,2785,x0,y407&width=3200&height=1801&format=pjpg&auto=webp",
@@ -1358,8 +1358,8 @@ export const BODIES = {
  "an-easy-recipe-perfect-for-weeknights-chicken-breast-with-almond-sauce": {
   "source": "an-easy-recipe-perfect-for-weeknights-chicken-breast-with-almond-sauce.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
+   "name": "Jessica Shapiro, MS, RD, CDN",
+   "role": "CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/03/01/PDTF/72806894007-thumbnail-mtf-lo-hud-march-recipe-vf-2.jpg?crop=1919,1081,x0,y62&width=1919&height=1081&format=pjpg&auto=webp",
@@ -1563,8 +1563,8 @@ export const BODIES = {
  "back-to-beating-strong-how-phyllis-got-her-heart-and-her-life-back-on-": {
   "source": "back-to-beating-strong-how-phyllis-got-her-heart-and-her-life-back-on-track.html",
   "byline": {
-   "name": "Luigi Di Biase, MD",
-   "role": "PhD, FACC, FHRS, System Director of Electrophysiology"
+   "name": "Luigi Di Biase, MD, PhD, FACC, FHRS",
+   "role": "System Director of Electrophysiology"
   },
   "spanish": {
    "title": "Con más fuerza que nunca: cómo Phyllis recuperó su corazón y su vida",
@@ -1679,7 +1679,7 @@ export const BODIES = {
  "beat-the-pollen-combatting-seasonal-allergies": {
   "source": "beat-the-pollen-combatting-seasonal-allergies.html",
   "byline": {
-   "name": "By Denisa Ferastraoaru, MD",
+   "name": "Denisa Ferastraoaru, MD",
    "role": "Co-Director, Montefiore Einstein Sinus and Allergy Center"
   },
   "spanish": {
@@ -1899,8 +1899,8 @@ export const BODIES = {
  "beyond-the-pap-self-collection-now-a-cervical-cancer-testing-option": {
   "source": "beyond-the-pap-self-collection-now-a-cervical-cancer-testing-option.html",
   "byline": {
-   "name": "Mark Einstein, MD",
-   "role": "MS, FACS, FACOG, Department Chair of Obstetrics & Gynecology and Women’s Health"
+   "name": "Mark Einstein, MD, MS, FACS, FACOG",
+   "role": "Department Chair of Obstetrics & Gynecology and Women’s Health"
   },
   "spanish": {
    "title": "Pruebas de cáncer de cuello uterino: Ahora puede tomarse usted la muestra",
@@ -2024,7 +2024,7 @@ export const BODIES = {
  "beyond-the-stage-what-makes-each-breast-cancer-unique-and-why-it-matte": {
   "source": "beyond-the-stage-what-makes-each-breast-cancer-unique-and-why-it-matters.html",
   "byline": {
-   "name": "By Susan Fineberg, MD",
+   "name": "Susan Fineberg, MD",
    "role": "Section Head of Breast Pathology and Attending Pathologist at Montefiore Einstein Comprehensive Cancer Center"
   },
   "spanish": {
@@ -2436,8 +2436,8 @@ export const BODIES = {
  "breastfeeding-is-a-personal-choice-know-the-benefits-for-baby-and-mom": {
   "source": "breastfeeding-is-a-personal-choice-know-the-benefits-for-baby-and-mom.html",
   "byline": {
-   "name": "Katharine Kelter, MD",
-   "role": "MPH, Attending Physician, Comprehensive Family Care Center"
+   "name": "Katharine Kelter, MD, MPH",
+   "role": "Attending Physician, Comprehensive Family Care Center"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/08/28/PDTF/70700128007-getty-images-1421339467-5.jpg?crop=5471,3091,x0,y278&width=3200&height=1808&format=pjpg&auto=webp",
@@ -2534,8 +2534,8 @@ export const BODIES = {
  "broccoli-tabbouleh-salad-a-veggie-packed-spin-on-a-mediterranean-class": {
   "source": "broccoli-tabbouleh-salad-a-veggie-packed-spin-on-a-mediterranean-classic.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, Nutrition Program Manager, Montefiore Einstein Advanced Care–Westchester"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "Nutrition Program Manager, Montefiore Einstein Advanced Care–Westchester"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/08/31/PDTF/70727646007-mtf-lo-hud-september-recipe-vf-19-x-1.jpg?crop=2954,1669,x0,y148&width=2954&height=1669&format=pjpg&auto=webp",
@@ -3076,8 +3076,8 @@ export const BODIES = {
  "chayote-squash-takes-center-stage-tinola-chicken-stew": {
   "source": "chayote-squash-takes-center-stage-tinola-chicken-stew.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/03/01/PWES/aca64ea2-0642-4cf7-98b5-bce2a08b3e51-MTF_March_Recipe_HD_Final.jpeg?crop=3023,1701,x0,y151&width=3023&height=1701&format=pjpg&auto=webp",
@@ -3260,8 +3260,8 @@ export const BODIES = {
  "colon-cancer-now-leads-cancer-deaths-under-50-what-to-know": {
   "source": "colon-cancer-now-leads-cancer-deaths-under-50-what-to-know.html",
   "byline": {
-   "name": "By Chaoyuan Kuang, MD",
-   "role": "PhD, Co-Leader, GI Clinical and Translational Research, Montefiore Einstein Comprehensive Cancer Center"
+   "name": "Chaoyuan Kuang, MD, PhD",
+   "role": "Co-Leader, GI Clinical and Translational Research, Montefiore Einstein Comprehensive Cancer Center"
   },
   "spanish": {
    "title": "Cáncer de colon, 1ª causa de muerte en adultos menores de 50: Qué saber",
@@ -3694,8 +3694,8 @@ export const BODIES = {
  "cozy-fall-soup-with-pumpkin-sweet-potato-lentils-turmeric": {
   "source": "cozy-fall-soup-with-pumpkin-sweet-potato-lentils-turmeric.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Sopa de otoño reconfortante con calabaza, batata y lentejas",
@@ -3884,8 +3884,8 @@ export const BODIES = {
  "curing-a-racing-heart-how-phyllis-beat-arrhythmia": {
   "source": "curing-a-racing-heart-how-phyllis-beat-arrhythmia.html",
   "byline": {
-   "name": "Luigi Di Biase, MD",
-   "role": "PhD, Section Head of Electrophysiology, Director of Arrhythmia Services"
+   "name": "Luigi Di Biase, MD, PhD",
+   "role": "Section Head of Electrophysiology, Director of Arrhythmia Services"
   },
   "spanish": {
    "title": "Curar un corazón acelerado: cómo logró Phyllis vencer su arritmia",
@@ -4072,8 +4072,8 @@ export const BODIES = {
  "dark-chocolate-bark-for-a-delicious-boost-to-brain-wellness": {
   "source": "dark-chocolate-bark-for-a-delicious-boost-to-brain-wellness.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Corteza de chocolate oscuro, un dulce placer que beneficia la salud del cerebro",
@@ -4160,8 +4160,8 @@ export const BODIES = {
  "delicious-lentil-soup-nutritional-powerhouse-winter": {
   "source": "delicious-lentil-soup-nutritional-powerhouse-winter.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2021/02/01/PWES/90ad8297-880d-420b-b03e-059d05bc9b2b-GettyImages-120599192.jpg?crop=2120,1193,x0,y107&width=2120&height=1193&format=pjpg&auto=webp",
@@ -4328,8 +4328,8 @@ export const BODIES = {
  "dubai-inspired-chocolate-covered-strawberries": {
   "source": "dubai-inspired-chocolate-covered-strawberries.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Fresas con Chocolate al Estilo Dubái",
@@ -4861,8 +4861,8 @@ export const BODIES = {
  "experience-mediterranean-greek-salad-sardines": {
   "source": "experience-mediterranean-greek-salad-sardines.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/05/03/PWES/80e8b685-7df9-4523-8072-ef35298aeec5-Final_LoHudRecipes_May2022.jpeg?crop=2999,1687,x0,y0&width=2999&height=1687&format=pjpg&auto=webp",
@@ -5164,7 +5164,7 @@ export const BODIES = {
  "guy-monseairs-heart-stopped-twice-he-was-back-coaching-in-just-10-days": {
   "source": "guy-monseairs-heart-stopped-twice-he-was-back-coaching-in-just-10-days.html",
   "byline": {
-   "name": "By Robert E. Michler, MD",
+   "name": "Robert E. Michler, MD",
    "role": "Surgeon-in-Chief and Chair, Surgery and Cardiothoracic & Vascular Surgery"
   },
   "spanish": {
@@ -5288,8 +5288,8 @@ export const BODIES = {
  "healthy-new-year-8-tips-to-stick-to-your-nutrition-resolutions": {
   "source": "healthy-new-year-8-tips-to-stick-to-your-nutrition-resolutions.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, Nutrition Program Manager, Montefiore Einstein Advanced Care–Westchester"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "Nutrition Program Manager, Montefiore Einstein Advanced Care–Westchester"
   },
   "spanish": {
    "title": "¡Feliz y saludable Año Nuevo! Ocho sugerencias para cumplir con tus propósitos de nutrición",
@@ -5490,8 +5490,8 @@ export const BODIES = {
  "heart-healthy-vegetable-and-chickpea-paella": {
   "source": "heart-healthy-vegetable-and-chickpea-paella.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Paella cardiosaludable de garbanzos y vegetales",
@@ -5582,8 +5582,8 @@ export const BODIES = {
  "hearty-minestrone-soup-loaded-fiber-protein-vitamins-and-other-nutrien": {
   "source": "hearty-minestrone-soup-loaded-fiber-protein-vitamins-and-other-nutrients.html",
   "byline": {
-   "name": "Melissa Rifkin, MS",
-   "role": "RD, CDN, for Montefiore"
+   "name": "Melissa Rifkin, MS, RD, CDN",
+   "role": "for Montefiore"
   },
   "spanish": {
    "title": "Esta contundente sopa minestrone es muy rica en fibra, proteínas, vitaminas y otros nutrientes",
@@ -5854,8 +5854,8 @@ export const BODIES = {
  "high-protein-asian-chicken-with-zucchini-noodles": {
   "source": "high-protein-asian-chicken-with-zucchini-noodles.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Pollo Asiático Alto en Proteína con Fideos de Calabacín",
@@ -6506,8 +6506,8 @@ export const BODIES = {
  "how-to-spot-heart-failure-plus-the-latest-life-changing-treatments": {
   "source": "how-to-spot-heart-failure-plus-the-latest-life-changing-treatments.html",
   "byline": {
-   "name": "Yogita M. Rochlani, MD",
-   "role": "FACC, Assistant Professor of Medicine—Cardiology"
+   "name": "Yogita M. Rochlani, MD, FACC",
+   "role": "Assistant Professor of Medicine—Cardiology"
   },
   "spanish": {
    "title": "Insuficiencia cardiaca: detección, y nuevos y transformadores tratamientos",
@@ -6885,8 +6885,8 @@ export const BODIES = {
  "keeping-up-with-the-latest-psoriasis-treatment-breakthroughs": {
   "source": "keeping-up-with-the-latest-psoriasis-treatment-breakthroughs.html",
   "byline": {
-   "name": "Benny Wu, DO",
-   "role": "PhD, and Assistant Professor of Medicine, and Anand Kumthekar, MD, RhMSUS"
+   "name": "Benny Wu, DO, PhD",
+   "role": "and Assistant Professor of Medicine, and Anand Kumthekar, MD, RhMSUS"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2023/08/31/PDTF/70728180007-getty-images-929498422-copy.jpg?crop=4855,2743,x0,y0&width=3200&height=1808&format=pjpg&auto=webp",
@@ -7208,8 +7208,8 @@ export const BODIES = {
  "kids-summer-menu": {
   "source": "kids-summer-menu.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
+   "name": "Jessica Shapiro, MS, RD, CDN",
+   "role": "CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/07/26/PWES/2c26cb62-e0df-4bb6-9844-8aafed0404bd-LoHud_August_Ingredients_HD2.jpeg?crop=2399,1350,x0,y122&width=2399&height=1350&format=pjpg&auto=webp",
@@ -7305,8 +7305,8 @@ export const BODIES = {
  "lentil-minestrone-soup-a-versatile-comfort-food": {
   "source": "lentil-minestrone-soup-a-versatile-comfort-food.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES. Nutrition Program Manager Montefiore Einstein Advance Care at Taxter Road, Elmsford NY"
+   "name": "Jessica Shapiro, MS, RD, CDN",
+   "role": "CDCES. Nutrition Program Manager Montefiore Einstein Advance Care at Taxter Road, Elmsford NY"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/01/03/PDTF/72097055007-thumbnail-mtf-lo-hud-jan-24-recipe-vf.jpg?crop=1919,1081,x0,y99&width=1919&height=1081&format=pjpg&auto=webp",
@@ -8141,8 +8141,8 @@ export const BODIES = {
  "mix-up-national-nutrition-month-simple-shakshuka-recipe": {
   "source": "mix-up-national-nutrition-month-simple-shakshuka-recipe.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2021/03/31/PWES/95f2c596-14e2-409a-85fc-3918709ace8e-GettyImages-1181013605.jpg?crop=2120,1193,x0,y0&width=2120&height=1193&format=pjpg&auto=webp",
@@ -8786,8 +8786,8 @@ export const BODIES = {
  "nutrition-filled-oats-more-than-ingredient-breakfast": {
   "source": "nutrition-filled-oats-more-than-ingredient-breakfast.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/02/09/PWES/5dfeec81-63eb-4e68-b59d-8a3f8ffce1d5-MTF_February_Recipe_HD.jpeg?crop=5471,3078,x0,y278&width=3200&height=1801&format=pjpg&auto=webp",
@@ -8867,8 +8867,8 @@ export const BODIES = {
  "one-pot-chicken-and-mushroom-skillet-with-vitamin-rich-ingredients": {
   "source": "one-pot-chicken-and-mushroom-skillet-with-vitamin-rich-ingredients.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Pollo con champiñones preparado en una sola cacerola, elaborado con ingredientes ricos en vitaminas",
@@ -8983,8 +8983,8 @@ export const BODIES = {
  "packing-the-punch-in-kung-pao-chicken-tacos": {
   "source": "packing-the-punch-in-kung-pao-chicken-tacos.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/authoring/authoring-images/2024/08/01/PDTF/74634801007-mtf-lo-hud-aug-24-recipe-vf-16-x-9-copy.jpg?crop=1919,1080,x0,y8&width=1919&height=1080&format=pjpg&auto=webp",
@@ -9320,8 +9320,8 @@ export const BODIES = {
  "restore-a-normal-heart-rhythm-cut-stroke-risk": {
   "source": "restore-a-normal-heart-rhythm-cut-stroke-risk.html",
   "byline": {
-   "name": "Luigi Di Biase, MD",
-   "role": "PhD, FACC, FHRS, System Director of Electrophysiology"
+   "name": "Luigi Di Biase, MD, PhD, FACC, FHRS",
+   "role": "System Director of Electrophysiology"
   },
   "spanish": {
    "title": "Restablezca un ritmo cardiaco normal y reduzca el riesgo de ACV",
@@ -10541,8 +10541,8 @@ export const BODIES = {
  "spice-up-breakfast-or-lunch-latin-twist-avocado-toast": {
   "source": "spice-up-breakfast-or-lunch-latin-twist-avocado-toast.html",
   "byline": {
-   "name": "Sandra Arevalo, MPH",
-   "role": "RDN, for Montefiore"
+   "name": "Sandra Arevalo, MPH, RDN",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2021/06/07/PWES/ba5819f1-165a-4d36-a887-f752345e73f2-GettyImages-641809868.jpg?crop=1731,974,x0,y86&width=1731&height=974&format=pjpg&auto=webp",
@@ -10626,8 +10626,8 @@ export const BODIES = {
  "spice-up-stay-home-cooking-easy-healthy-thai-soup-recipe": {
   "source": "spice-up-stay-home-cooking-easy-healthy-thai-soup-recipe.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDE, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN",
+   "role": "CDE, for Montefiore"
   },
   "spanish": {
    "title": "Alegre su cocina casera con esta sencilla y saludable receta de sopa tailandesa",
@@ -10703,8 +10703,8 @@ export const BODIES = {
  "spice-up-your-diet-spinach-and-black-bean-enchiladas-dish": {
   "source": "spice-up-your-diet-spinach-and-black-bean-enchiladas-dish.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/03/30/PWES/cbaac113-b626-446c-b8c5-31f150eb5f5a-enchiladas.jpg?crop=2047,1152,x0,y0&width=2047&height=1152&format=pjpg&auto=webp",
@@ -10957,8 +10957,8 @@ export const BODIES = {
  "start-your-morning-right-with-homestyle-blueberry-johnnycakes": {
   "source": "start-your-morning-right-with-homestyle-blueberry-johnnycakes.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Empieza el día de la mejor manera con estos JohnnyCakes caseros con arándanos",
@@ -11376,8 +11376,8 @@ export const BODIES = {
  "stopping-colon-cancer-with-more-testing-options-and-treatment-advances": {
   "source": "stopping-colon-cancer-with-more-testing-options-and-treatment-advances.html",
   "byline": {
-   "name": "Chaoyuan Kuang, MD",
-   "role": "PhD, Co-Leader, GI Clinical and Translational Research, at Montefiore Einstein Comprehensive Cancer Center, and Othon Wiltz, MD, Colon and Rectal Surgeon"
+   "name": "Chaoyuan Kuang, MD, PhD",
+   "role": "Co-Leader, GI Clinical and Translational Research, at Montefiore Einstein Comprehensive Cancer Center, and Othon Wiltz, MD, Colon and Rectal Surgeon"
   },
   "spanish": {
    "title": "Detener el cáncer de colon: más pruebas y avances en el tratamiento",
@@ -12265,8 +12265,8 @@ export const BODIES = {
  "the-shift-in-cervical-cancer-screening-how-new-at-home-hpv-test-fits-i": {
   "source": "the-shift-in-cervical-cancer-screening-how-new-at-home-hpv-test-fits-in.html",
   "byline": {
-   "name": "Mark Einstein, MD",
-   "role": "MS, FACS, FACOG, Department Chair of Obstetrics & Gynecology and Women’s Health"
+   "name": "Mark Einstein, MD, MS, FACS, FACOG",
+   "role": "Department Chair of Obstetrics & Gynecology and Women’s Health"
   },
   "spanish": {
    "title": "Nueva prueba del VPH desde casa para detectar el cáncer de cuello uterino",
@@ -12406,7 +12406,7 @@ export const BODIES = {
  "the-stroke-treatment-that-can-prevent-disability": {
   "source": "the-stroke-treatment-that-can-prevent-disability.html",
   "byline": {
-   "name": "By David Altschul, MD",
+   "name": "David Altschul, MD",
    "role": "Dir. of Neurovascular Surgery, Co-Dir. of Montefiore Comprehensive Stroke Center; Allan Brook, MD, Neuroradiology; Neil Haranhalli, MD, Endovascular/Cerebrovascular Neurosurgeon; & Daniel Labovitz, MD, Vascular Neurology"
   },
   "spanish": {
@@ -12681,8 +12681,8 @@ export const BODIES = {
  "these-nutritious-salads-and-drinks-liven-up-any-summer-meal": {
   "source": "these-nutritious-salads-and-drinks-liven-up-any-summer-meal.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "spanish": {
    "title": "Estas ensaladas y bebidas nutritivas realzan cualquier comida de verano",
@@ -12898,8 +12898,8 @@ export const BODIES = {
  "this-antioxidant-rich-bean-salad-is-the-perfect-plant-based-summer-dis": {
   "source": "this-antioxidant-rich-bean-salad-is-the-perfect-plant-based-summer-dish.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC,"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Ensalada de frijoles rica en antioxidantes, el plato vegetal perfecto para el verano",
@@ -13229,8 +13229,8 @@ export const BODIES = {
  "tired-of-urine-leaks-relief-may-start-with-your-pelvic-floor": {
   "source": "tired-of-urine-leaks-relief-may-start-with-your-pelvic-floor.html",
   "byline": {
-   "name": "Whitney L. Clearwater, MD",
-   "role": "MPH, FACOG, Associate Program Director, Urogynecology & Reconstructive Pelvic Surgery Fellowship"
+   "name": "Whitney L. Clearwater, MD, MPH, FACOG",
+   "role": "Associate Program Director, Urogynecology & Reconstructive Pelvic Surgery Fellowship"
   },
   "spanish": {
    "title": "¿Harta de tener pérdidas de orina? El alivio empieza en el suelo pélvico",
@@ -13525,8 +13525,8 @@ export const BODIES = {
  "tom-kha-gai-a-warm-embrace-from-thai-cuisine": {
   "source": "tom-kha-gai-a-warm-embrace-from-thai-cuisine.html",
   "byline": {
-   "name": "Cewin Chao, MS",
-   "role": "RD, CDN, MBA Director, Clinical Nutrition Services"
+   "name": "Cewin Chao, MS, RD, CDN",
+   "role": "MBA Director, Clinical Nutrition Services"
   },
   "spanish": {
    "title": "Tom Kha Gai: Un abrazo de la cocina Tailandesa",
@@ -13630,8 +13630,8 @@ export const BODIES = {
  "traditional-mexican-tacos-bursting-citrusy-zest-lean-start-2022": {
   "source": "traditional-mexican-tacos-bursting-citrusy-zest-lean-start-2022.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES, for Montefiore"
+   "name": "Jessica Shapiro, MS, RD, CDN, CDCES",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2022/01/19/PWES/7ca3831c-73a2-470c-b23c-8143929e98be-LoHudRecipe_Jan2022_FinalPlate.jpeg?crop=5514,3102,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
@@ -13711,8 +13711,8 @@ export const BODIES = {
  "treat-mom-to-mini-garden-fresh-vegetable-egg-bites": {
   "source": "treat-mom-to-mini-garden-fresh-vegetable-egg-bites.html",
   "byline": {
-   "name": "Cewin Chao, MS",
-   "role": "RD, CDN, MBA, Director, Clinical Nutrition Services, Montefiore Einstein"
+   "name": "Cewin Chao, MS, RD, CDN",
+   "role": "MBA, Director, Clinical Nutrition Services, Montefiore Einstein"
   },
   "spanish": {
    "title": "Consiente a Mamá con estos Muffins de Huevo y Vegetales frescos",
@@ -13895,8 +13895,8 @@ export const BODIES = {
  "turkey-salad-your-whole-family-will-gobble-up": {
   "source": "turkey-salad-your-whole-family-will-gobble-up.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "La ensalada de pavo que tu familia devorará",
@@ -14098,8 +14098,8 @@ export const BODIES = {
  "vegan-cassoulet-rustic-elegance-with-hearty-plant-delights": {
   "source": "vegan-cassoulet-rustic-elegance-with-hearty-plant-delights.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
+   "name": "Jessica Shapiro, MS, RD, CDN",
+   "role": "CDCES. Nutrition Program Manager, Montefiore Einstein Advanced Care"
   },
   "spanish": {
    "title": "Cassoulet Vegano. Receta vegetariana provincial, con un toque sofisticado",
@@ -14186,8 +14186,8 @@ export const BODIES = {
  "vegetable-frittata-spring-smoothie-an-easy-way-to-start-the-day": {
   "source": "vegetable-frittata-spring-smoothie-an-easy-way-to-start-the-day.html",
   "byline": {
-   "name": "Jessica Shapiro, MS",
-   "role": "RD, CDN, CDCES Nutrition Program Manager Montefiore Einstein Advance Care at Taxter Road, Elmsford NY"
+   "name": "Jessica Shapiro, MS, RD, CDN",
+   "role": "CDCES Nutrition Program Manager Montefiore Einstein Advance Care at Taxter Road, Elmsford NY"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2023/05/02/PWES/00a7a03c-e809-4734-80e7-8cecfd855d20-thumbnail_IMG_6772.jpeg?crop=1279,720,x0,y64&width=1279&height=720&format=pjpg&auto=webp",
@@ -14262,8 +14262,8 @@ export const BODIES = {
  "warm-up-spring-vibrant-west-african-peanut-soup-recipe": {
   "source": "warm-up-spring-vibrant-west-african-peanut-soup-recipe.html",
   "byline": {
-   "name": "Melissa Rifkin, MS",
-   "role": "RD, CDN, for Montefiore"
+   "name": "Melissa Rifkin, MS, RD, CDN",
+   "role": "for Montefiore"
   },
   "spanish": {
    "title": "Prepárese para la primavera con esta exhuberante receta de sopa de cacahuetes del África occidental",
@@ -14663,8 +14663,8 @@ export const BODIES = {
  "wondering-what-do-whole-chicken-make-these-4-easy-healthy-recipes": {
   "source": "wondering-what-do-whole-chicken-make-these-4-easy-healthy-recipes.html",
   "byline": {
-   "name": "Sandra Arevalo, MPH",
-   "role": "RDN, for Montefiore"
+   "name": "Sandra Arevalo, MPH, RDN",
+   "role": "for Montefiore"
   },
   "meta": {
    "image": "https://www.lohud.com/gcdn/presto/2020/09/29/PWES/f43db564-717d-432a-8a3e-b1fef8012837-GettyImages-1056210438.jpg?crop=2118,1192,x0,y108&width=2118&height=1192&format=pjpg&auto=webp",
@@ -14756,8 +14756,8 @@ export const BODIES = {
  "youll-get-wrapped-up-in-these-heart-healthy-cabbage-wraps": {
   "source": "youll-get-wrapped-up-in-these-heart-healthy-cabbage-wraps.html",
   "byline": {
-   "name": "Monica Kelly, MS",
-   "role": "RD, CDN, CNSC"
+   "name": "Monica Kelly, MS, RD, CDN, CNSC",
+   "role": null
   },
   "spanish": {
    "title": "Te fascinarán estos wraps de repollo saludables para el corazón",
@@ -14984,8 +14984,8 @@ export const BODIES = {
  "your-heart-health-is-more-on-your-plate-than-you-might-think": {
   "source": "your-heart-health-is-more-on-your-plate-than-you-might-think.html",
   "byline": {
-   "name": "Robert Ostfeld, MD",
-   "role": "MSc., Director of Preventive Cardiology"
+   "name": "Robert Ostfeld, MD, MSc.",
+   "role": "Director of Preventive Cardiology"
   },
   "spanish": {
    "title": "La salud del corazón depende más de su dieta de lo que cree",

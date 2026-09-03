@@ -26,6 +26,23 @@
 
 export const ARTICLE_FAQS = {};
 
+/**
+ * PLACEHOLDER Q&A, so the section can be judged on every article before the copy
+ * exists. Deliberately Latin: it is unmistakably not content, and it cannot be read
+ * as a medical claim under a named physician's byline — which invented English
+ * questions and answers on these pages would be.
+ *
+ * Placeholder entries NEVER emit FAQPage schema. Only real copy in ARTICLE_FAQS does.
+ */
+export const PLACEHOLDER_FAQS = [
+  { q: 'Quaestio prima de hac re quam lector saepe rogat?',
+    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.' },
+  { q: 'Quaestio altera, brevior sed non minus utilis?',
+    a: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.' },
+  { q: 'Quaestio tertia quae rem totam concludit?',
+    a: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.' },
+];
+
 /** Entries for one article, or null. Empty objects never reach the page or schema. */
 export const faqsFor = (slug) => {
   const rec = ARTICLE_FAQS[slug];

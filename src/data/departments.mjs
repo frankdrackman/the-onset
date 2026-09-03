@@ -90,6 +90,41 @@ export const DEPARTMENTS = [
     topics: ['Hearing', 'Sinus', 'Voice'],
   },
   {
+    slug: 'gastroenterology', label: 'Digestive Health', clinical: true,
+    entity: { name: 'Montefiore Einstein Division of Gastroenterology', url: 'https://www.montefioreeinstein.org/care/gastroenterology/' },
+    intro: 'Digestive Health covers the gut, liver and everything downstream of a meal — reflux, IBS, screening and the symptoms people put off mentioning. Written by the Montefiore Einstein gastroenterologists who treat them.',
+    findCare: { label: 'Find a gastroenterologist', url: 'https://www.montefioreeinstein.org/doctors/?specialty=gastroenterology' },
+    topics: ['IBS', 'Liver', 'Screening', 'Reflux'],
+  },
+  {
+    slug: 'dermatology', label: 'Skin Care', clinical: true,
+    entity: { name: 'Montefiore Einstein Division of Dermatology', url: 'https://www.montefioreeinstein.org/care/dermatology/' },
+    intro: 'Skin Care covers what to watch for on your own skin — moles, rashes, sun damage and the checks worth making a habit. From Montefiore Einstein dermatologists.',
+    findCare: { label: 'Find a dermatologist', url: 'https://www.montefioreeinstein.org/doctors/?specialty=dermatology' },
+    topics: ['Skin cancer', 'Sun', 'Psoriasis'],
+  },
+  {
+    slug: 'pediatrics', label: "Children's Health", clinical: true,
+    entity: { name: "The Children's Hospital at Montefiore Einstein", url: 'https://www.montefioreeinstein.org/childrens/' },
+    intro: "Children's Health covers growing bodies and the questions that come with them — sleep, development, injuries and when a symptom in a child means something different than it would in an adult. From the clinicians at The Children's Hospital at Montefiore Einstein.",
+    findCare: { label: 'Find a pediatric specialist', url: 'https://www.montefioreeinstein.org/doctors/?specialty=pediatrics' },
+    topics: ['Development', 'Safety', 'Sleep', 'Family'],
+  },
+  {
+    slug: 'womens-health', label: "Women's Health", clinical: true,
+    entity: { name: 'Montefiore Einstein Department of Obstetrics & Gynecology and Women’s Health', url: 'https://www.montefioreeinstein.org/care/womens-health/' },
+    intro: "Women's Health covers screening, pregnancy, periods, menopause and the conditions that go under-discussed for far too long. Written by Montefiore Einstein obstetricians and gynecologists.",
+    findCare: { label: 'Find an OB-GYN', url: 'https://www.montefioreeinstein.org/doctors/?specialty=obgyn' },
+    topics: ['Screening', 'Pregnancy', 'Menopause', 'Fibroids'],
+  },
+  {
+    slug: 'transplant', label: 'Transplant', clinical: true,
+    entity: { name: 'Montefiore Einstein Center for Transplantation', url: 'https://www.montefioreeinstein.org/care/transplant/' },
+    intro: 'Transplant covers organ failure, the waiting list, living donation and life afterwards — from the Montefiore Einstein surgeons who perform these operations and the patients who have had them.',
+    findCare: { label: 'Find a transplant specialist', url: 'https://www.montefioreeinstein.org/doctors/?specialty=transplant' },
+    topics: ['Living donation', 'Heart', 'Liver', 'Kidney'],
+  },
+  {
     // NOT a clinical department. The Live Well orphan home, so recipes and general
     // healthy-living content never wear a fake department tag. Deliberately carries
     // NO entity binding — no entity claim is made for it. (Brief: the canonical

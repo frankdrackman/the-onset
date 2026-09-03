@@ -41,6 +41,43 @@ const fromEpisode = (e) => ({
   series: SERIES.name,
 });
 
+/**
+ * Canonical department from the CONTRIBUTOR'S OWN SPECIALTY.
+ *
+ * The brief's classification order tags by topic first and falls back to the author's
+ * department. In practice topic keywords misfile pieces — an IBS article bylined by a
+ * gastroenterologist landed under Primary Care — so the contributor's stated
+ * specialty wins where they state one, and topic classification is the fallback.
+ *
+ * Ordered most specific first: a body-system specialty beats an age group, so
+ * "Pediatric Urology" resolves to Urology rather than Children's Health.
+ */
+const SPECIALTY_DEPT = [
+  [/\b(RD|RDN|CDN|CDCES|Clinical Nutrition|Nutrition Program|dietiti)/i, 'healthy-nutrition'],
+  [/gastroenterolog|hepatolog|inflammatory bowel/i, 'gastroenterology'],
+  [/transplant/i,                                   'transplant'],
+  [/urolog/i,                                       'urology'],
+  [/dermatolog/i,                                   'dermatology'],
+  [/cardiolog|heart failure|electrophysiolog|cardiothoracic|cardiovascular/i, 'heart-care'],
+  [/neurolog|neurosurg|stroke|epileps|headache|multiple sclerosis/i,          'brain-nerve-care'],
+  [/oncolog|cancer|hematolog|breast patholog|radiation/i,                     'cancer-care'],
+  [/endocrinolog|diabet|thyroid/i,                  'endocrinology'],
+  [/psychiatr|psycholog|behavioral health/i,        'behavioral-health'],
+  [/obstetric|gynecolog|women'?s health|urogynecolog|maternal/i, 'womens-health'],
+  [/allerg|immunolog/i,                             'allergy-immunology'],
+  [/sleep/i,                                        'sleep-medicine'],
+  [/otolaryngolog|otorhinolaryngolog|\bENT\b/i,     'ear-nose-throat'],
+  [/orthoped|rehabilitat|physiatr|sports medicine/i, 'orthopedics-rehab'],
+  [/pediatric|adolescent|children/i,                'pediatrics'],
+  [/pulmonar|infectious|geriatric|internal medicine|family medicine|primary care|general medicine/i, 'primary-care'],
+];
+const deptFromSpecialty = (byline) => {
+  const hay = `${byline?.role ?? ''} ${byline?.name ?? ''}`;
+  if (!hay.trim()) return null;
+  for (const [re, slug] of SPECIALTY_DEPT) if (re.test(hay)) return slug;
+  return null;
+};
+
 /** Merge in anything the ingested article bodies tell us. The body is the primary
  *  source: it carries the byline the public index did not, the article's own link to
  *  its Spanish twin, and enough words to compute a real read time. */
@@ -59,12 +96,33 @@ const enrich = (i) => {
   // The publisher's own lead image, referenced at a sensible width. This is the
   // viewer's browser loading an image, not a crawl. For a self-contained build the
   // art should be downloaded and served locally — see ingest/CODEX-PROMPT-HTML.md.
+  // PULL QUOTE — a line lifted from the article's own body, typographic emphasis
+  // only. Per the wireframe these pieces do not quote physicians, so there is no
+  // attribution and no speaker. Prefer a sentence the piece already sets in quotes;
+  // otherwise take a substantial sentence from the middle, never the opener.
+  const sentences = [];
+  b.paras.forEach((para, idx) => {
+    if (para.tag !== 'p' || idx === 0) return;
+    const quoted = para.text.match(/[\u201c"][^\u201d"]{50,200}[\u201d"]/);
+    if (quoted) sentences.push({ text: quoted[0].replace(/^[\u201c"]|[\u201d",]$/g, '').trim(), rank: 0, idx });
+    para.text.split(/(?<=[.!?])\s+/).forEach((sent) => {
+      const t = sent.trim();
+      if (t.length >= 90 && t.length <= 210 && !/^[\u201c"]/.test(t) && !/\b(call|appointment|visit|learn more)\b/i.test(t)) {
+        sentences.push({ text: t, rank: 1, idx });
+      }
+    });
+  });
+  const mid = b.paras.length / 2;
+  sentences.sort((a, x) => a.rank - x.rank || Math.abs(a.idx - mid) - Math.abs(x.idx - mid));
+  const pullQuote = sentences.length ? sentences[0].text : null;
+
   const img = b.meta?.image
     ? b.meta.image.split('?')[0] + '?width=1200&disable=upscale&format=pjpg&auto=webp'
     : null;
   return {
     ...i,
     body: b.paras,
+    ...(pullQuote ? { pullQuote } : {}),
     ...(img ? { image: img, imageRemote: true, imageCredit: b.meta?.imageAlt ?? null } : {}),
     words,
     minutes: Math.max(1, Math.round(words / 225)),
@@ -99,7 +157,16 @@ const enrichBound = (i) => {
   const p = e.byline.profileUrl ? null : findProfile(e.byline.name);
   const b = p ? { ...e.byline, name: p.name, profileUrl: p.sameAs, npi: p.npi } : e.byline;
   const photo = b.photo ?? headshotFor(b.name);
-  return { ...e, byline: photo ? { ...b, photo } : b };
+  const withByline = { ...e, byline: photo ? { ...b, photo } : b };
+
+  // Align the canonical department to the contributor's own specialty. Recipes stay
+  // in Healthy Nutrition; the department the topic keywords had guessed drops to a
+  // secondary tag, so the item still cross-surfaces where it used to appear.
+  const aligned = withByline.kind === 'recipe' ? null : deptFromSpecialty(withByline.byline);
+  if (!aligned || aligned === withByline.dept) return withByline;
+  const secondary = [...new Set([...(withByline.secondaryDepts ?? []), withByline.dept])]
+    .filter((d) => d !== aligned);
+  return { ...withByline, dept: aligned, secondaryDepts: secondary, deptFromByline: true };
 };
 
 export const CATALOG = [...ITEMS.map(enrichBound), ...EPISODES.map(fromEpisode)];

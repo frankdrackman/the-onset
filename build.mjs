@@ -11,7 +11,7 @@
  *   node build.mjs --serve  build, then serve dist/ on :4173
  */
 
-import { mkdir, writeFile, rm, cp, readFile } from 'node:fs/promises';
+import { mkdir, writeFile, rm, readFile, readdir } from 'node:fs/promises';
 import { dirname, join, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -42,6 +42,20 @@ const SRC = join(ROOT, 'src');
  */
 const BRAND_FONTS = !process.argv.includes('--no-brand-fonts');
 
+/** Recursive directory copy.
+ *  Replaces fs.promises.cp, which stalls indefinitely in this environment
+ *  regardless of source — an explicit walk is both reliable and easy to reason about. */
+async function copyDir(from, to, skip = () => false) {
+  await mkdir(to, { recursive: true });
+  for (const e of await readdir(from, { withFileTypes: true })) {
+    const src = join(from, e.name);
+    if (skip(src)) continue;
+    const dst = join(to, e.name);
+    if (e.isDirectory()) await copyDir(src, dst, skip);
+    else await writeFile(dst, await readFile(src));
+  }
+}
+
 let count = 0;
 async function emit(relPath, htmlStr) {
   const out = join(DIST, relPath);
@@ -55,10 +69,8 @@ async function build() {
   await mkdir(DIST, { recursive: true });
 
   // ---- assets ----
-  await cp(join(SRC, 'assets'), join(DIST, 'assets'), {
-    recursive: true,
-    filter: (src) => BRAND_FONTS || !src.includes(`${sep}fonts`),
-  });
+  await copyDir(join(SRC, 'assets'), join(DIST, 'assets'),
+    (src) => !BRAND_FONTS && src.includes(`${sep}fonts`));
   // The ticker's own styles live with the component; append them to the built sheet
   // so there is one stylesheet request and no chance of the two drifting apart.
   const css = await readFile(join(SRC, 'assets', 'onset.css'), 'utf8');

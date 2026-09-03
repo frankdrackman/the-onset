@@ -16,7 +16,7 @@ import { page, masthead, crumbs, rel } from '../components/chrome.mjs';
 import { card, media, metaStrip } from '../components/cards.mjs';
 import { HUB } from '../data/site.mjs';
 import { byDept } from '../data/departments.mjs';
-import { faqsFor } from '../data/faqs.mjs';
+import { faqsFor, PLACEHOLDER_FAQS } from '../data/faqs.mjs';
 import * as T from '../lib/taxonomy.mjs';
 import * as S from '../lib/schema.mjs';
 
@@ -33,7 +33,10 @@ export const detailPage = (item) => {
   const inShort = opener ? [opener.text]
     : item.standfirst && !/\.\.\.$/.test(item.standfirst) ? [item.standfirst]
     : item.standfirst ? [item.standfirst.replace(/\s*\.\.\.$/, '')] : [];
-  const faqs = faqRec?.items ?? [];
+  // Real copy renders as content and emits schema. Otherwise the section still
+  // renders, filled with visibly-placeholder Latin and emitting no schema at all.
+  const faqs = faqRec?.items ?? PLACEHOLDER_FAQS;
+  const faqsAreReal = !!faqRec?.items?.length;
   const related = T.surfacingIn(item.dept).filter((i) => i !== item).slice(0, 3);
   const sameByline = item.byline?.name
     ? T.CATALOG.filter((i) => i.byline?.name === item.byline.name && i.kind !== 'episode').length : 0;
@@ -65,7 +68,9 @@ export const detailPage = (item) => {
       S.meOrganization(),
       S.hubCollection(),
       schemaNode,
-      S.faqPage(faqs),
+      // Schema only for real, reviewed Q&A. Placeholder copy emits nothing —
+      // an FAQPage full of Latin would be worse than no FAQPage at all.
+      faqsAreReal ? S.faqPage(faqs) : null,
       S.breadcrumbs([
         { label: 'Montefiore Einstein', href: '/' },
         { label: HUB.name, href: `${HUB.path}/` },
@@ -107,9 +112,19 @@ ${crumbs(trail, r)}
 
         <div class="prose">
           ${item.body?.length
-            ? item.body.filter((b) => b !== opener).map((b) => b.tag === 'p'
-                ? `<p>${esc(b.text)}</p>`
-                : `<h2>${esc(b.text)}</h2>`)
+            ? (() => {
+                const blocks = item.body.filter((b) => b !== opener);
+                // Drop the pull quote in after the first section, so it lands in the
+                // body rather than on top of it.
+                let at = blocks.findIndex((b, i) => i > 1 && b.tag === 'h2');
+                if (at < 0) at = Math.min(3, blocks.length);
+                return blocks.map((b, i) => {
+                  const el = b.tag === 'p' ? `<p>${esc(b.text)}</p>` : `<h2>${esc(b.text)}</h2>`;
+                  return i === at && item.pullQuote
+                    ? `<blockquote class="pull"><em class="pull-quote">${esc(item.pullQuote)}</em></blockquote>${el}`
+                    : el;
+                });
+              })()
             : html`
               <p>
                 This is the Montefiore Einstein page for a piece published in the
@@ -119,7 +134,7 @@ ${crumbs(trail, r)}
         </div>
 
         ${faqs.length ? html`
-        <section class="qa" aria-labelledby="qa-h">
+        <section class="qa${faqsAreReal ? '' : ' qa--placeholder'}" aria-labelledby="qa-h">
           <h2 class="mod__h" id="qa-h">Common questions</h2>
           ${faqs.map((f) => html`
             <div class="qa__item">
