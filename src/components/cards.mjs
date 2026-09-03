@@ -12,7 +12,9 @@ const href = (r, item) => `${r}${itemPath(item).replace(/^\//, '')}index.html`;
 const deptHref = (r, slug) => `${r}${deptPath(slug).replace(/^\//, '')}index.html`;
 
 /** Decorative tint rotation. Carries no meaning — meaning lives in the meta strip. */
-const TINTS = ['', 'ph--wheat', 'ph--mint', 'ph--sky', 'ph--flesh'];
+// Warm tints belong to recipes; editorial stories stay in the cool half of the ME
+// palette so a stroke story is never served on a buttercup field.
+const TINTS = ['', 'ph--mint', 'ph--sky'];
 const WARM = ['ph--wheat', 'ph--warm2', 'ph--warm3'];
 const hash = (s) => { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) % 997; return h; };
 const tintFor = (item) => {
@@ -54,11 +56,12 @@ export const metaStrip = (item, r, { long = false, extra = [], omitByline = fals
   if (item.kind === 'episode') {
     bits.push(`<span>${item.minutes} min</span>`);
     bits.push(`<span>transcript</span>`);
-  } else if (!omitByline && item.kind === 'recipe') {
-    bits.push(`<span>Reviewed by ${esc(item.byline.name)}</span>`);
   } else if (!omitByline) {
-    bits.push(`<span>${esc(item.byline.name)}</span>`);
-    bits.push(`<span>${item.minutes} min read</span>`);
+    // An unknown byline or read time renders as nothing at all. Never a placeholder.
+    if (item.byline?.name) {
+      bits.push(`<span>${item.byline.reviewer ? 'Reviewed by ' : ''}${esc(item.byline.name)}</span>`);
+    }
+    if (item.minutes) bits.push(`<span>${item.minutes} min read</span>`);
   }
   if (item.es) bits.push(`<span class="meta__lang" title="Also available in Spanish">EN/ES</span>`);
   for (const e of extra) bits.push(`<span>${esc(e)}</span>`);
@@ -108,10 +111,11 @@ export const offsetHero = (item, r, { headingLevel = 3 } = {}) => {
         ${item.kind === 'episode' ? 'Watch the episode' : 'Continue reading'} <span aria-hidden="true">→</span>
         <span class="vh">: ${esc(displayTitle(item))}</span>
       </a>
+      ${item.byline?.name ? html`
       <p class="byline">
-        ${item.kind === 'recipe' ? 'Reviewed by' : 'By'} <strong>${esc(item.byline.name)}</strong><br>
-        ${esc(byDept[item.byline.dept]?.label ?? '')} · ${item.minutes} min ${item.kind === 'episode' ? '' : 'read'}
-      </p>
+        ${item.kind === 'recipe' ? 'Reviewed by' : item.kind === 'episode' ? 'With' : 'By'} <strong>${esc(item.byline.name)}</strong><br>
+        ${esc(item.byline.role || byDept[item.byline.dept]?.label || '')}${item.minutes ? ` · ${item.minutes} min${item.kind === 'episode' ? '' : ' read'}` : ''}
+      </p>` : ''}
     </div>
   </div>
 </article>`;
@@ -131,7 +135,7 @@ export const journeyBand = (item, r) => html`
     <p class="journey__eyebrow">Patient Journeys</p>
     <h3 class="journey__title"><a href="${href(r, item)}">${esc(item.title)}</a></h3>
     <p class="journey__meta">
-      With ${esc(item.clinician)}, <a href="${deptHref(r, item.dept)}">${esc(byDept[item.dept].label)}</a>
+      ${item.byline?.name ? `With ${esc(item.byline.name)} · ` : ''}<a href="${deptHref(r, item.dept)}">${esc(byDept[item.dept].label)}</a>
       <span class="sep" aria-hidden="true"> · </span>${esc(cardDate(item.published))}
     </p>
   </div>

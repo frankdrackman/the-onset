@@ -21,7 +21,7 @@ export const departmentPage = (dept) => {
   const stories = all.filter((i) => i.kind === 'article' || i.kind === 'recipe');
   const episodes = T.episodesIn(dept.slug);
   const journeys = T.journeysIn(dept.slug);
-  const feature = stories[0] ?? all[0];
+  const feature = T.preferWithStandfirst(stories)[0] ?? all[0];
   const rest = stories.filter((i) => i !== feature);
   const trail = [
     { label: 'Montefiore Einstein', href: 'index.html' },

@@ -50,7 +50,7 @@ ${footer(r)}
 const protoBanner = (r) => html`
 <div class="proto">
   <div class="wrap">
-    <span><strong>Prototype</strong> — ${esc(HUB.name)} is a working title; hub name is an open Loreen/Les decision. Photography, bylines and the full LoHud archive are placeholders.</span>
+    <span><strong>Prototype</strong> — ${esc(HUB.name)} is a working title; the hub name is an open Loreen/Les decision. Headlines, dates, episodes and transcripts are real; photography is not commissioned and some bylines are still missing.</span>
     <a href="${r}notes.html">Build notes &amp; decisions →</a>
   </div>
 </div>`;

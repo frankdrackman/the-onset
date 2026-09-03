@@ -30,7 +30,7 @@ const fromEpisode = (e) => ({
   published: e.published,
   updated: e.published,
   standfirst: e.summary,
-  byline: { name: 'Dr. Guest, MD', credential: 'MD', dept: e.dept, pending: true, guest: true },
+  byline: { name: e.guest, role: e.guestSpecialty, dept: e.dept, pending: false, guest: true },
   lang: 'en',
   es: false,
   lohud: false,
@@ -67,22 +67,24 @@ export const episodesIn = (slug) =>
 
 export const findItem = (slug) => CATALOG.find((i) => i.slug === slug);
 
-/** Display title. Ten of the thirteen episode titles are not enumerated in either
- *  source document, so a pending episode is identified by the thing that actually
- *  identifies it — its season and episode — rather than by a repeated placeholder
- *  that makes three cards in a row look identical. */
-export const displayTitle = (i) =>
-  i.kind === 'episode' && i.titlePending
-    ? `The Balance, Season ${i.season} Episode ${i.episode}`
-    : i.title;
+/** Every title in both feeds is now the publisher's real headline. */
+export const displayTitle = (i) => i.title;
+
+/** The offset hero is built around a standfirst, so a hero slot prefers an item that
+ *  actually has one. Not every LoHud teaser survived the fragment filter, and a hero
+ *  with a bare headline wastes the module. */
+export const preferWithStandfirst = (items) => {
+  const withText = items.filter((i) => i.standfirst);
+  return withText.length ? [...withText, ...items.filter((i) => !i.standfirst)] : items;
+};
 
 /** The Latest — the ticker's source lens. Curated: editorial pins lead, then
  *  reverse-chronological by editor-set date. Capped at 6–10 items per the brief. */
-export const theLatest = (limit = 8) => {
-  const pinned = CATALOG.filter((i) => i.featured).sort(byDate);
-  const rest = CATALOG.filter((i) => !i.featured && i.kind !== 'episode').sort(byDate);
-  return [...pinned, ...rest].slice(0, limit);
-};
+export const theLatest = (limit = 8) =>
+  // Reverse-chronological by editor-set date, which is what The Latest is. Editorial
+  // pins would lead here; there is no editorial mandate in the prototype, so the feed
+  // speaks for itself. Episodes are excluded — a season drop would flood every slot.
+  CATALOG.filter((i) => i.kind !== 'episode').sort(byDate).slice(0, limit);
 
 /** Department shelves for the hub home — only departments that actually have
  *  content, ordered by how much they have. Zero-item sections are never padded. */

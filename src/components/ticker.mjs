@@ -24,7 +24,12 @@ import { offsetHero, card, metaStrip, itemHref } from './cards.mjs';
 export const groupsOf = (items, per = 4) => {
   const out = [];
   for (let i = 0; i < items.length; i += per) out.push(items.slice(i, i + per));
-  return out.filter((g) => g.length > 1);
+  // The offset hero is built around a standfirst, so each set leads with an item that
+  // has one. Order within a set is presentation, not chronology.
+  return out.filter((g) => g.length > 1).map((g) => {
+    const i = g.findIndex((x) => x.standfirst);
+    return i > 0 ? [g[i], ...g.filter((_, n) => n !== i)] : g;
+  });
 };
 
 export const ticker = (items, r, {

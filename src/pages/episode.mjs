@@ -40,7 +40,6 @@ export const episodePage = (ep) => {
       S.meOrganization(),
       S.hubCollection(),
       S.videoPage(ep),
-      S.faqPage(ep.faqs),
       S.breadcrumbs([
         { label: 'Montefiore Einstein', href: '/' },
         { label: HUB.name, href: `${HUB.path}/` },
@@ -69,7 +68,6 @@ ${crumbs(trail, r)}
           <span>Full transcript below</span>
         </p>
         <h1 class="detail__title">${esc(title)}</h1>
-        ${ep.titlePending ? '<p class="mod__note">Episode title pending the series crawl. The season and episode number identify it in the meantime.</p>' : ''}
 
         <!-- Embedded from and linking out to YouTube. The hub does not re-host. -->
         <div class="embed" style="margin-block:var(--space-28)">
@@ -83,7 +81,7 @@ ${crumbs(trail, r)}
         <div class="author" style="margin-top:0">
           <div style="flex:1 1 320px">
             <p class="byline"><strong>Host</strong> ${esc(SERIES.host.name)} — ${esc(SERIES.host.role)}</p>
-            <p class="byline"><strong>Guest</strong> ${esc(ep.byline.name)}, ${esc(dept.label)}</p>
+            <p class="byline"><strong>Guest</strong> ${esc(ep.guest)}${ep.guestSpecialty ? `, ${esc(ep.guestSpecialty)}` : ''}, Montefiore Einstein</p>
             <p class="mod__note" style="margin-top:var(--space-8)">Both are Person entities. The guest carries a <code>sameAs</code> to Find a Doctor, which makes the byline corroborable rather than asserted.</p>
           </div>
           <a class="btn btn--ghost" href="${esc(dept.findCare.url)}">View profile in Find a Doctor <span aria-hidden="true">↗</span></a>
@@ -96,37 +94,43 @@ ${crumbs(trail, r)}
           <p>${esc(ep.summary)}</p>
         </section>
 
+        ${ep.topics.length ? html`
         <section class="prose" aria-labelledby="ep-covers">
           <h2 id="ep-covers">What this episode covers</h2>
-          <ul>${ep.covers.map((c) => `<li>${esc(c)}</li>`)}</ul>
-        </section>
+          <div class="chips chips--tap" style="margin-bottom:var(--space-16)">
+            ${ep.topics.map((t) => `<span class="chip">${esc(t)}</span>`)}
+          </div>
+          <p class="mod__note">Montefiore Einstein's own subject tags for this episode. On the live hub this block also carries two or three answer-first bullets written for the page.</p>
+        </section>` : ''}
 
         <!-- Transcript: chaptered with timestamps, mirrored in VideoObject
              hasPart/Clip. Ships in the initial HTML, EXPANDED on load.
              Per-chapter collapsing would be fine; fetch-on-click is not. -->
         <section class="transcript" aria-labelledby="ep-transcript">
-          <h2 class="mod__h" id="ep-transcript">Transcript</h2>
+          <h2 class="mod__h" id="ep-transcript">Jump to a moment</h2>
           <p class="mod__note" style="margin-block:var(--space-8) var(--space-16)">
-            ${ep.transcript.length > 1
-              ? 'Chapter markers below. The full transcript ships in this page’s HTML — it is never fetched on click.'
-              : 'Transcription is a named production task in the brief. Chapters land with it.'}
+            Timestamps taken from the episode's own words. The whole ${ep.transcript.length}-line transcript
+            ships in this page’s HTML and is expanded on load — never fetched on click, because text behind an
+            interaction is text an engine cannot cite.
           </p>
           <ol>
-            ${ep.transcript.map((c, i) => html`
+            ${ep.chapters.map((c, i) => html`
               <li id="t${i}"><span class="t">${esc(c.t)}</span><span class="c">${esc(c.label)}</span></li>`)}
           </ol>
-          ${ep.transcript.length > 1 ? '<p class="mod__note" style="margin-top:var(--space-16)">Chapters continue to the close.</p>' : ''}
         </section>
 
-        ${ep.faqs.length ? html`
-        <section class="qa" aria-labelledby="ep-qa">
-          <h2 class="mod__h" id="ep-qa">Common questions</h2>
-          ${ep.faqs.map((f) => html`
-            <div class="qa__item">
-              <h3 class="qa__q">${esc(f.q)}</h3>
-              <p class="qa__a">${esc(f.a)}</p>
-            </div>`)}
-        </section>` : ''}
+        <section class="transcript" aria-labelledby="ep-fulltext">
+          <h2 class="mod__h" id="ep-fulltext">Full transcript</h2>
+          <ol>
+            ${ep.transcript.map((c) => html`
+              <li><span class="t">${esc(c.t)}</span><span class="c">${esc(c.text)}</span></li>`)}
+          </ol>
+        </section>
+
+        ${ep.tieBreak ? html`
+        <aside class="mod__note" style="border-top:var(--rule);padding-top:var(--space-20);margin-top:var(--space-32)">
+          <strong>Classification note.</strong> ${esc(ep.tieBreak)}
+        </aside>` : ''}
         </div><!-- /.detail__col -->
       </div>
     </div>

@@ -3,7 +3,7 @@
 // collection, not a department. TOPICS GATHER; DEPARTMENTS OWN — every item here
 // still links to its one canonical URL under its owning department.
 
-import { html, esc } from '../lib/html.mjs';
+import { html, esc, cardDate } from '../lib/html.mjs';
 import { page, masthead, crumbs, rel } from '../components/chrome.mjs';
 import { card, media, itemHref } from '../components/cards.mjs';
 import { HUB } from '../data/site.mjs';
@@ -16,7 +16,7 @@ export const topicPage = (topic) => {
   const items = T.topicItems(topic);
   const recipes = items.filter((i) => i.kind === 'recipe');
   const articles = items.filter((i) => i.kind !== 'recipe');
-  const feature = recipes[0];
+  const feature = T.preferWithStandfirst(recipes)[0];
 
   // "Where this content lives" — recipes head the list because Healthy Nutrition is
   // the canonical exception: no clinical department, so no entity claim.
@@ -115,14 +115,9 @@ ${crumbs(trail, r)}
             <h3 class="card__title"><a href="${itemHref(r, it)}">${esc(it.title)}</a></h3>
             <hr class="card__hr">
             <p class="meta">
-              <span>${it.recipe.cookTime} min</span>
-              <span class="sep" aria-hidden="true">·</span><span>Serves ${it.recipe.serves}</span>
-              ${it.recipe.plans.length ? `<span class="sep" aria-hidden="true">·</span><span>${esc(it.recipe.plans.join(', '))}</span>` : ''}
-            </p>
-            <p class="meta">
-              <span class="meta__type">Recipe</span>
-              <span class="sep" aria-hidden="true">·</span><span>Reviewed by ${esc(it.byline.name)}</span>
-              ${it.es ? '<span class="sep" aria-hidden="true">·</span><span class="meta__lang">EN/ES</span>' : ''}
+              <span>${esc(cardDate(it.published))}</span>
+              <span class="sep" aria-hidden="true">·</span><span class="meta__type">Recipe</span>
+              ${it.byline?.name ? `<span class="sep" aria-hidden="true">·</span><span>Reviewed by ${esc(it.byline.name)}</span>` : ''}
             </p>
           </article>`)}
       </div>

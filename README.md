@@ -30,11 +30,11 @@ All seven screens of wireframe v2, plus the archive:
 | 2c | Balance episode | `/the-onset/heart-care/the-balance-s1e6/` |
 | 2d | Department (×12) | `/the-onset/heart-care/` |
 | 2e | Topic | `/the-onset/topics/nutrition/` |
-| 2f | Article detail | `/the-onset/heart-care/heart-attack-cardiac-arrest-heart-failure/` |
+| 2f | Article detail | `/the-onset/heart-care/cardiac-arrest-heart-attack-or-heart-failure-whats-the-difference/` |
 | 2g | ME homepage, two streams | `/` |
 | — | Archive | `/the-onset/archive/` |
 
-105 pages in total: every one of the 81 catalog items has a real detail page, so
+184 pages in total: every one of the 154 catalog items has a real detail page, so
 nothing dead-ends. `/notes.html` documents every decision and is linked from the
 banner on every page.
 
@@ -49,7 +49,7 @@ advance, and the archive's filter/sort/search.
 
 ```
 src/
-  data/         site identity · 12 departments · 4 pillars · 13 episodes · 68 items
+  data/         site identity · 12 departments · 4 pillars · 13 episodes · 141 articles
   lib/          html helpers · taxonomy resolver · JSON-LD builders
   components/   page chrome · the one card language · the accessible ticker
   pages/        one module per screen; department.mjs renders all twelve
@@ -67,20 +67,43 @@ used.
 Unwrapped, `.me a` (0,1,1) out-specifies a component class like `.btn` (0,1,0), so a
 navy button renders navy-on-navy text. A base layer should behave as one.
 
-## Content honesty
+## The content is real
 
-Every number on the site is **computed from the data**, never asserted. The archive
-holds a representative sample of 81 items — the brief states ~135 English articles as
-a labelled floor with the item-level LoHud crawl still pending, so the prototype does
-not claim 135. When the crawl lands, `src/data/articles.mjs` is replaced and nothing
-else changes.
+**The Balance — all 13 episodes**, harvested from the public series channel
+`youtube.com/@thebalancewithdrozuah`. Real titles, publish dates, durations, view
+counts, thumbnails, guest clinicians, and full timestamped transcripts (91–182 lines
+each). The channel holds 15 videos; the two season promos are excluded exactly as the
+brief specifies.
 
-- **Bylines** follow the wireframe's own `Dr. Byline Name, MD` convention plus the
-  real department. No ME clinician is named. The `Person`/`Physician` entity, the
-  credential strip and the Find a Doctor `sameAs` are wired and bind on real names.
-- **Episode titles**: the three named in the brief are carried verbatim. The other
-  ten are not enumerated in either source, so they are identified by season and
-  episode.
+The publish dates settle an editorial argument: all six Season 1 episodes published
+2022-05-11, all seven Season 2 on 2023-06-12. A season really does land at once, so
+the two streams must not interleave. And every one of the brief's deterministic
+tie-breaks holds against the real descriptions — including S1-E6, where the
+first-named-guest rule resolves telemedicine to Heart Care and the real description
+does name Dr. Slipczuk (Cardiology) before Dr. Altschul (Neurosurgery).
+
+**LoHud — 141 articles**, with real headlines, exact dates, canonical URLs and teaser
+text. That clears the brief's "roughly 135" and confirms it as a floor.
+**lohud.com was never crawled**: its robots.txt disallows every Claude and Anthropic
+agent identifier, so the archive was enumerated from Google's public index of
+`lohud.com/story/sponsor-story/montefiore-health-system/` instead.
+
+Three ME clinicians appear in **both** feeds — Dr. Vafa Tabatabaie, Dr. David
+Altschul and Jessica Shapiro, RD — which is the corroborable cross-feed entity signal
+the GEO section asks for, demonstrated rather than asserted.
+
+### What is still missing, and shows as missing
+
+Unknown values render as nothing at all, never as a placeholder.
+
+- **Bylines** for 111 of 141 articles (30 are real, with the clinician's role). Three
+  more survive only as a surname.
+- **Spanish twins** — confirmed to exist by the brief, but absent from the public
+  index. They need a LoHud manifest.
+- **Body text, read times, recipe cook-times** — these need the article bodies, which
+  belong to LoHud and are not reproduced. Each detail page is Option C: an
+  ME-authored, self-canonical page owning the citable summary, linking out with
+  `rel="sponsored"`.
 - **Photography** is not commissioned. Placeholders hold the exact ratios the
   direction calls for — 4:3 lead, 16:9 secondary, 21:9 detail — and say what they are.
 - **Fonts** are the ME-licensed Leitura brand faces, shipped so the prototype renders
@@ -108,7 +131,7 @@ and each non-obvious case carries the rule that decided it as a comment in
 
 ## Verified
 
-`node check.mjs` passes across all 105 pages: no broken internal links, valid JSON-LD
+`node check.mjs` passes across all 184 pages: no broken internal links, valid JSON-LD
 on every page, no pillar emitted as an entity, no empty `FAQPage`, exactly one `h1`
 per page, no skipped heading levels, skip link and `#main` landmark everywhere, no
 `<details>` gating citable text, every `role="img"` labelled.

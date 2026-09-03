@@ -64,10 +64,12 @@ export const breadcrumbs = (trail) => ({
  *  `pending: true` bylines are the wireframe's placeholders — they still emit the
  *  correct shape, minus the sameAs, which would otherwise be a fabricated claim. */
 export const person = (byline) => {
+  if (!byline?.name) return undefined;   // no author node where there is no author
   const dept = byDept[byline.dept];
   const node = {
     '@type': byline.reviewer ? 'Person' : 'Physician',
     name: byline.name,
+    ...(byline.role ? { jobTitle: byline.role } : {}),
     ...(byline.reviewer ? {} : { medicalSpecialty: dept?.entity?.name ?? undefined }),
     affiliation: { '@id': ME_ID },
   };
@@ -134,7 +136,7 @@ export const articlePage = (item) => ({
   datePublished: item.published,
   dateModified: item.updated,
   inLanguage: item.lang,
-  author: person(item.byline),
+  ...(person(item.byline) ? { author: person(item.byline) } : {}),
   publisher: { '@id': ME_ID },
   sponsor: { '@id': ME_ID },
   isPartOf: { '@id': HUB_ID },
@@ -154,21 +156,24 @@ export const recipePage = (item) => ({
   url: abs(itemPath(item)),
   datePublished: item.published,
   inLanguage: item.lang,
-  cookTime: `PT${item.recipe.cookTime}M`,
-  recipeYield: `${item.recipe.serves} servings`,
-  keywords: item.recipe.plans.join(', ') || undefined,
   publisher: { '@id': ME_ID },
   isPartOf: { '@id': HUB_ID },
   // The dietitian is the reviewer, not the author — the credibility signal that
-  // separates this from a food blog.
-  review: { '@type': 'Review', author: person(item.byline), reviewBody: 'Reviewed by a Montefiore Einstein registered dietitian.' },
+  // separates this from a food blog. Emitted only where the reviewer is known.
+  ...(person(item.byline)
+    ? { review: { '@type': 'Review', author: person(item.byline),
+        reviewBody: 'Reviewed by a Montefiore Einstein registered dietitian.' } }
+    : {}),
 });
 
 /** A Balance episode. The video lives on YouTube; this page owns the citable text. */
 export const videoPage = (ep) => ({
   '@type': 'VideoObject',
   '@id': `${abs(itemPath(ep))}#video`,
-  name: displayTitle(ep),
+  name: ep.title,
+  thumbnailUrl: ep.thumbnail,
+  interactionStatistic: { '@type': 'InteractionCounter',
+    interactionType: 'https://schema.org/WatchAction', userInteractionCount: ep.views },
   description: ep.summary,
   url: abs(itemPath(ep)),
   contentUrl: ep.youtube,
@@ -182,14 +187,16 @@ export const videoPage = (ep) => ({
   partOfSeason: { '@type': 'CreativeWorkSeason', seasonNumber: ep.season },
   episodeNumber: ep.episode,
   // The on-page transcript as extractable text, chaptered and mirrored in hasPart.
-  transcript: ep.transcript.map((c) => `${c.t} ${c.label}`).join('\n'),
-  hasPart: ep.transcript.map((c, i) => ({
-    '@type': 'Clip', name: c.label, startOffset: toSeconds(c.t),
+  // The real, complete transcript as extractable text — this is what makes the
+  // ME-domain page the citable layer for a video that lives on YouTube.
+  transcript: ep.transcript.map((c) => c.text).join(' ').replace(/\s+/g, ' ').trim(),
+  hasPart: ep.chapters.map((c, i) => ({
+    '@type': 'Clip', name: c.label, startOffset: Math.round(c.ms / 1000),
     url: `${abs(itemPath(ep))}#t${i}`,
   })),
   actor: [
     { '@type': 'Person', name: SERIES.host.name, jobTitle: SERIES.host.role, affiliation: { '@id': ME_ID } },
-    person(ep.byline),
+    { '@type': 'Physician', name: ep.guest, medicalSpecialty: ep.guestSpecialty, affiliation: { '@id': ME_ID } },
   ],
   speakable: speakable(),
 });
@@ -212,7 +219,7 @@ export const seriesGraph = (episodes) => ({
   numberOfEpisodes: episodes.length,
   numberOfSeasons: SERIES.seasons.length,
   author: { '@type': 'Person', name: SERIES.host.name, jobTitle: SERIES.host.role, affiliation: { '@id': ME_ID } },
-  hasPart: episodes.map((e) => ({ '@type': 'VideoObject', name: displayTitle(e), url: abs(itemPath(e)) })),
+  hasPart: episodes.map((e) => ({ '@type': 'VideoObject', name: e.title, url: abs(itemPath(e)) })),
 });
 
 /** Assemble one @graph per page. Nulls are dropped so we never emit empty nodes —

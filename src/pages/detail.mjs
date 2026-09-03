@@ -16,18 +16,20 @@ import { page, masthead, crumbs, rel } from '../components/chrome.mjs';
 import { card, media, metaStrip } from '../components/cards.mjs';
 import { HUB } from '../data/site.mjs';
 import { byDept } from '../data/departments.mjs';
-import { LONGFORM } from '../data/longform.mjs';
 import * as T from '../lib/taxonomy.mjs';
 import * as S from '../lib/schema.mjs';
 
 export const detailPage = (item) => {
   const r = rel(3);
   const dept = byDept[item.dept];
-  const long = LONGFORM[item.slug];
-  const inShort = long?.inShort ?? [item.standfirst];
-  const faqs = long?.faqs ?? [];
+  // Option C, as the brief carries it: this ME-domain page owns the citable summary
+  // and links out to the full piece on lohud.com. The body text is LoHud's; it is not
+  // reproduced here, and nothing is invented to fill the space.
+  const inShort = item.standfirst ? [item.standfirst] : [];
+  const faqs = [];
   const related = T.surfacingIn(item.dept).filter((i) => i !== item).slice(0, 3);
-  const sameByline = T.CATALOG.filter((i) => i.byline?.name === item.byline.name && i.kind !== 'episode').length;
+  const sameByline = item.byline?.name
+    ? T.CATALOG.filter((i) => i.byline?.name === item.byline.name && i.kind !== 'episode').length : 0;
 
   const trail = [
     { label: 'Montefiore Einstein', href: 'index.html' },
@@ -76,44 +78,39 @@ ${crumbs(trail, r)}
         <div style="margin-top:var(--space-28)">
           ${metaStrip(item, r, { long: true, omitByline: true })}
           <h1 class="detail__title">${esc(item.title)}</h1>
+          ${item.byline?.name ? html`
           <p class="detail__byline byline">
-            ${item.kind === 'recipe' ? 'Reviewed by' : 'By'} <strong>${esc(item.byline.name)}</strong>${item.byline.reviewer ? '' : `, ${esc(dept.label)}`}
-            · ${item.minutes} min read
-            ${item.es ? '· <span class="meta__lang">Also in Spanish</span>' : ''}
-          </p>
-          ${item.kind === 'journey' ? html`
-            <p class="byline">With <strong>${esc(item.clinician)}</strong>, ${esc(dept.label)}</p>` : ''}
+            ${item.byline.reviewer ? 'Reviewed by' : 'By'} <strong>${esc(item.byline.name)}</strong>${item.byline.role ? `, ${esc(item.byline.role)}` : `, ${esc(dept.label)}`}
+            ${item.minutes ? `· ${item.minutes} min read` : ''}
+          </p>` : html`
+          <p class="detail__byline byline">
+            Published by <strong>Montefiore Einstein</strong> on lohud.com.
+            <span class="mod__note">Physician byline not present in the public index — it lands with the LoHud manifest.</span>
+          </p>`}
+
         </div>
 
         <!-- Answer-first. Speakable. Above the body. Never behind an interaction. -->
         <section class="in-short" aria-labelledby="inshort-h">
           <h2 id="inshort-h">In short</h2>
           ${inShort.map((p) => `<p>${p}</p>`)}
-          ${item.kind === 'recipe' ? html`
-            <ul>
-              <li><strong>${item.recipe.cookTime} minutes</strong>, serves ${item.recipe.serves}</li>
-              ${item.recipe.plans.length ? `<li>${esc(item.recipe.plans.join(' · '))}</li>` : ''}
-              <li>Reviewed by a Montefiore Einstein registered dietitian</li>
-            </ul>` : ''}
+          ${item.kind === 'recipe' && item.byline?.reviewer ? html`
+            <ul><li>Reviewed by ${esc(item.byline.name)}, Montefiore Einstein</li></ul>` : ''}
         </section>
 
         <div class="prose">
-          ${long
-            ? long.body.map((sec) => html`
-                <h2>${esc(sec.h2)}</h2>
-                ${sec.paras.map((p) => `<p>${p}</p>`)}`)
-            : html`
-              <h2>Full article body continues</h2>
-              <p>
-                The body copy for this piece is a production task, not a template gap. Every detail page on the hub
-                renders this same structure: an answer-first summary above, then H2-chunked sections in reader
-                phrasing, the measure capped at 64 characters, then the question-and-answer block, then the author
-                card. ${esc(item.standfirst)}
-              </p>
-              <p>
-                Each H2 on a finished page is written as a question someone actually asks, because those headings are
-                what an AI engine lifts when it answers on the hub's behalf.
-              </p>`}
+          <p>
+            This is the Montefiore Einstein page for a piece published in the
+            ${esc(HUB.publisher)} series on lohud.com. The summary above is the citable text
+            Montefiore Einstein owns on its own domain; the full article stays where it was
+            published, and the link below goes to it.
+          </p>
+          <p class="mod__note">
+            On the live hub this block is where the ME-authored teaser copy sits — two or three
+            answer-first paragraphs written for this page. It is deliberately empty in the
+            prototype rather than filled with invented copy: the body text belongs to LoHud, and
+            the summary above is the publisher's own.
+          </p>
         </div>
 
         ${faqs.length ? html`
@@ -126,30 +123,38 @@ ${crumbs(trail, r)}
             </div>`)}
         </section>` : ''}
 
-        <!-- The Person entity made visible. -->
+        <!-- The Person entity made visible — rendered only where a real named
+             clinician is known. No author card for an unknown byline. -->
+        ${item.byline?.name ? html`
         <aside class="author" aria-label="About the author">
           <div class="ph author__photo" data-label="Photo" role="img" aria-label="Author photograph pending"></div>
           <div>
             <h2 class="author__name">${esc(item.byline.name)}</h2>
             <p class="byline">
-              ${esc(item.byline.reviewer ? 'Registered dietitian' : dept.label)}, Montefiore Einstein
+              ${esc(item.byline?.role || dept.label)}, Montefiore Einstein
               · ${sameByline} piece${sameByline === 1 ? '' : 's'} on ${esc(HUB.name)}
             </p>
-            <p class="mod__note">Byline is a prototype placeholder; the Find a Doctor <code>sameAs</code> binds when the crawl supplies the named clinician.</p>
+            ${item.byline?.partial ? '<p class="mod__note">Only the surname survives in the public index; the full name lands with the LoHud manifest.</p>' : ''}
           </div>
           <span class="mod__spacer"></span>
           <a class="btn btn--ghost" href="${esc(dept.findCare.url)}">View profile <span aria-hidden="true">↗</span></a>
-        </aside>
+        </aside>` : ''}
 
         <!-- Paid custom content boundary: rel="sponsored", passing no link authority.
              This replaces the old "more stories on LoHud.com" component, which
              pointed authority outward. -->
-        ${item.lohud ? html`
-        <p class="mod__note" style="border-top:var(--rule);padding-top:var(--space-20)">
-          Montefiore Einstein publishes this piece here first. A syndicated copy runs on
-          <a href="https://www.lohud.com/" rel="sponsored noopener" target="_blank">lohud.com</a>
-          as paid custom content and points back to this page.
-        </p>` : ''}
+        ${item.lohudUrl ? html`
+        <div style="border-top:var(--rule);padding-top:var(--space-24);margin-top:var(--space-32)">
+          <a class="btn" href="${esc(item.lohudUrl)}" rel="sponsored noopener" target="_blank">
+            Read the full article on lohud.com <span aria-hidden="true">↗</span>
+          </a>
+          <p class="mod__note" style="margin-top:var(--space-12)">
+            Option C, as SEO carries it: this Montefiore Einstein page is self-canonical and owns the citable
+            summary; the full piece stays where it was published. The cross-boundary link carries
+            <code>rel="sponsored"</code>, so the paid boundary passes no link authority — ME authority accrues by
+            entity consistency instead.
+          </p>
+        </div>` : ''}
         </div><!-- /.detail__col -->
       </div>
     </div>
