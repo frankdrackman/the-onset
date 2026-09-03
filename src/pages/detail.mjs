@@ -149,7 +149,9 @@ ${crumbs(trail, r)}
              clinician is known. No author card for an unknown byline. -->
         ${item.byline?.name ? html`
         <aside class="author" aria-label="About the author">
-          <div class="ph author__photo" data-label="Photo" role="img" aria-label="Author photograph pending"></div>
+          ${item.byline.photo
+            ? `<img class="author__photo author__photo--real" src="${r}assets/${esc(item.byline.photo)}" alt="" loading="lazy">`
+            : '<div class="ph author__photo" data-label="Photo" role="img" aria-label="Author photograph pending"></div>'}
           <div>
             <h2 class="author__name">${esc(item.byline.name)}</h2>
             <p class="byline">

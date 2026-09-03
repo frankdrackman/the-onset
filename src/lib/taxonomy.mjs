@@ -11,6 +11,7 @@ import { HUB } from '../data/site.mjs';
 import { byDept } from '../data/departments.mjs';
 import { BODIES } from '../data/bodies.mjs';
 import { findProfile } from '../data/profiles.mjs';
+import { headshotFor } from '../data/headshots.mjs';
 
 const HUB_PATH = HUB.path;
 
@@ -49,7 +50,9 @@ const enrich = (i) => {
   const bind = (by) => {
     if (!by?.name) return by;
     const p = findProfile(by.name);
-    return p ? { ...by, name: p.name, profileUrl: p.sameAs, npi: p.npi } : by;
+    const merged = p ? { ...by, name: p.name, profileUrl: p.sameAs, npi: p.npi } : by;
+    const photo = headshotFor(merged.name);
+    return photo ? { ...merged, photo } : merged;
   };
   if (!b) return { ...i, byline: bind(i.byline) };
   const words = b.paras.reduce((n, p) => n + p.text.split(/\s+/).length, 0);
@@ -91,7 +94,9 @@ const enrichBound = (i) => {
   const e = enrich(i);
   if (!e.byline?.name || e.byline.profileUrl) return e;
   const p = findProfile(e.byline.name);
-  return p ? { ...e, byline: { ...e.byline, name: p.name, profileUrl: p.sameAs, npi: p.npi } } : e;
+  const b = p ? { ...e.byline, name: p.name, profileUrl: p.sameAs, npi: p.npi } : e.byline;
+  const photo = headshotFor(b.name);
+  return { ...e, byline: photo ? { ...b, photo } : b };
 };
 
 export const CATALOG = [...ITEMS.map(enrichBound), ...EPISODES.map(fromEpisode)];

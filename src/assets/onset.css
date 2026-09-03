@@ -520,3 +520,6 @@ select.ctrl { padding-right: var(--space-32); }
 /* FAQ slot awaiting editorial copy — a build affordance, never mistaken for content. */
 .qa--empty { border: 1px dashed var(--color-gray-400); border-radius: var(--radius-md); padding: var(--space-24); background: var(--color-soft-gray); }
 .qa--empty .mod__h { margin-bottom: var(--space-8); }
+
+/* Real physician headshot in the author card. */
+.author__photo--real { object-fit: cover; border-radius: var(--radius-full); }

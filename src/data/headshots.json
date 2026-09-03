@@ -1,0 +1,320 @@
+{
+ "MiriamHarel": {
+  "file": "physicians/MiriamHarel.jpg",
+  "npi": "1619156148",
+  "name": "Miriam Harel, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1619156148/miriam-harel"
+ },
+ "MarioGarcia": {
+  "file": "physicians/MarioGarcia.jpg",
+  "npi": "1669567210",
+  "name": "Mario J. Garcia, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1669567210/mario-j-garcia"
+ },
+ "RobertEMichler": {
+  "file": "physicians/RobertEMichler.jpg",
+  "npi": "1841370491",
+  "name": "Robert E. Michler, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1841370491/robert-e-michler"
+ },
+ "RobertOstfeld": {
+  "file": "physicians/RobertOstfeld.jpg",
+  "npi": "1265522064",
+  "name": "Robert J. Ostfeld, MD, MS",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1265522064/robert-j-ostfeld"
+ },
+ "CharlesCEsenwa": {
+  "file": "physicians/CharlesCEsenwa.jpg",
+  "npi": "1245556901",
+  "name": "Charles C. Esenwa, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1245556901/charles-c-esenwa"
+ },
+ "JacobCynamon": {
+  "file": "physicians/JacobCynamon.jpg",
+  "npi": "1407949647",
+  "name": "Jacob Cynamon",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1407949647/jacob-cynamon"
+ },
+ "Clearwater": {
+  "file": "physicians/Clearwater.jpg",
+  "npi": "1043697691",
+  "name": "Whitney L. Clearwater, MD, MPH",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1043697691/whitney-l-clearwater"
+ },
+ "JillianParekh": {
+  "file": "physicians/JillianParekh.jpg",
+  "npi": "1144464892",
+  "name": "Jillian B. Parekh, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1144464892/jillian-b-parekh"
+ },
+ "DavidAltschul": {
+  "file": "physicians/DavidAltschul.jpg",
+  "npi": "1649567900",
+  "name": "David J. Altschul, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1649567900/david-j-altschul"
+ },
+ "SandraAleksic": {
+  "file": "physicians/SandraAleksic.jpg",
+  "npi": "1265864409",
+  "name": "Sandra Aleksic, MD, MS",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1265864409/sandra-aleksic"
+ },
+ "LuigiDiBiase": {
+  "file": "physicians/LuigiDiBiase.jpg",
+  "npi": "1891045837",
+  "name": "Luigi Di Biase, MD, PhD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1891045837/luigi-di-biase"
+ },
+ "CynthiaArmand": {
+  "file": "physicians/CynthiaArmand.jpg",
+  "npi": "1659622603",
+  "name": "Cynthia E. Armand, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1659622603/cynthia-e-armand"
+ },
+ "AnjaliManavalan": {
+  "file": "physicians/AnjaliManavalan.jpg",
+  "npi": "1740502897",
+  "name": "Anjali D. Manavalan, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1740502897/anjali-d-manavalan"
+ },
+ "BethNMcLellan": {
+  "file": "physicians/BethNMcLellan.jpg",
+  "npi": "1356512412",
+  "name": "Beth N. McLellan, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1356512412/beth-n-mclellan"
+ },
+ "KaraWatts": {
+  "file": "physicians/KaraWatts.jpg",
+  "npi": "1215222856",
+  "name": "Kara L. Watts, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1215222856/kara-l-watts"
+ },
+ "VafaTabatabaie": {
+  "file": "physicians/VafaTabatabaie.jpg",
+  "npi": "1861789976",
+  "name": "Vafa Tabatabaie, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1861789976/vafa-tabatabaie"
+ },
+ "Rochlani": {
+  "file": "physicians/Rochlani.jpg",
+  "npi": "1427498401",
+  "name": "Yogita Mahendra Rochlani, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1427498401/yogita-mahendra-rochlani"
+ },
+ "AliceSTeich": {
+  "file": "physicians/AliceSTeich.jpg",
+  "npi": "1376826818",
+  "name": "Alice S. Teich, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1376826818/alice-s-teich"
+ },
+ "Weston": {
+  "file": "physicians/Weston.jpg",
+  "npi": "1003132861",
+  "name": "Gregory D. Weston, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1003132861/gregory-d-weston"
+ },
+ "AliYMansour": {
+  "file": "physicians/AliYMansour.jpg",
+  "npi": "1427279017",
+  "name": "Ali Y. Mansour, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1427279017/ali-y-mansour"
+ },
+ "ChaoyuanKuang": {
+  "file": "physicians/ChaoyuanKuang.jpg",
+  "npi": "1114312972",
+  "name": "Chaoyuan Kuang",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1114312972/chaoyuan-kuang"
+ },
+ "TamarNobel": {
+  "file": "physicians/TamarNobel.jpg",
+  "npi": "1902224413",
+  "name": "Tamar B. Nobel, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1902224413/tamar-b-nobel"
+ },
+ "PedroMaria": {
+  "file": "physicians/PedroMaria.jpg",
+  "npi": "1740394618",
+  "name": "Pedro P. Maria, DO",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1740394618/pedro-p-maria"
+ },
+ "MarkEinstein": {
+  "file": "physicians/MarkEinstein.jpg",
+  "npi": "1356421812",
+  "name": "Mark H. Einstein, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1356421812/mark-h-einstein"
+ },
+ "JessicaZwerling": {
+  "file": "physicians/JessicaZwerling.jpg",
+  "npi": "1053496364",
+  "name": "Jessica L. Zwerling, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1053496364/jessica-l-zwerling"
+ },
+ "RobertJOstfeld": {
+  "file": "physicians/RobertJOstfeld.jpg",
+  "npi": "1265522064",
+  "name": "Robert J. Ostfeld, MD, MS",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1265522064/robert-j-ostfeld"
+ },
+ "UlrichPJorde": {
+  "file": "physicians/UlrichPJorde.jpg",
+  "npi": "1184617573",
+  "name": "Ulrich P. Jorde",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1184617573/ulrich-p-jorde"
+ },
+ "DawnMWahezi": {
+  "file": "physicians/DawnMWahezi.jpg",
+  "npi": "1518290725",
+  "name": "Dawn M. Wahezi, MD, MS",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1518290725/dawn-m-wahezi"
+ },
+ "BennyWu": {
+  "file": "physicians/BennyWu.jpg",
+  "npi": "1730538596",
+  "name": "Benedict C. Wu",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1730538596/benedict-c-wu"
+ },
+ "SharonBushi": {
+  "file": "physicians/SharonBushi.jpg",
+  "npi": "1467847350",
+  "name": "Sharon Bushi, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1467847350/sharon-bushi"
+ },
+ "OrenTepper": {
+  "file": "physicians/OrenTepper.jpg",
+  "npi": "1972707636",
+  "name": "Oren M. Tepper, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1972707636/oren-m-tepper"
+ },
+ "DavidJAltschul": {
+  "file": "physicians/DavidJAltschul.jpg",
+  "npi": "1649567900",
+  "name": "David J. Altschul, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1649567900/david-j-altschul"
+ },
+ "SriramMachineni": {
+  "file": "physicians/SriramMachineni.jpg",
+  "npi": "1750350666",
+  "name": "Sriram Machineni, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1750350666/sriram-machineni"
+ },
+ "MontefioreEinstein": {
+  "file": "physicians/MontefioreEinstein.jpg",
+  "npi": "1356421812",
+  "name": "Mark H. Einstein, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1356421812/mark-h-einstein"
+ },
+ "JonathanAlpert": {
+  "file": "physicians/JonathanAlpert.jpg",
+  "npi": "1508857863",
+  "name": "Jonathan E. Alpert, MD, PhD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1508857863/jonathan-e-alpert"
+ },
+ "AmitVerma": {
+  "file": "physicians/AmitVerma.jpg",
+  "npi": "1033299524",
+  "name": "Amit K. Verma, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1033299524/amit-k-verma"
+ },
+ "AnjaliDManavalan": {
+  "file": "physicians/AnjaliDManavalan.jpg",
+  "npi": "1740502897",
+  "name": "Anjali D. Manavalan, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1740502897/anjali-d-manavalan"
+ },
+ "NicoleHayde": {
+  "file": "physicians/NicoleHayde.jpg",
+  "npi": "1417196726",
+  "name": "Nicole A. Hayde",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1417196726/nicole-a-hayde"
+ },
+ "MarioJGarcia": {
+  "file": "physicians/MarioJGarcia.jpg",
+  "npi": "1669567210",
+  "name": "Mario J. Garcia, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1669567210/mario-j-garcia"
+ },
+ "TamarBNobel": {
+  "file": "physicians/TamarBNobel.jpg",
+  "npi": "1902224413",
+  "name": "Tamar B. Nobel, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1902224413/tamar-b-nobel"
+ },
+ "SunjuPark": {
+  "file": "physicians/SunjuPark.jpg",
+  "npi": "1013216860",
+  "name": "Sunju Park, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1013216860/sunju-park"
+ },
+ "KaraLWatts": {
+  "file": "physicians/KaraLWatts.jpg",
+  "npi": "1215222856",
+  "name": "Kara L. Watts, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1215222856/kara-l-watts"
+ },
+ "SimonARego": {
+  "file": "physicians/SimonARego.jpg",
+  "npi": "1699845800",
+  "name": "Simon A. Rego, PsyD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1699845800/simon-a-rego"
+ },
+ "JillianBParekh": {
+  "file": "physicians/JillianBParekh.jpg",
+  "npi": "1144464892",
+  "name": "Jillian B. Parekh, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1144464892/jillian-b-parekh"
+ },
+ "YogitaMahendraRochlani": {
+  "file": "physicians/YogitaMahendraRochlani.jpg",
+  "npi": "1427498401",
+  "name": "Yogita Mahendra Rochlani, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1427498401/yogita-mahendra-rochlani"
+ },
+ "GregoryDWeston": {
+  "file": "physicians/GregoryDWeston.jpg",
+  "npi": "1003132861",
+  "name": "Gregory D. Weston, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1003132861/gregory-d-weston"
+ },
+ "ElizabethMAlderman": {
+  "file": "physicians/ElizabethMAlderman.jpg",
+  "npi": "1558447821",
+  "name": "Elizabeth M. Alderman",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1558447821/elizabeth-m-alderman"
+ },
+ "LaurenGluck": {
+  "file": "physicians/LaurenGluck.jpg",
+  "npi": "1033524780",
+  "name": "Lauren Gluck, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1033524780/lauren-gluck"
+ },
+ "MilanKinkhabwala": {
+  "file": "physicians/MilanKinkhabwala.jpg",
+  "npi": "1942257282",
+  "name": "Milan M. Kinkhabwala, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1942257282/milan-m-kinkhabwala"
+ },
+ "CynthiaEArmand": {
+  "file": "physicians/CynthiaEArmand.jpg",
+  "npi": "1659622603",
+  "name": "Cynthia E. Armand, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1659622603/cynthia-e-armand"
+ },
+ "AmandaZayde": {
+  "file": "physicians/AmandaZayde.jpg",
+  "npi": "1790030963",
+  "name": "Amanda Zayde, PsyD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1790030963/amanda-zayde"
+ },
+ "AlexanderISankin": {
+  "file": "physicians/AlexanderISankin.jpg",
+  "npi": "1982866570",
+  "name": "Alexander I. Sankin, MD",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1982866570/alexander-i-sankin"
+ },
+ "WhitneyLClearwater": {
+  "file": "physicians/WhitneyLClearwater.jpg",
+  "npi": "1043697691",
+  "name": "Whitney L. Clearwater, MD, MPH",
+  "profile": "https://doctors.montefioreeinstein.org/providers/1043697691/whitney-l-clearwater"
+ }
+}
