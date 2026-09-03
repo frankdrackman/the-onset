@@ -179,6 +179,12 @@ a, button { min-height: 0; }
   background: rgba(255,255,255,.82); padding: 6px 10px; border-radius: var(--radius-sm);
   text-align: center; max-width: 80%;
 }
+/* A real photograph fills the same ratio box the placeholder held, so nothing in the
+   layout shifts as art lands. */
+.ph--has-img { background: var(--color-gray-200); }
+.ph--has-img::after { content: none; }
+.ph__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
 .ph--4x3   { aspect-ratio: 4 / 3; }
 .ph--16x9  { aspect-ratio: 16 / 9; }
 .ph--3x2   { aspect-ratio: 3 / 2; }

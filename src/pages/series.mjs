@@ -48,7 +48,7 @@ ${crumbs(trail, r)}
   <section class="mod" aria-labelledby="series-h">
     <div class="wrap">
       <div class="hero">
-        <div class="hero__media">${media({ kind: 'episode', slug: 'series', title: SERIES.name }, '4x3', 'Series still')}</div>
+        <div class="hero__media">${media({ ...latest, kind: 'episode' }, '16x9', 'Series still', r)}</div>
         <div class="hero__body">
           <p class="meta">
             <span class="meta__type">Video series</span>

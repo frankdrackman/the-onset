@@ -34,11 +34,23 @@ const labelFor = (item) => {
 };
 
 /** Media block at a stated ratio. */
-export const media = (item, ratio = '16x9', label = null) => html`
+export const media = (item, ratio = '16x9', label = null, r = '') => {
+  const play = item.kind === 'episode' ? '<span class="ph__play" aria-hidden="true">▶</span>' : '';
+  if (item.image) {
+    // alt is empty on purpose: the headline beside it is the accessible name, so
+    // describing the image again would just make a screen reader say it twice.
+    return html`
+<div class="ph ph--${ratio} ph--has-img">
+  <img class="ph__img" src="${r}assets/${esc(item.image)}" alt="" loading="lazy" decoding="async">
+  ${play}
+</div>`;
+  }
+  return html`
 <div class="ph ph--${ratio} ${tintFor(item)}" data-label="${esc(label ?? labelFor(item))}" role="img"
      aria-label="${esc(label ?? labelFor(item))} — art pending for ${esc(displayTitle(item))}">
-  ${item.kind === 'episode' ? '<span class="ph__play" aria-hidden="true">▶</span>' : ''}
+  ${play}
 </div>`;
+};
 
 /**
  * The meta strip: date · department · content type, separated by navy dots.
@@ -74,7 +86,7 @@ export const metaStrip = (item, r, { long = false, extra = [], omitByline = fals
  */
 export const card = (item, r, { ratio = '16x9', size = '', stand = false } = {}) => html`
 <article class="card ${size}">
-  <a class="card__media" href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, ratio)}</a>
+  <a class="card__media" href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, ratio, null, r)}</a>
   <h3 class="card__title"><a href="${href(r, item)}">${esc(displayTitle(item))}</a></h3>
   ${stand && item.standfirst ? `<p class="card__stand">${esc(item.standfirst)}</p>` : ''}
   <hr class="card__hr">
@@ -84,7 +96,7 @@ export const card = (item, r, { ratio = '16x9', size = '', stand = false } = {})
 /** Small shelf card — image, headline, meta. */
 export const shelfCard = (item, r) => html`
 <article class="card card--xs">
-  <a class="card__media" href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, '3x2')}</a>
+  <a class="card__media" href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, '3x2', null, r)}</a>
   <h3 class="card__title"><a href="${href(r, item)}">${esc(item.title)}</a></h3>
   <hr class="card__hr">
   ${metaStrip(item, r)}
@@ -97,10 +109,14 @@ export const shelfCard = (item, r) => html`
  */
 export const offsetHero = (item, r, { headingLevel = 3 } = {}) => {
   const H = `h${headingLevel}`;
+  // Editorial photography takes the 4:3 lead the direction calls for. A Balance still
+  // is a 16:9 title card, and cropping it to 4:3 cuts the lettering off, so video
+  // keeps its own ratio.
+  const heroRatio = item.kind === 'episode' ? '16x9' : '4x3';
   return html`
 <article class="hero">
   <div class="hero__media">
-    <a href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, '4x3', 'Lead photograph')}</a>
+    <a href="${href(r, item)}" tabindex="-1" aria-hidden="true">${media(item, heroRatio, 'Lead photograph', r)}</a>
   </div>
   <div class="hero__body">
     ${metaStrip(item, r, { long: true })}

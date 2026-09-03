@@ -111,7 +111,7 @@ ${crumbs(trail, r)}
       <div class="row row--3">
         ${recipes.slice(0, 6).map((it) => html`
           <article class="card card--sm">
-            <a class="card__media" href="${itemHref(r, it)}" tabindex="-1" aria-hidden="true">${media(it, '3x2', 'Recipe photograph')}</a>
+            <a class="card__media" href="${itemHref(r, it)}" tabindex="-1" aria-hidden="true">${media(it, '3x2', 'Recipe photograph', r)}</a>
             <h3 class="card__title"><a href="${itemHref(r, it)}">${esc(it.title)}</a></h3>
             <hr class="card__hr">
             <p class="meta">

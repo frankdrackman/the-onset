@@ -78,7 +78,7 @@ ${crumbs(trail, r)}
   <article>
     <div class="wrap">
       <div class="detail">
-        ${media(item, '21x9', item.kind === 'recipe' ? 'Recipe photograph' : 'Lead photograph')}
+        ${media(item, '21x9', item.kind === 'recipe' ? 'Recipe photograph' : 'Lead photograph', r)}
         <div class="detail__col">
         <div style="margin-top:var(--space-28)">
           ${metaStrip(item, r, { long: true, omitByline: true })}

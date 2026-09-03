@@ -28,6 +28,7 @@ export const pillarPath = (slug) => `${HUB_PATH}/pillars/${slug}/`;
 const fromEpisode = (e) => ({
   ...e,
   kind: 'episode',
+  image: `img/${e.slug}.jpg`,
   topic: `S${e.season} · E${e.episode}`,
   published: e.published,
   updated: e.published,
